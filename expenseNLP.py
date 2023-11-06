@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('dataset.csv')
 
 # Split the 'Source Data'column into 'Text of Invoice' and 'Expense Category' columns
-df[['Text of Invoice', 'Expense Category']] = df['Source Data'].str.split(',', 1, expand=True)
+df[['Text of Invoice', 'Expense Category']] = df['Source Data'].str.rsplit(",", expand=True, n=1)
 
 # Create a list of tuples representing your dataset
 dataset = [(row['Text of Invoice'], row['Expense Category']) for _, row in df.iterrows()]
