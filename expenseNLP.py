@@ -3,7 +3,7 @@ import pandas as pd
 # Load the Excel file into a DataFrame and skip the header row
 df = pd.read_csv('dataset.csv')
 
-# Split the 'Source Data'column into 'Text of Invoice' and 'Expense Category' columns
+# Split the 'Source Data'column into 'Text of Invoice' and 'Expense Category' columns.  Using the ',' in the dataset as the separater, and split column into two from right to left for one time using rsplit.
 df[['Text of Invoice', 'Expense Category']] = df['Source Data'].str.rsplit(",", expand=True, n=1)
 
 # Create a list of tuples representing your dataset
