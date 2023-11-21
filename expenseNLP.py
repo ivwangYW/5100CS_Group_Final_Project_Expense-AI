@@ -70,34 +70,6 @@ labels = list(labels)
 	pip install nltk
 """
 
-"""
-#tokenization and preprocessing txt
-def custom_preprocessor(textList):
-	tokenized_list = []
-	
-	for text in textList:
-		# Additional stopwords specific to your domain can be added to this list
-		custom_stopwords = set(stopwords.words('english'))
-		#remove all numbers from each text
-		text = remove_numbers(text)
-		# Tokenize using nltk
-		tokenized_text = word_tokenize(text.lower())  # Convert to lowercase for consistency
-		
-		# Remove punctuation and non-alphabetic characters
-		tokenized_text = [token for token in tokenized_text if token.isalpha()]
-
-		# Remove stopwords
-		tokenized_text = [token for token in tokenized_text if token not in custom_stopwords]
-		tokenized_list.append(tokenized_text)
-
-	return tokenized_list
-
-def remove_numbers(text):
-	# Use regex to remove all numbers
-	text_without_numbers = re.sub(r'\d+', '', text)
-	return text_without_numbers
-
-"""
 def custom_preprocessor(text):
 	
 	# Additional stopwords specific to your domain can be added to this list
@@ -117,7 +89,8 @@ def custom_preprocessor(text):
 	# Concatenate the tokens into a single string
 	return ' '.join(tokenized_text)
 
-
+#remove all numbers to prevent vectorizer to use numbers as features
+	# token_pattern=u'(?u)\b\w*[a-zA-Z]\w*\b'
 def remove_numbers(text):
 	# Use regex to remove all numbers
 	text_without_numbers = re.sub(r'\d+', '', text)
@@ -137,72 +110,51 @@ vectorizer = TfidfVectorizer(
 	stop_words="english",
 	#include the custom preprocessor into the vectorizer so that test data and other new data can be processed consistantly through the pipeline.
 	preprocessor=custom_preprocessor    
-	#remove all numbers to prevent vectorizer to use numbers as features
-	#token_pattern=u'(?u)\b\w*[a-zA-Z]\w*\b'      
+	      
 )	
-# Transform the training data using the vectorizer
-X_tfidf = vectorizer.fit_transform(x_train)
-# Transform the test data using the same vectorizer separately
-X_test_tfidf = vectorizer.transform(x_test)
+
 
 """
 7. Define NLP pipeline.
-# Define NLP pipeline
-model = make_pipeline(
-	CountVectorizer(analyzer=tokenize_and_clean),
-	MultinomialNB()
-)
 """
-# Create a pipeline with TF-IDF vectorizer and a classifier (e.g., Support Vector Machine)
+# Create a pipeline with TF-IDF vectorizer and a classifier (e.g., Support Vector Machine,  Neural Networks,  MultinomialNB, etc.)
 text_classifier = Pipeline([
 	('tfidf', vectorizer),
-	('clf', SVC())  # classifier can be changed
+	('clf', SVC())  # classifier can be changed.     
 ])
 
 
 
 """
 8.   Train the model
-
-model.fit(X_train, y_train)
-
-# Make predictions on the test set
-X_test, y_test = zip(*test_set)
-predictions = model.predict(X_test)
-
 """
 # Fit the pipeline on the training data
 text_classifier.fit(x_train, y_train)
 
 
-
-
-
 """
-# Inverse transform the labels for evaluation
+# (?? Not sure if we need it)  Inverse transform the labels for evaluation
 #y_test_inverse = le.inverse_transform(y_test)
 #predictions_inverse = le.inverse_transform(predictions)
 """
-# Assuming you have a new invoice text in a variable called 'new_invoice_text'
-new_invoice_text = "INV/2035-05-25-051 - Invoice Date: 2035-05-25 - Vendor: Spectrum Business - Companywide Internet and Phone Upgrade - Total Amount: $2,600.00."
 
 
 
-# Use the trained model to predict the category
-predicted_category = text_classifier.predict([new_invoice_text])
-#predictions_inverse = le.inverse_transform(predicted_category[0])
-#print(f'inverse {predictions_inverse}')
-print(f"The predicted category for the new invoice is: {predicted_category[0]}")
+
 """
-# Evaluate the model
-accuracy = metrics.accuracy_score(y_test, predictions)
-print(f"Model Accuracy: {accuracy}")
-
-# Now you can use 'model' for predicting the category of new invoices
-# Example: category = model.predict(["New invoice text"])
+9. Evaluate the model
+	(?? will delete later if not needed--> )  accuracy = metrics.accuracy_score(y_test, predictions)
 """
-
 
 # Evaluate the model on the test data
 accuracy = text_classifier.score(x_test, y_test)
 print(f"Accuracy on the test set: {accuracy}")
+
+
+# ((?? might not work)  Assuming you have a new invoice text, not in both the training and testing datasets, try to get the classification answer
+print('Now, please input text of invoice, and wait for classification of expense category:  ')
+one_text_of_invoice = input()
+if ( one_text_of_invoice.isalpha ):
+	answer = text_classifier.predict([one_text_of_invoice])[0]
+print(f'new invoice test: {answer}')
+
