@@ -1,7 +1,10 @@
 # 5100CS_Group_Final_Project_Expense-AI
 Automated Expense Processing Tool Using NLP/ML and MDP
 
-1. add data.csv
-2. Need to complete custom_preprocessor function.
-3. classifier in the pipeline can be changed  (if we have time, can build our own neural network classifier, or not)
+TODO:
+1. update data.csv
+2. classifier in the pipeline can be changed  (if we have time, can build our own neural network classifier, or not, or try other classification algorithms)
+3. MDP
+4. try other accuracy matrics
+5. any graph if needed
 
