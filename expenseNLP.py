@@ -25,21 +25,7 @@ except LookupError:
     nltk.download('punkt')
 
 """
-1.  Setting up data:    First,  Using the source file dataset.csv to create 'dataset' as a list of tuples where each tuple contains the text 
-and expense category.  
-"""
-"""to delete
-# Load the Excel file into a DataFrame and skip the header row
-df = pd.read_csv('dataset.csv')
-
-# Split the 'Source Data'column into 'Text of Invoice' and 'Expense Category' columns.  Using the ',' in the dataset as the separater, and split column into two from right to left for one time using rsplit.
-df[['Text of Invoice', 'Expense Category']] = df['Source Data'].str.rsplit(",", expand=True, n=1)
-
-# Create a list of tuples representing your dataset
-dataset = [(row['Text of Invoice'], row['Expense Category']) for _, row in df.iterrows()]
-	# Separate into two lists
-	#text_of_invoice_list = [item[0] for item in dataset]
-	#expense_category_list = [item[1] for item in dataset]
+1.  Obtain dataset and data frame related to Expense category classigication from dataConverter.py
 """
 dataset = dataConverter.dataset_invoiceText_expenseCategory
 df_expenseCategory = dataConverter.df_expenseCategory
