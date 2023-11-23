@@ -9,16 +9,26 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
 import os
 import re
+import dataConverter
 
 
-# Download the NLTK stopwords corpus
-nltk.download('stopwords')
-nltk.download('punkt')
+# Check if NLTK stopwords corpus is already downloaded
+if not nltk.corpus.stopwords.fileids():
+    # Download stopwords corpus if not present
+    nltk.download('stopwords')
+
+# Check if NLTK punkt tokenizer data is already downloaded
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    # Download punkt tokenizer data if not present
+    nltk.download('punkt')
 
 """
 1.  Setting up data:    First,  Using the source file dataset.csv to create 'dataset' as a list of tuples where each tuple contains the text 
 and expense category.  
 """
+"""to delete
 # Load the Excel file into a DataFrame and skip the header row
 df = pd.read_csv('dataset.csv')
 
@@ -27,10 +37,12 @@ df[['Text of Invoice', 'Expense Category']] = df['Source Data'].str.rsplit(",", 
 
 # Create a list of tuples representing your dataset
 dataset = [(row['Text of Invoice'], row['Expense Category']) for _, row in df.iterrows()]
-# Separate into two lists
-text_of_invoice_list = [item[0] for item in dataset]
-expense_category_list = [item[1] for item in dataset]
-
+	# Separate into two lists
+	#text_of_invoice_list = [item[0] for item in dataset]
+	#expense_category_list = [item[1] for item in dataset]
+"""
+dataset = dataConverter.dataset_invoiceText_expenseCategory
+df_expenseCategory = dataConverter.df_expenseCategory
 
 """
 2.  Label Encoding
@@ -42,7 +54,7 @@ expense_category_list = [item[1] for item in dataset]
 """
 le = LabelEncoder()
 #Fit and transform the 'Expense Category' column into numerical code.
-df['Expense Category'] = le.fit_transform(df['Expense Category'])
+df_expenseCategory = le.fit_transform(df_expenseCategory)
 
 
 """
