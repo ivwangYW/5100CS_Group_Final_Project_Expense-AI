@@ -9,16 +9,16 @@ https://lucid.app/lucidchart/c1208529-7687-4675-92aa-f0c39d2d320d/edit?view_item
 see file Diagram 2 - Decision Making - MDP Diagram.pdf
 
 ### TODO: ###
-0. label add amount   - Ivy 
-1. update data.csv    ( more data)     -Ivy
-2. Database tables         - Ivy     
-3. NLP for invoice Amount extraction 
-4. NLP for invoice date extraction 
+0. label add amount   - Ivy - done
+1. Database tables         - Ivy     
+2. Update data.csv    ( more data)     -Ivy
+3. NLP for invoice Amount extraction (can use data in dataConverter directly)
+4. NLP for invoice date extraction (can use data in dataConverter directly)
 5. Reward Calculation
 6. Reinforcement learning process        MDP   
 7. Calculate rewards
 8. Python logic /Calculate/ class
-9. classifier in the pipeline can be changed  (if we have time, can build our own neural network classifier, or not, or try other classification algorithms)
+9. classifier in the pipeline can be changed  (if we have time, can build our own neural network classifier, or not, or try other classification algorithms) (can use data in dataConverter directly)
 
 10. optimizing any detail
 11. try other accuracy matrics
