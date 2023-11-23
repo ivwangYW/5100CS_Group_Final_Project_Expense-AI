@@ -18,9 +18,8 @@ see file Diagram 2 - Decision Making - MDP Diagram.pdf
 6. Reinforcement learning process        MDP   
 7. Calculate rewards
 8. Python logic /Calculate/ class
-
-
 9. classifier in the pipeline can be changed  (if we have time, can build our own neural network classifier, or not, or try other classification algorithms)
+
 10. optimizing any detail
 11. try other accuracy matrics
 12. any graph, if needed
