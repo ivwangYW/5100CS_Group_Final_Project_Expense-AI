@@ -1,6 +1,13 @@
 # 5100CS_Group_Final_Project_Expense-AI
 Automated Expense Processing Tool Using NLP/ML and MDP
 
+### Project Process:  ### 
+Process Summary: 
+https://lucid.app/lucidchart/c1208529-7687-4675-92aa-f0c39d2d320d/edit?view_items=h9CPPX0PBLSY&invitationId=inv_8b067be2-0838-4a98-8c72-c8ffc477b320
+
+Decision Making - MDP process:   
+see file Diagram 2 - Decision Making - MDP Diagram.pdf
+
 TODO:
 0. label add amount   - Ivy 
 1. update data.csv    ( more data)     -Ivy
