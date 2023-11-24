@@ -154,5 +154,5 @@ print('Now, please input text of invoice, and wait for classification of expense
 one_text_of_invoice = input()
 if ( one_text_of_invoice.isalpha ):
 	answer = text_classifier.predict([one_text_of_invoice])[0]
-print(f'new invoice test: {answer}')
+print(f'new invoice test answer: {answer}')
 
