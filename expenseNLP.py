@@ -92,12 +92,9 @@ print(f"Optimized Model Accuracy: {accuracy}")
 
 
 
-# Load your dataset
-# Replace 'your_dataset.csv' with the path to your dataset
+# Load dataset
 df = dataConverter.df_invoiceText
 
-# Assuming you have a trained model 'text_classifier'
-# If not, you need to train your model here (not included in this script)
 
 # Function to extract date, total amount, and currency unit
 def extract_details(text):
