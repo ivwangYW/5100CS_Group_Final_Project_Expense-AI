@@ -12,9 +12,8 @@ see file Diagram 2 - Decision Making - MDP Diagram.pdf
 see file Diagram 3 - Fraud Risk Score Worksheet
 
 ### TODO: ###
-0. dataset label add invoice #   - Ivy 
+0. dataset label add invoice #   - done 
 0.2 Update data.csv    ( more data)     -Ivy
-0.5 update dataset -Ivy
 0.6 feature labels for fraud score   -Ivy
 0.8 design functions for predictions of future Invoice Amount (y, output) at certain future date (x, input)
 0.9 feature value functions     -Ivy
