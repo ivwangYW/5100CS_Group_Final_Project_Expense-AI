@@ -107,3 +107,41 @@ Result:  array([3.71841299, 2.36386733, 3.88831202, 3.62880083, 4.98692431,
        2.00799916, 4.8815638 , 4.47609869, 3.42294878, 4.41156017,
        5.10470735, 4.23970991])
 """
+
+"""
+Risk comparison:
+EmployeeID P000002 had reasonable claim amount compared to our prediction for the same 
+expense category for same employee based on past claim records in the ReimbursementRequestRecords 
+table in database. 
+
+
+"""
+# Partial Data in ReimbursementRequestRecords table
+# for employee'E000435', , past reimbursement request for'Phone & Internet', before last invoice date '2021-03-19', 'B9620'
+    #were all around 165.   If we have a new invoice amount significantly greater than this amount, the risk score should raise up. 
+    
+dbcon.execute('''
+    INSERT INTO ReimbursementRequestRecords 
+    (RecordID, EmployeeID, ProjectID, ExpenseCategory, SubmissionDate, InvoiceDate, InvoiceID, InvoiceAmount)
+    VALUES 
+    ('R000006', 'E000002', 'P000002', 'Phone & Internet', '2020-06-20','2020-05-16', 'B92399','159.00'),
+    ('R000007', 'E000435', 'P000005', 'Phone & Internet', '2020-06-21','2020-05-19', 'B92300','159.00'),
+    ('R000008', 'E000435', 'P000005', 'Phone & Internet', '2020-07-21','2020-06-19', 'B92310','159.00'),
+    ('R000009', 'E000435', 'P000005', 'Phone & Internet', '2020-08-25','2020-07-19', 'B92314','159.00'),
+    ('R000010', 'E000435', 'P000005', 'Phone & Internet', '2020-09-21','2020-08-19', 'B92318','159.00'),
+    ('R000011', 'E000435', 'P000005', 'Phone & Internet', '2020-10-20','2020-09-19', 'B92350','159.00'),
+    ('R000012', 'E000435', 'P000005', 'Phone * Internet', '2020-11-20', '2020-10-19', 'B9600',
+    '159.00'),
+    ('R000013', 'E000435', 'P000005', 'Phone * Internet', '2021-01-20', '2020-11-19', 'B9605',
+    '168.00'),
+    ('R000014', 'E000435', 'P000005', 'Phone & Internet', '2021-02-21', '2020-12-19', 'B9610',
+    '169.00'),
+    ('R000015', 'E000435', 'P000006', 'Phone & Internet', '2021-03-21', '2021-01-19', 'B9611',
+    '169.00'),
+    ('R000016', 'E000435', 'P000006', 'Phone & Internet', '2021-04-21', '2021-02-19', 'B9612',
+    '169.00'),
+    ('R000017', 'E000435', 'P000006', 'Phone & Internet', '2021-05-21', '2021-03-19', 'B9614',
+    '170.00'),
+    ('R000018', 'E000435', 'P000006', 'Phone & Internet', '2021-04-21', '2021-03-19', 'B9615',
+    '171.00'),
+   
