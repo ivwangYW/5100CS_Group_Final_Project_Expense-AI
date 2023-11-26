@@ -20,10 +20,11 @@ def queryEmployeesFromDB():
     df = pd.read_sql_query(query, connection)
 
     # Print the DataFrame
-    print(df)
+    #print(df)
 
     # Close the connection
     connection.close()
+    return df
 
 def queryProjectsFromDB():
     connection = sqlite3.connect(db_path)
@@ -34,10 +35,11 @@ def queryProjectsFromDB():
     df = pd.read_sql_query(query, connection)
 
     # Print the DataFrame
-    print(df)
+    #print(df)
 
     # Close the connection
     connection.close()
+    return df
 
 def queryProjectEmployeesRelationFromDB():
     connection = sqlite3.connect(db_path)
@@ -48,10 +50,11 @@ def queryProjectEmployeesRelationFromDB():
     df = pd.read_sql_query(query, connection)
 
     # Print the DataFrame
-    print(df)
+    #print(df)
 
     # Close the connection
     connection.close()
+    return df
 
 def queryReimbursementRequestRecordsFromDB():
     connection = sqlite3.connect(db_path)
@@ -62,10 +65,11 @@ def queryReimbursementRequestRecordsFromDB():
     df = pd.read_sql_query(query, connection)
 
     # Print the DataFrame
-    print(df)
+    #print(df)
 
     # Close the connection
     connection.close()
+    return df
 
 print('Employees table: ')
 queryEmployeesFromDB()
