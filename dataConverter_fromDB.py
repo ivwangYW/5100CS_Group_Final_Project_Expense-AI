@@ -71,11 +71,11 @@ def queryReimbursementRequestRecordsFromDB():
     connection.close()
     return df
 
-print('Employees table: ')
+#Query dataframe from Employees table in database: 
 queryEmployeesFromDB()
-print('projects table: ')
+#Query dataframe from Projects table in database: 
 queryProjectsFromDB()
-print('ProjectEmployeesRelation table: ')
+#Query dataframe from ProjectEmployeesRelationtable in database:  
 queryProjectEmployeesRelationFromDB()
-print('ReimbursementRequestRecords table: ')
+#Query datafram from ReimbursementRequestRecords table in database:
 queryReimbursementRequestRecordsFromDB()
