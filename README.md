@@ -14,23 +14,24 @@ under folder 'Guide', see file Diagram 3 - Fraud Risk Score Worksheet
 
 ### TODO: ###
 0. dataset label add invoice #   - done 
-0.2 Update data.csv    ( more data)     -Ivy
-0.6 feature labels for fraud score   -Ivy
-0.8 design function using Time Series Forcasting (Supervised ML) for predictions of future Invoice Amount (y, output) on a certain future date (x, input) for certain employee(employeeID)'s spending of certain type of expense (Expense Category) , based on historical Invoice Dates and Amounts for each employee for each expense category in database table - ReimbursementRequestRecords
-0.9 feature value functions     -Ivy
-0.94 design a function to determine likelihood of personal expense (in features worksheet)
-1. Database tables         - Ivy  done    
-3. NLP for invoice Amount extraction (can use data in dataConverter directly)
-4. NLP for invoice date extraction (can use data in dataConverter directly)
-5. Reward Calculation (need to update based on data from dataConverter_fromDB)
-6. Reinforcement learning process        MDP   
-7. fraud risk score  ( ML neural network process: feature value scaling + add layers + select loss  function         +calculate loss + backpropagation = classifier function to predict where score is 0,5 or 10)
-8. main.py -logic   （input: see process diagram; output: actions)
+1. Update data.csv    ( more data)     -Ivy
+2. feature labels for fraud score   -Ivy
+3. design function using Time Series Forcasting (Supervised ML) for predictions of future Invoice Amount (y, output) on a certain future date (x, input) for certain employee(employeeID)'s spending of certain type of expense (Expense Category) , based on historical Invoice Dates and Amounts for each employee for each expense category in database table - ReimbursementRequestRecords
+4. design a function to determine likelihood of personal expense (in features worksheet)
+5. feature value functions     -Ivy
+6. Database tables         - Ivy  done    
+7. NLP for invoice Amount extraction (can use data in dataConverter directly)
+8. NLP for invoice date extraction (can use data in dataConverter directly)
+9. Reward Calculation (need to update based on data from dataConverter_fromDB)
+10. Reinforcement learning process        MDP   
+11. fraud risk score  ( ML neural network process: feature value scaling + add layers + select loss  function         +calculate loss + backpropagation = classifier function to predict where score is 0,5 or 10)
+12. main.py    (input: see process diagram; output: actions)
 
-9. classifier in the pipeline can be changed  (if we have time, can build our own neural network classifier, or not, or try other classification algorithms) (can use data in dataConverter directly)
-10. optimizing any detail
-11. try other accuracy matrics
-12. any graph, if needed
+
+13. classifier in the pipeline can be changed  (if we have time, can build our own neural network classifier, or not, or try other classification algorithms) (can use data in dataConverter directly)
+14. optimizing any detail
+15. try other accuracy matrics
+16. any graph, if needed
 
 
 
