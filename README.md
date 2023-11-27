@@ -49,3 +49,16 @@ More can be found here below, but we just selected the above main currency symbo
 https://wise.com/gb/blog/world-currency-symbols
 
 
+## Accessing SQLite Database -  Start installing sqlite3 package
+type  'pip install pandas sqlite3' in the terminal  
+then you can start querying data by importing the python file dataConverter_fromDB.py, the data frames for each table are there for you to use directly.
+
+## Probablly not needed ##
+SQLite download and install
+Step 1. go to https://www.sqlite.org/download.html
+Step 2. download:    for Windows, download'sqlite-tools-win-x64-3440200.zip',  unzip it
+Step 3. then run the sqlite3.exe file and copy the file from the package/folder to it's parent folder
+
+
+
+
