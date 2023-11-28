@@ -12,8 +12,10 @@ under folder 'Guide', see file Diagram 2 - Decision Making - MDP Diagram.pdf
 under folder 'Guide', see file Diagram 3 - Fraud Risk Score Worksheet
 
 ### ML Training Dataset ###
-###### For geting invoice info from Text of invoice: ######   See csv file ' dataset_with Labels.csv'
-###### For training model to classify fraud risk score based on customized feature vector values: ###### See csv file ' dataset_MLtrainingVectors_fraudRiskScore_labeling.csv'
+###### For geting invoice info from Text of invoice: ######   
+See csv file ' dataset_with Labels.csv'
+###### For training model to classify fraud risk score based on customized feature vector values: ###### 
+See csv file ' dataset_MLtrainingVectors_fraudRiskScore_labeling.csv'
 
 ### TODO: ###
 0. dataset label add invoice #   - done 
@@ -21,13 +23,13 @@ under folder 'Guide', see file Diagram 3 - Fraud Risk Score Worksheet
 2. feature labels for fraud score   -Ivy
 3. design function using Time Series Forcasting (Supervised ML) for predictions of future Invoice Amount (y, output) on a certain future date (x, input) for certain employee(employeeID)'s spending of certain type of expense (Expense Category) , based on historical Invoice Dates and Amounts for each employee for each expense category in database table - ReimbursementRequestRecords
 4. design a function to determine likelihood of personal expense (in features worksheet)
-5. feature value functions     -Ivy
+5. feature value functions + feature value scaling    -Ivy
 6. Database tables         - Ivy  done    
 7. NLP for invoice Amount extraction (can use data in dataConverter directly)
 8. NLP for invoice date extraction (can use data in dataConverter directly)
 9. Reward Calculation (need to update based on data from dataConverter_fromDB)
 10. Reinforcement learning process        MDP   
-11. fraud risk score  ( ML neural network process: feature value scaling + add layers + select loss  function         +calculate loss + backpropagation = classifier function to predict where score is 0,5 or 10)
+11. fraud risk score  ( ML neural network process: add layers + select loss  function         +calculate loss + backpropagation = classifier function to predict where score is 0,5 or 10)
 12. main.py    (input: see process diagram; output: actions)
 
 
