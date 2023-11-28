@@ -11,6 +11,9 @@ under folder 'Guide', see file Diagram 2 - Decision Making - MDP Diagram.pdf
 ##### Feature process 
 under folder 'Guide', see file Diagram 3 - Fraud Risk Score Worksheet
 
+### ML Training Dataset ###
+###### For geting invoice info from Text of invoice: ######   See csv file ' dataset_with Labels.csv'
+###### For training model to classify fraud risk score based on customized feature vector values: ###### See csv file ' dataset_MLtrainingVectors_fraudRiskScore_labeling.csv'
 
 ### TODO: ###
 0. dataset label add invoice #   - done 
