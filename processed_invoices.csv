@@ -1,134 +1,751 @@
 Predicted Expense Category,Invoice Date,Invoice Amount,Currency Unit
- Professional Development,2040-02-01,1440.0,$
+ Professional Development,,1440.0,$
  Travel,2040-02-10,3150.0,$
- Professional Development,2040-02-20,638.0,$
+ Meals and Entertainment,,638.0,$
  Meals and Entertainment,2040-02-25,1985.0,$
  Health and Wellness,2040-03-05,363.0,$
- Professional Development,2040-03-15,2178.0,$
+ Professional Development,,2178.0,$
  Office Equipment & Supplies,2040-03-25,180.0,$
- Health and Wellness,2040-04-01,1460.0,$
- Meals and Entertainment,2040-04-10,2900.0,$
- Office Equipment & Supplies,2039-09-01,4950.0,$
- Professional Development,2039-09-10,1320.0,$
+ Health and Wellness,,1460.0,$
+ Meals and Entertainment,,2900.0,$
+ Office Equipment & Supplies,,4950.0,$
+ Professional Development,,1320.0,$
  Office Equipment & Supplies,2039-09-20,495.0,$
- Travel,2039-09-25,3850.0,$
+ Travel,,3850.0,$
  Health and Wellness,2039-10-05,1650.0,$
- Meals and Entertainment,2039-10-15,2750.0,$
- Professional Development,2039-10-25,1980.0,$
- Phone & Internet,2039-11-01,660.0,$
- Office Equipment & Supplies,2039-11-15,242.0,$
- Health and Wellness,2039-12-01,2200.0,$
+ Meals and Entertainment,,2750.0,$
+ Professional Development,,1980.0,$
+ Travel,,660.0,$
+ Office Equipment & Supplies,,242.0,$
+ Meals and Entertainment,,2200.0,$
  Professional Development,2039-12-10,1650.0,$
  Meals and Entertainment,2039-12-20,2200.0,$
  Office Equipment & Supplies,2039-12-25,4050.0,$
- Health and Wellness,2039-12-30,330.0,$
- Professional Development,2040-01-05,1980.0,$
- Office Equipment & Supplies,2040-01-15,275.0,$
+ Health and Wellness,,330.0,$
+ Professional Development,,1980.0,$
+ Office Equipment & Supplies,,275.0,$
  Office Equipment & Supplies,2038-10-15,700.0,$
- Travel,2038-10-25,18250.0,$
+ Travel,,18250.0,$
  Professional Development,2038-11-05,1650.0,$
  Phone & Internet,2038-11-15,1100.0,$
- Meals and Entertainment,2038-11-01,1320.0,$
+ Meals and Entertainment,,1320.0,$
  Moving Expense,2038-12-05,7500.0,$
- Professional Development,2038-12-15,8800.0,$
- Phone & Internet,2038-12-25,6000.0,$
- Health and Wellness,2039-01-05,1100.0,$
- Travel,2039-01-15,750.0,$
+ Meals and Entertainment,,8800.0,$
+ Phone & Internet,,6000.0,$
+ Health and Wellness,,1100.0,$
+ Travel,,750.0,$
  Office Equipment & Supplies,2039-01-25,500.0,$
  Meals and Entertainment,2039-02-05,1320.0,$
  Travel,2039-02-15,3600.0,$
  Office Equipment & Supplies,2039-03-01,400.0,$
  Health and Wellness,2039-03-05,990.0,$
- Travel,2038-03-01,8950.0,$
- Professional Development,2038-04-10,1300.0,$
+ Travel,,8950.0,$
+ Professional Development,,1300.0,$
  Phone & Internet,2038-04-20,950.0,$
  Meals and Entertainment,2038-04-05,650.0,$
  Moving Expense,2038-05-15,4800.0,$
- Professional Development,2038-05-25,4000.0,$
- Phone & Internet,2038-06-01,6000.0,$
- Health and Wellness,2038-06-10,1300.0,$
+Professional Development,2038-05-25,4000.0,£
+ Phone & Internet,2038-06-01,6000.0,£
+ Health and Wellness,2038-06-10,1300.0,£
  Travel,2038-07-05,850.0,$
- Office Equipment & Supplies,2038-07-15,700.0,$
- Meals and Entertainment,2038-07-25,1100.0,$
- Travel,2038-08-05,2950.0,$
- Office Equipment & Supplies,2038-08-15,9000.0,$
- Health and Wellness,2038-08-01,1300.0,$
- Travel,2038-09-10,6550.0,$
- Professional Development,2038-09-20,3100.0,$
- Travel,2039-03-15,8050.0,$
- Professional Development,2039-03-25,3300.0,$
- Office Equipment & Supplies,2039-04-01,1980.0,$
- Health and Wellness,2039-04-15,1620.0,$
- Travel,2039-04-20,880.0,$
- Professional Development,2039-05-05,1650.0,$
- Health and Wellness,2039-05-15,1100.0,$
- Professional Development,2039-05-25,550.0,$
- Office Equipment & Supplies,2039-06-05,8800.0,$
- Health and Wellness,2039-06-15,8250.0,$
- Health and Wellness,2039-06-25,1100.0,$
- Office Equipment & Supplies,2039-07-01,6050.0,$
- Meals and Entertainment,2039-07-05,2200.0,$
- Professional Development,2039-07-15,660.0,$
- Office Equipment & Supplies,2039-07-25,400.0,$
- Travel,2039-08-05,2400.0,$
- Professional Development,2039-08-15,1320.0,$
- Office Equipment & Supplies,2040-04-30,5175.0,$
- Meals and Entertainment,2040-05-05,2850.0,$
- Health and Wellness,2040-05-15,2200.0,$
- Professional Development,2040-05-25,2875.0,$
- Office Equipment & Supplies,2040-06-05,180.0,$
- Travel,2040-06-15,2750.0,$
- Office Equipment & Supplies,2040-06-25,4000.0,$
- Meals and Entertainment,2040-07-01,3400.0,$
- Health and Wellness,2040-07-10,2960.0,$
- Office Equipment & Supplies,2040-11-05,5720.0,$
- Meals and Entertainment,2040-11-15,2650.0,$
- Health and Wellness,2040-11-25,2200.0,$
- Professional Development,2040-12-05,3175.0,$
- Office Equipment & Supplies,2040-12-15,230.0,$
- Meals and Entertainment,2040-12-25,4150.0,$
- Health and Wellness,2041-01-05,3475.0,$
- Professional Development,2041-01-15,2975.0,$
- Office Equipment & Supplies,2041-01-25,4400.0,$
- Meals and Entertainment,2041-02-05,4850.0,$
- Health and Wellness,2041-02-15,2580.0,$
- Professional Development,2041-02-25,3610.0,$
- Office Equipment & Supplies,2041-03-05,260.0,$
- Meals and Entertainment,2041-03-15,3325.0,$
- Office Equipment & Supplies,2041-04-05,5590.0,$
- Meals and Entertainment,2041-04-15,4800.0,$
- Health and Wellness,2041-04-25,2375.0,$
- Professional Development,2041-05-05,3870.0,$
- Office Equipment & Supplies,2041-05-15,320.0,$
- Meals and Entertainment,2041-05-25,6050.0,$
- Office Equipment & Supplies,2041-06-05,345.0,$
- Health and Wellness,2041-06-15,2590.0,$
- Professional Development,2041-06-25,3710.0,$
- Travel,2041-07-05,3750.0,$
- Health and Wellness,2041-07-15,2075.0,$
- Professional Development,2041-07-25,3280.0,$
- Office Equipment & Supplies,2041-08-05,395.0,$
- Meals and Entertainment,2041-08-15,5350.0,$
- Office Equipment & Supplies,2041-08-25,7950.0,$
- Meals and Entertainment,2041-09-05,4230.0,$
- Travel,2041-09-15,4550.0,$
- Health and Wellness,2041-09-25,1995.0,$
- Office Equipment & Supplies,2041-10-05,330.0,$
- Meals and Entertainment,2041-10-15,6600.0,$
- Health and Wellness,2041-10-25,2900.0,$
- Professional Development,2041-11-05,4370.0,$
- Office Equipment & Supplies,2041-11-15,340.0,$
- Meals and Entertainment,2041-11-25,7500.0,$
- Office Equipment & Supplies,2041-12-05,5880.0,$
- Health and Wellness,2041-12-15,1700.0,$
- Professional Development,2041-12-25,3870.0,$
- Office Equipment & Supplies,2042-01-05,205.0,$
- Travel,2042-01-15,5300.0,$
- Travel,2042-01-25,690.0,$
- Health and Wellness,2042-02-05,4150.0,$
- Professional Development,2042-02-15,6400.0,$
- Travel,2042-02-25,8200.0,$
- Professional Development,2042-03-05,10700.0,$
- Health and Wellness,2042-03-15,5050.0,$
- Professional Development,2042-03-25,940.0,$
- Travel,2042-04-05,10500.0,$
+ Meals and Entertainment,2034-04-05,1520.0,$
+ Travel,2034-06-12,,
+ Professional Development,2034-08-20,586.25,£
+ Meals and Entertainment,2034-10-25,2942.5,$
+ Health and Wellness,2034-12-05,483.5,$
+ Professional Development,2035-02-15,2460.0,$
+ Meals and Entertainment,2010-10-10,1520.0,$
+ Travel,,,
+ Professional Development,,586.25,£
+ Meals and Entertainment,,2942.5,$
+ Health and Wellness,,483.5,$
+ Meals and Entertainment,2014-09-15,1520.0,$
+ Travel,2016-09-28,,
+ Professional Development,2018-04-10,586.25,£
+ Meals and Entertainment,2020-11-05,2942.5,$
+ Health and Wellness,2023-12-20,483.5,$
+ Professional Development,2025-02-28,2460.0,$
+ Meals and Entertainment,2014-09-15,1520.0,$
+ Travel,2016-09-28,,
+ Professional Development,2018-04-10,586.25,£
+ Meals and Entertainment,2020-11-05,2942.5,$
+ Health and Wellness,2023-12-20,483.5,$
+ Professional Development,2025-02-28,2460.0,$
+ Professional Development,2012-12-12,1520.0,$
+ Meals and Entertainment,2015-09-25,2942.5,$
+ Health and Wellness,2018-10-01,483.5,$
+ Office Equipment & Supplies,2012-06-10,4870.0,£
+ Travel,2014-10-25,3055.0,$
+ Professional Development,2016-11-30,792.5,$
+ Meals and Entertainment,2018-05-12,4420.0,$
+ Health and Wellness,2020-12-20,,
+ Professional Development,2022-05-15,2065.0,$
+ Meals and Entertainment,2024-08-30,3705.0,$
+ Health and Wellness,2026-12-15,575.75,$
+ Professional Development,2028-01-10,2765.0,$
+ Meals and Entertainment,2030-11-20,4040.0,£
+ Professional Development,2033-02-28,808.0,$
+ Office Equipment & Supplies,2012-06-10,4870.0,£
+ Travel,2014-10-25,3055.0,$
+ Professional Development,2016-11-30,792.5,$
+ Meals and Entertainment,2018-05-12,4420.0,$
+ Health and Wellness,2020-12-20,,
+ Professional Development,2022-05-15,2065.0,$
+ Meals and Entertainment,2024-08-30,3705.0,$
+ Health and Wellness,2026-12-15,575.75,$
+ Professional Development,2028-01-10,2765.0,$
+ Office Equipment & Supplies,2030-11-20,3980.0,£
+ Professional Development,2015-07-18,2840.0,$
+ Health and Wellness,2017-03-28,,
+ Travel,2019-09-14,3340.0,£
+ Professional Development,2021-04-05,1104.5,$
+ Meals and Entertainment,2023-11-02,2935.0,$
+ Health and Wellness,2025-06-20,3400.0,$
+ Professional Development,2027-02-12,1792.5,$
+ Office Equipment & Supplies,2029-08-09,575.0,£
+ Meals and Entertainment,2031-05-15,2800.0,$
+ Health and Wellness,2033-12-08,,
+ Professional Development,2036-03-21,3265.0,$
+ Travel,2038-10-19,2543.0,£
+ Professional Development,2040-07-07,1457.5,$
+ Meals and Entertainment,2042-01-25,3425.0,$
+ Health and Wellness,2044-06-12,3180.0,$
+ Professional Development,2016-08-14,1457.5,$
+ Meals and Entertainment,2018-04-02,3780.0,$
+ Health and Wellness,2020-12-15,,
+ Professional Development,2022-07-20,1700.0,$
+ Meals and Entertainment,2024-02-28,3460.0,$
+ Professional Development,2026-10-10,745.0,$
+ Office Equipment & Supplies,2028-05-18,628.75,£
+ Travel,2030-12-05,3975.0,$
+ Professional Development,2032-09-15,2125.0,$
+ Office Equipment & Supplies,2034-04-28,3470.0,£
+ Professional Development,2036-01-10,747.5,$
+ Meals and Entertainment,2038-06-20,4875.0,$
+ Professional Development,2015-04-25,1295.5,$
+ Health and Wellness,2017-11-08,,
+ Travel,2019-06-15,2305.0,£
+ Professional Development,2021-01-30,418.5,$
+ Meals and Entertainment,2023-08-12,4420.0,$
+ Health and Wellness,2025-03-22,453.25,$
+ Professional Development,2027-10-05,1903.25,$
+ Office Equipment & Supplies,2029-05-18,707.5,£
+ Travel,2031-12-08,3387.5,$
+ Professional Development,2033-07-20,2102.5,$
+ Office Equipment & Supplies,2035-02-28,3880.0,£
+ Professional Development,2037-09-15,732.5,$
+ Meals and Entertainment,2039-04-28,4630.0,$
+ Health and Wellness,2041-02-12,3635.0,$
+ Professional Development,2043-07-31,1507.5,$
+ Professional Development,2015-04-25,1295.5,$
+ Health and Wellness,2017-11-08,,
+ Travel,2019-06-15,2305.0,£
+ Professional Development,2021-01-30,418.5,$
+ Meals and Entertainment,2023-08-12,4420.0,$
+ Health and Wellness,2025-03-22,453.25,$
+ Professional Development,2027-10-05,1903.25,$
+ Office Equipment & Supplies,2029-05-18,707.5,£
+ Travel,2031-12-08,3387.5,$
+ Professional Development,2033-07-20,2102.5,$
+ Office Equipment & Supplies,2035-02-28,3880.0,£
+ Professional Development,2037-09-15,732.5,$
+ Meals and Entertainment,2039-04-28,4630.0,$
+ Health and Wellness,2041-02-12,3635.0,$
+ Professional Development,2015-04-25,1295.5,$
+ Health and Wellness,2017-11-08,,
+ Travel,2019-06-15,2305.0,£
+ Professional Development,2021-01-30,418.5,$
+ Meals and Entertainment,2023-08-12,4420.0,$
+ Health and Wellness,2025-03-22,453.25,$
+ Professional Development,2027-10-05,1903.25,$
+ Office Equipment & Supplies,2029-05-18,707.5,£
+ Travel,2031-12-08,3387.5,$
+ Professional Development,2033-07-20,2102.5,$
+ Office Equipment & Supplies,2035-02-28,3880.0,£
+ Professional Development,2037-09-15,732.5,$
+ Meals and Entertainment,2039-04-28,4630.0,$
+ Health and Wellness,2041-02-12,3635.0,$
+ Professional Development,2023-02-15,5037.5,$
+ Professional Development,2024-05-10,,
+ Meals and Entertainment,2025-09-20,325.0,£
+ Professional Development,2026-12-05,2480.0,$
+ Office Equipment & Supplies,2028-03-28,217.5,$
+ Professional Development,2029-07-15,1090.75,$
+ Travel,2031-10-12,2970.0,$
+ Professional Development,2033-01-25,4200.0,$
+ Professional Development,2034-05-30,690.0,$
+ Meals and Entertainment,2036-10-18,407.5,$
+ Travel,2038-02-28,3410.0,£
+ Health and Wellness,2040-06-12,407.5,$
+ Professional Development,2023-02-15,5037.5,$
+ Professional Development,2024-05-10,,
+ Meals and Entertainment,2025-09-20,325.0,£
+ Professional Development,2026-12-05,2480.0,$
+ Office Equipment & Supplies,2028-03-28,217.5,$
+ Professional Development,2029-07-15,1090.75,$
+ Travel,2031-10-12,2970.0,$
+ Professional Development,2033-01-25,4200.0,$
+ Professional Development,2034-05-30,690.0,$
+ Meals and Entertainment,2036-10-18,407.5,$
+ Travel,2038-02-28,3410.0,£
+ Health and Wellness,2040-06-12,407.5,$
+ Professional Development,2023-02-15,5037.5,$
+ Professional Development,2024-05-10,,
+ Meals and Entertainment,2025-09-20,325.0,£
+ Professional Development,2026-12-05,2480.0,$
+ Office Equipment & Supplies,2028-03-28,217.5,$
+ Professional Development,2029-07-15,1090.75,$
+ Travel,2031-10-12,2970.0,$
+ Professional Development,2033-01-25,4200.0,$
+ Professional Development,2034-05-30,690.0,$
+ Meals and Entertainment,2036-10-18,407.5,$
+ Professional Development,2023-03-20,4320.0,$
+ Professional Development,2024-07-10,,
+ Meals and Entertainment,2025-11-15,435.0,£
+ Professional Development,2027-02-28,3140.0,$
+ Office Equipment & Supplies,2028-06-05,275.75,$
+ Professional Development,2029-09-20,1312.5,$
+ Travel,2031-01-12,2965.0,$
+ Professional Development,2033-04-25,4762.5,$
+ Professional Development,2034-08-30,805.0,$
+ Meals and Entertainment,2036-12-18,510.0,$
+ Meals and Entertainment,2023-04-15,3862.5,$
+ Meals and Entertainment,2024-08-22,287.5,£
+ Meals and Entertainment,2025-12-10,,
+ Meals and Entertainment,2027-03-28,336.0,$
+ Meals and Entertainment,2028-07-15,628.0,£
+ Meals and Entertainment,2029-10-30,487.5,$
+ Meals and Entertainment,2031-02-20,617.5,$
+ Meals and Entertainment,2033-06-12,688.75,$
+ Meals and Entertainment,2034-10-28,,
+ Meals and Entertainment,2036-02-15,240.0,$
+ Meals and Entertainment,2037-06-28,520.0,£
+ Meals and Entertainment,2038-11-15,175.5,$
+ Meals and Entertainment,2040-03-05,867.5,$
+ Meals and Entertainment,2023-04-15,580.0,$
+ Meals and Entertainment,2024-08-22,,
+ Meals and Entertainment,2025-12-10,460.0,£
+ Meals and Entertainment,2027-03-28,336.0,$
+ Meals and Entertainment,2028-07-15,405.0,$
+ Meals and Entertainment,2029-10-30,,
+ Meals and Entertainment,2031-02-20,617.5,$
+ Meals and Entertainment,2033-06-12,538.75,$
+ Meals and Entertainment,2034-10-28,,
+ Meals and Entertainment,2036-02-15,207.5,$
+ Meals and Entertainment,2037-06-28,628.0,£
+ Meals and Entertainment,2038-11-15,245.5,$
+ Meals and Entertainment,2040-03-05,295.0,$
+ Meals and Entertainment,2023-05-28,375.0,$
+ Meals and Entertainment,2024-09-15,395.0,£
+ Meals and Entertainment,2025-01-10,477.5,$
+ Meals and Entertainment,2026-03-22,415.5,$
+ Meals and Entertainment,2027-08-05,,
+ Meals and Entertainment,2028-11-18,248.5,$
+ Meals and Entertainment,2030-02-10,495.0,£
+ Meals and Entertainment,2031-05-15,,
+ Meals and Entertainment,2032-09-28,418.5,$
+ Meals and Entertainment,2034-01-22,570.0,$
+ Meals and Entertainment,2023-07-15,305.0,$
+ Meals and Entertainment,2024-10-28,,
+ Meals and Entertainment,2026-02-20,380.0,£
+ Meals and Entertainment,2027-09-10,330.5,$
+ Meals and Entertainment,2028-12-12,380.0,$
+ Meals and Entertainment,2030-03-25,333.0,$
+ Meals and Entertainment,2031-06-18,,
+ Meals and Entertainment,2032-10-05,245.0,£
+ Meals and Entertainment,2034-02-15,377.0,$
+ Meals and Entertainment,2036-09-12,,
+ Meals and Entertainment,2037-01-28,,
+ Meals and Entertainment,2038-04-15,442.0,£
+ Meals and Entertainment,2039-07-22,392.5,$
+ Meals and Entertainment,2040-11-10,249.5,$
+ Meals and Entertainment,2041-02-18,356.5,$
+ Meals and Entertainment,2042-06-05,,
+ Meals and Entertainment,2043-09-30,292.5,£
+ Meals and Entertainment,2044-01-15,428.5,$
+ Meals and Entertainment,2045-04-20,545.0,$
+ Meals and Entertainment,2046-07-12,,
+ Meals and Entertainment,2047-02-28,,
+ Meals and Entertainment,2048-05-19,326.0,£
+ Meals and Entertainment,2049-09-02,450.0,$
+ Meals and Entertainment,2050-12-10,275.5,$
+ Meals and Entertainment,2051-03-15,374.5,$
+ Meals and Entertainment,2052-06-28,,
+ Meals and Entertainment,2053-10-05,283.5,£
+ Meals and Entertainment,2054-01-25,463.5,$
+ Meals and Entertainment,2023-07-15,305.0,$
+ Meals and Entertainment,2024-10-28,,
+ Meals and Entertainment,2026-02-20,380.0,£
+ Meals and Entertainment,2027-09-10,330.5,$
+ Meals and Entertainment,2028-12-12,380.0,$
+ Meals and Entertainment,2030-03-25,333.0,$
+ Meals and Entertainment,2031-06-18,,
+ Meals and Entertainment,2032-10-05,245.0,£
+ Meals and Entertainment,2034-02-15,377.0,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,395.0,£
+ Meals and Entertainment,,560.5,$
+ Meals and Entertainment,,302.5,$
+ Meals and Entertainment,,423.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,330.5,£
+ Meals and Entertainment,,407.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,412.5,£
+ Meals and Entertainment,,645.5,$
+ Meals and Entertainment,,318.5,$
+ Meals and Entertainment,,498.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,300.5,£
+ Meals and Entertainment,,345.5,$
+ Meals and Entertainment,,560.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,412.5,£
+ Meals and Entertainment,,645.5,$
+ Meals and Entertainment,,318.5,$
+ Meals and Entertainment,,498.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,300.5,£
+ Meals and Entertainment,,345.5,$
+ Meals and Entertainment,,560.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,558.5,£
+ Meals and Entertainment,,818.5,$
+ Meals and Entertainment,,648.5,$
+ Meals and Entertainment,,948.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,718.5,£
+ Meals and Entertainment,,483.5,$
+ Meals and Entertainment,,1118.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,648.5,£
+ Meals and Entertainment,,778.5,$
+ Meals and Entertainment,,563.5,$
+ Meals and Entertainment,,998.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,628.5,£
+ Meals and Entertainment,,503.5,$
+ Meals and Entertainment,,768.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,708.5,£
+ Meals and Entertainment,,563.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,578.5,£
+ Meals and Entertainment,,523.5,$
+ Meals and Entertainment,,688.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,463.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,648.5,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,493.5,$
+ Meals and Entertainment,,553.5,$
+ Meals and Entertainment,,578.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,493.5,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,568.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,578.5,£
+ Meals and Entertainment,,648.5,$
+ Meals and Entertainment,,493.5,$
+ Meals and Entertainment,,558.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,648.5,£
+ Meals and Entertainment,,503.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,608.5,$
+ Meals and Entertainment,,558.5,£
+ Meals and Entertainment,,718.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,558.5,$
+ Meals and Entertainment,,718.5,$
+ Meals and Entertainment,,608.5,£
+ Meals and Entertainment,,558.5,$
+ Meals and Entertainment,,718.5,$
+ Meals and Entertainment,,608.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,718.5,£
+ Meals and Entertainment,,558.5,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,718.5,$
+ Meals and Entertainment,,558.5,$
+ Meals and Entertainment,,718.5,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,538.5,$
+ Meals and Entertainment,,458.5,$
+ Meals and Entertainment,,518.5,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,458.5,$
+ Meals and Entertainment,,518.5,$
+ Meals and Entertainment,,538.5,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,672.5,$
+ Meals and Entertainment,,550.0,$
+ Meals and Entertainment,,600.0,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,600.0,$
+ Meals and Entertainment,,657.5,$
+ Meals and Entertainment,,725.0,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,725.0,$
+ Meals and Entertainment,,657.5,$
+ Meals and Entertainment,,600.0,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,600.0,$
+ Meals and Entertainment,,657.5,$
+ Meals and Entertainment,,725.0,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,725.0,$
+ Meals and Entertainment,,657.5,$
+ Meals and Entertainment,,600.0,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,,
+ Meals and Entertainment,,600.0,$
+ Meals and Entertainment,,657.5,$
+ Meals and Entertainment,,725.0,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,725.0,$
+ Meals and Entertainment,,790.0,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,870.0,$
+ Meals and Entertainment,,850.0,£
+ Meals and Entertainment,,,
+ Meals and Entertainment,,850.0,$
+ Meals and Entertainment,,870.0,$
+ Meals and Entertainment,,,
+ Meals and Entertainment,,850.0,£
+ Meals and Entertainment,,850.0,$
+ Travel,,1620.0,$
+ Travel,,,
+ Travel,,2180.0,$
+ Travel,,1680.0,£
+ Travel,,,
+ Travel,,2180.0,$
+ Travel,,1580.0,$
+ Travel,,,
+ Travel,,1680.0,£
+ Travel,,,
+ Travel,,990.0,$
+ Travel,,550.0,£
+ Travel,,330.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,110.0,£
+ Travel,,132.0,$
+ Travel,,440.0,$
+ Travel,,250.0,$
+ Travel,,,
+ Travel,,660.0,£
+ Travel,,1320.0,$
+ Travel,,220.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,88.0,£
+ Travel,,110.0,$
+ Travel,,385.0,$
+ Travel,,148.5,$
+ Travel,,,
+ Travel,,990.0,£
+ Travel,,1650.0,$
+ Travel,,275.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,132.0,£
+ Travel,,132.0,$
+ Travel,,440.0,$
+ Travel,,137.5,$
+ Travel,,,
+ Travel,,990.0,£
+ Travel,,1650.0,$
+ Travel,,275.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,132.0,£
+ Travel,,132.0,$
+ Travel,,440.0,$
+ Travel,,137.5,$
+ Travel,,,
+ Travel,,2750.0,$
+ Travel,,330.0,£
+ Travel,,,
+ Travel,,1100.0,$
+ Travel,,,
+ Travel,,1320.0,£
+ Travel,,198.0,$
+ Travel,,330.0,$
+ Travel,,148.5,$
+ Travel,,,
+ Travel,,495.0,£
+ Travel,,330.0,$
+ Travel,,2750.0,$
+ Travel,,,
+ Travel,,880.0,£
+ Travel,,132.0,$
+ Travel,,220.0,$
+ Travel,,137.5,$
+ Travel,,,
+ Travel,,,
+ Travel,,495.0,$
+ Travel,,,
+ Travel,,385.0,$
+ Travel,,198.0,£
+ Travel,,330.0,$
+ Travel,,,
+ Travel,,165.0,$
+ Travel,,,
+ Travel,,44.0,£
+ Travel,,440.0,$
+ Travel,,1980.0,$
+ Travel,,,
+ Travel,,275.0,$
+ Travel,,132.0,£
+ Travel,,770.0,$
+ Travel,,,
+ Travel,,198.0,$
+ Travel,,,
+ Travel,,55.0,£
+ Travel,,550.0,$
+ Travel,,1980.0,$
+ Travel,,,
+ Travel,,275.0,$
+ Travel,,132.0,£
+ Travel,,770.0,$
+ Travel,,,
+ Travel,,198.0,$
+ Travel,,,
+ Travel,,55.0,£
+ Travel,,550.0,$
+ Travel,2040-03-15,2750.0,$
+ Travel,,,
+ Travel,,880.0,$
+ Travel,,88.0,£
+ Travel,,990.0,$
+ Travel,,,
+ Travel,,242.0,$
+ Travel,,,
+ Travel,,44.0,£
+ Travel,,495.0,$
+ Travel,2040-01-10,3300.0,$
+ Travel,,,
+ Travel,,660.0,$
+ Travel,,110.0,£
+ Travel,,1320.0,$
+ Travel,,,
+ Travel,,330.0,$
+ Travel,,,
+ Travel,,55.0,£
+ Travel,,660.0,$
+ Travel,,7700.0,$
+ Travel,,,
+ Travel,,935.0,$
+ Travel,,220.0,£
+ Travel,,2200.0,$
+ Travel,,,
+ Travel,,550.0,$
+ Travel,,,
+ Travel,,110.0,£
+ Travel,,660.0,$
+ Travel,,1320.0,$
+ Travel,,55.0,£
+ Travel,,,
+ Travel,,88.0,$
+ Travel,,330.0,$
+ Travel,,,
+ Travel,,55.0,$
+ Travel,,165.0,£
+ Travel,,198.0,$
+ Travel,,,
+ Travel,,330.0,$
+ Travel,,,
+ Travel,,660.0,$
+ Travel,,880.0,$
+ Travel,,1320.0,£
+ Travel,,,
+ Travel,,275.0,$
+ Travel,,132.0,$
+ Travel,,,
+ Travel,,330.0,£
+ Travel,,880.0,$
+ Travel,,,
+ Travel,,990.0,$
+ Travel,,1320.0,$
+ Travel,,1650.0,£
+ Travel,,,
+ Travel,,198.0,$
+ Travel,,55.0,$
+ Travel,,,
+ Travel,,275.0,£
+ Travel,,1650.0,$
+ Travel,,,
+ Travel,,880.0,$
+ Travel,,1980.0,$
+ Travel,,2750.0,$
+ Travel,,,
+ Travel,,330.0,$
+ Travel,,110.0,£
+ Travel,,,
+ Travel,,132.0,$
+ Travel,,2200.0,$
+ Travel,,,
+ Travel,,165.0,£
+ Travel,,330.0,$
+ Travel,,1980.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,275.0,$
+ Travel,,880.0,£
+ Travel,,1650.0,$
+ Travel,,55.0,$
+ Travel,,,
+ Travel,,132.0,$
+ Travel,,,
+ Travel,,880.0,$
+ Travel,,,
+ Travel,,198.0,£
+ Travel,,220.0,$
+ Travel,,,
+ Travel,,330.0,$
+ Travel,,2750.0,$
+ Travel,,330.0,£
+ Travel,,165.0,$
+ Travel,,,
+ Travel,,110.0,$
+ Travel,,,
+ Travel,,880.0,$
+ Travel,,88.0,$
+ Travel,,,
+ Travel,,132.0,$
+ Travel,,330.0,$
+ Travel,,55.0,£
+ Travel,,77.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,1650.0,$
+ Travel,,220.0,$
+ Travel,,44.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,88.0,$
+ Travel,,,
+ Travel,,165.0,$
+ Travel,,1980.0,$
+ Travel,,,
+ Travel,,,
+ Travel,,99.0,$
+ Travel,,,
+ Travel,,66.0,$
+ Travel,,2915.0,$
+ Travel,,,
+ Travel,,1045.0,$
+ Travel,,3560.0,$
+ Travel,,572.0,$
+ Travel,,,
+ Travel,,1430.0,$
+ Travel,,3322.0,$
+ Travel,,535.0,$
+ Travel,,3000.0,$
+ Travel,,365.0,$
+ Travel,,2360.0,$
+ Travel,,1780.0,$
+ Travel,,480.0,$
+ Travel,,835.0,$
+ Travel,,2756.0,$
+ Travel,,940.0,$
+ Travel,,2390.0,$
+ Travel,,1430.0,$
+ Travel,,4120.0,$
+ Travel,,480.0,$
+ Travel,,956.0,$
+ Travel,,435.0,$
+ Travel,,1450.0,$
+ Travel,,705.0,$
+ Travel,,3320.0,$
+ Travel,,61.0,$
+ Travel,,3000.0,$
+ Travel,,380.0,$
+ Travel,,3810.0,$
+ Travel,,700.0,$
+ Travel,,1530.0,$
+ Travel,,615.0,$
+ Travel,,2136.0,$
+ Travel,,380.0,$
+ Travel,,3000.0,$
+ Travel,,490.0,$
+ Travel,,2400.0,$
+ Travel,,1078.0,$
+ Travel,,3210.0,$
+ Travel,,1900.0,$
+ Travel,,2148.0,$
+ Travel,,725.0,$
+ Travel,,2660.0,$
+ Travel,,510.0,$
+ Travel,,548.0,$
+ Travel,,2400.0,$
+ Travel,,1240.0,$
+ Travel,,960.0,$
+ Travel,,4200.0,$
+ Travel,,2390.0,$
+ Travel,,2150.0,$
+ Travel,,725.0,$
+ Travel,,2980.0,$
+ Travel,,510.0,$
+ Travel,,548.0,$
+ Travel,,2600.0,$
+ Travel,,1450.0,$
+ Travel,,960.0,$
+ Travel,,4530.0,$
+650.00,,2500.0,$
+ Travel,,3650.0,$
+ Travel,,3270.0,$
+ Travel,,730.0,$
+ Travel,,480.0,$
+ Travel,,920.0,$
+ Travel,,1450.0,$
+ Travel,,3600.0,$
+ Travel,,730.0,$
+ Travel,,2620.0,$
+ Travel,,4200.0,$
+430.00,,1200.0,$
+ Travel,,480.0,$
+ Travel,,4900.0,$
+ Travel,,970.0,$
+ Travel,,1190.0,$
+ Travel,,3300.0,$
+ Travel,,4200.0,$
+ Travel,,850.0,$
+ Travel,,2600.0,$
+ Travel,,2400.0,$
+ Travel,,960.0,$
+ Travel,,3600.0,$
+ Travel,,1440.0,$
+ Travel,,3000.0,$
+ Travel,,3000.0,$
+ Travel,,4550.0,$
+ Travel,,900.0,$
+ Travel,,720.0,$
+ Travel,,5100.0,$
+ Travel,,2800.0,$
+ Travel,,1800.0,$
+ Travel,,5400.0,$
+ Travel,,3700.0,$
+ Travel,,2160.0,$
+ Travel,,2680.0,$
+ Travel,,1200.0,$
+ Travel,,1080.0,$
+ Travel,,5870.0,$
+ Travel,,3920.0,$
