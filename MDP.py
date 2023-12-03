@@ -1,8 +1,8 @@
 import random
-
+import matrix_mdp
 import gymnasium as gym
 import numpy as np
-
+from rewardCalc import reward_calculation
 
 class ReimbursementMDP(gym.Env):
     def __init__(self):
@@ -29,7 +29,7 @@ class ReimbursementMDP(gym.Env):
         # env = gym.make('matrix_mdp/MatrixMDP-v0', p_0=P_0, p=T, r=R, disable_env_checker=True)
         # observation, info = env.reset()
 
-    def iterate(self):
+    def iterate(self,x,r,a,if_travel):
         env = gym.make('matrix_mdp/MatrixMDP-v0', p_0=self.P_0, p=self.T, r=self.R, disable_env_checker=True)
         observation, info = env.reset()
 
@@ -49,13 +49,13 @@ class ReimbursementMDP(gym.Env):
                 break
             else:
                 act = random.choice(init)
-
+            last=observation
             observation, reward, terminated, truncated, info = env.step(act)
-
+            reward=reward_calculation(x,r,a,last,observation,if_travel)
             if terminated:
                 return observation, reward
 
 
 mdp = ReimbursementMDP()
 
-print(mdp.iterate())
+print(mdp.iterate(0.2,0.1,0.2,True))
