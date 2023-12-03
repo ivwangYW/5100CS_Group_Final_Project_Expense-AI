@@ -172,11 +172,7 @@ def appInvoiceFinder(text, trained_model):
 
 
 text = "#Summit-INV-20XHKD15 - Date of Issue: October 15, 2039 - Supplier: Summit Catering Services - Catering for company-wide summit, gourmet cuisine, and dessert buffet - Subamounts: $2,500.00 for catering - Tax: $250.00 - Total Amount: $2,750.00, Summit-INV-20XHKD15, Meals and Entertainment, 2039-10-15, 2750.00, USD"
-<<<<<<< HEAD
-appInvoiceFinder(text, trained_model)
-=======
 appInvoiceFinder(text, trained_model)
 
 
 
->>>>>>> 0d7e9044d482286c26ae57ff86bac55e7d003b63
