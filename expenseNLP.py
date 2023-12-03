@@ -11,6 +11,7 @@ from sklearn.svm import SVC
 import os
 import re
 import dataConverter
+import spacy
 
 # Ensure necessary NLTK resources are available
 nltk.download('stopwords')
@@ -20,6 +21,13 @@ nltk.download('wordnet')
 # Obtain dataset and DataFrame from dataConverter.py
 dataset = dataConverter.dataset_invoiceText_expenseCategory
 df_expenseCategory = dataConverter.df_expenseCategory
+
+
+import joblib  # Use joblib for model persistence
+
+from sklearn.preprocessing import LabelEncoder
+
+
 
 # Label Encoding
 le = LabelEncoder()
@@ -74,52 +82,66 @@ param_grid = {
     'clf__kernel': ['linear', 'rbf', 'poly']
 }
 
-# Grid Search with Cross-Validation
+#Grid Search with Cross-Validation
 grid_search = GridSearchCV(pipeline, param_grid, cv=5, verbose=1)
 grid_search.fit(x_train, y_train)
-
+# Save the trained model to a file
+joblib.dump(grid_search.best_estimator_, 'trained_model.joblib')
 # Model Evaluation
 accuracy = grid_search.score(x_test, y_test)
 print(f"Optimized Model Accuracy: {accuracy}")
 
-# Predicting New Invoice Category
+# # Predicting New Invoice Category
 # print('Please input text of invoice for classification: ')
 # one_text_of_invoice = input()
 # if one_text_of_invoice.isalpha():
 #     answer = grid_search.predict([one_text_of_invoice])[0]
 #     answer = le.inverse_transform([answer])[0]  # Inverse transform to get original category
-#     print(f'Expense Category: {answer}')
+#     print(f'Expense Category: {answer}\n')
 
+
+
+##Date training.
+dataset = dataConverter.dataset_invoiceText_invoiceDate
+df_invoiceDate = dataConverter.df_invoiceDate
 
 
 # Load dataset
 df = dataConverter.df_invoiceText
 
+nlp = spacy.load("en_core_web_sm")
 
 # Function to extract date, total amount, and currency unit
 def extract_details(text):
+
+    invoice_number_pattern = r'#\S+'
+    invoice_number_match = re.search(invoice_number_pattern, text)
+    invoice_number = invoice_number_match.group(0) if invoice_number_match else None
     # Regex pattern for date (YYYY-MM-DD format)
-    date_pattern = r'\b\d{4}-\d{2}-\d{2}\b'
+    doc = nlp(text)
+    dates = [ent.text for ent in doc.ents if ent.label_ == 'DATE']
+    date = dates[0] if dates else None
     # Regex for currency symbols/codes
     currency_pattern = r'\$|€|£|USD|EUR|GBP'
     # Regex for monetary values
     amount_pattern = r'(\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?|€\d{1,3}(?:,\d{3})*(?:\.\d{2})?|£\d{1,3}(?:,\d{3})*(?:\.\d{2})?)'
 
-    date_match = re.search(date_pattern, text)
+
     currency_match = re.search(currency_pattern, text)
     amounts = re.findall(amount_pattern, text)
 
     amounts = [float(amount[1:].replace(',', '')) for amount in amounts]
     largest_amount = max(amounts, default=None)
 
-    date = date_match.group(0) if date_match else None
+
     currency = currency_match.group(0) if currency_match else None
     amount = largest_amount
 
-    return date, amount, currency
+    return invoice_number, date, amount, currency
 
 # Apply the extraction function
 extracted_data = df.apply(extract_details)
+
 
 # Create a new DataFrame from the extracted data
 df_extracted = pd.DataFrame(extracted_data.tolist(), columns=['Invoice Date', 'Invoice Amount', 'Currency Unit'])
@@ -130,3 +152,27 @@ df_extracted['Predicted Expense Category'] = grid_search.predict(df)
 df_final = df_extracted[['Predicted Expense Category', 'Invoice Date', 'Invoice Amount', 'Currency Unit']]
 
 df_final.to_csv('processed_invoices.csv', index=False)
+
+trained_model = joblib.load('trained_model.joblib')
+
+def appInvoiceFinder(text, trained_model):
+        InvoiceId,InvoiceDate, InvoiceAmount, InvoiceCurrency = extract_details(text)
+        print(f'InvoiceId :{InvoiceId}\n')
+        print(f'InvoiceDate : {InvoiceDate}\n')
+        print(f'InvoiceAmount :{ InvoiceAmount}\n')
+        print(f'InvoiceCurrency :{ InvoiceCurrency}\n')
+
+        ExpensiveCategory = trained_model.predict([text])  # Inverse transform to get original category
+        #decoded_category = le.inverse_transform(ExpensiveCategory)
+
+        print(f'InvoiceExpenseCategory{ExpensiveCategory[0]}\n')
+        return   InvoiceId, InvoiceDate, InvoiceAmount, InvoiceCurrency,ExpensiveCategory
+
+
+
+
+text = "#Summit-INV-20XHKD15 - Date of Issue: October 15, 2039 - Supplier: Summit Catering Services - Catering for company-wide summit, gourmet cuisine, and dessert buffet - Subamounts: $2,500.00 for catering - Tax: $250.00 - Total Amount: $2,750.00, Summit-INV-20XHKD15, Meals and Entertainment, 2039-10-15, 2750.00, USD"
+appInvoiceFinder(text, trained_model)
+
+
+
