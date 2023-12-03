@@ -144,12 +144,12 @@ extracted_data = df.apply(extract_details)
 
 
 # Create a new DataFrame from the extracted data
-df_extracted = pd.DataFrame(extracted_data.tolist(), columns=['Invoice Date', 'Invoice Amount', 'Currency Unit'])
+df_extracted = pd.DataFrame(extracted_data.tolist(), columns=['InvoiceNumber','Invoice Date', 'Invoice Amount', 'Currency Unit'])
 
 
 df_extracted['Predicted Expense Category'] = grid_search.predict(df)
 
-df_final = df_extracted[['Predicted Expense Category', 'Invoice Date', 'Invoice Amount', 'Currency Unit']]
+df_final = df_extracted[['Predicted Expense Category', 'InvoiceNumber','Invoice Date', 'Invoice Amount', 'Currency Unit']]
 
 df_final.to_csv('processed_invoices.csv', index=False)
 
