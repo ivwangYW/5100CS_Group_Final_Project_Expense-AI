@@ -65,5 +65,9 @@ Step 2. download:    for Windows, download'sqlite-tools-win-x64-3440200.zip',  u
 Step 3. then run the sqlite3.exe file and copy the file from the package/folder to it's parent folder
 
 
+## See result ###
+Visit http://127.0.0.1:5000/ in your browser to see the form. After submission, the decision will be displayed on the result page.
+
+
 
 

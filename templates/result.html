@@ -1,0 +1,60 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap">
+    <title>Expense AI - Result</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5eef8;
+            color: #6c3483;
+            margin: 0;
+        }
+        h1 {
+            color: #8e44ad;
+            font-size: 2em;
+            text-align: center;
+        }
+        p {
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .approved {
+            color: #27ae60;
+        }
+        .denied {
+            color: #e74c3c;
+        }
+        .review {
+            color: #3498db;
+        }
+        .pending {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Expense AI - Decision Made</h1>
+        {% if decision == 'approve' %}
+            <p class="approved">Approved</p>
+        {% elif decision == 'deny' %}
+            <p class="denied">Denied</p>
+        {% elif decision == 'submit_to_management' %}
+            <p class="review">Submitted to management for review.</p>
+        {% elif decision == 'submit_additional_document' %}
+            <p class="pending">Please provide more supporting documents, such as flight tickets, signature from management confirming project duration, etc.</p>
+        {% else %}
+            <p>Invalid decision</p>
+        {% endif %}
+    </div>
+</body>
+</html>
