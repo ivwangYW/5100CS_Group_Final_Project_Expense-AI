@@ -63,7 +63,7 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 # Instantiate the model with the correct input_size and output_size
 
 class NeuralNetwork(nn.Module):
-    def __init__(self, input_size, output_size, dropout_rate=0.1):
+    def __init__(self, input_size, output_size, dropout_rate=0.3):
         super(NeuralNetwork, self).__init__()
         self.fc1 = nn.Linear(input_size, 64)
         self.relu = nn.ReLU()
