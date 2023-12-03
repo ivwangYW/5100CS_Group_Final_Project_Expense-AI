@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, Binarizer, MinMaxScaler
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
 import pandas as pd
@@ -12,6 +12,12 @@ import numpy as np
 file_path = 'dataset_MLtrainingVectors_fraudRiskScore_labeling.csv'
 data_df = pd.read_csv(file_path, skiprows=1)
 
+scaler = MinMaxScaler()
+data_df.iloc[:, :7] = scaler.fit_transform(data_df.iloc[:, :7])
+
+binarizer = Binarizer(threshold=0.5)
+data_df.iloc[:, 7:9] = binarizer.fit_transform(data_df.iloc[:, 7:9])
+
 # Extract features and labels
 X = data_df.iloc[:, :-1].values  # Features
 y = data_df.iloc[:, -1].values  # Labels
@@ -21,14 +27,7 @@ X_tensor = torch.tensor(X, dtype=torch.float32)
 y_tensor = torch.tensor(y, dtype=torch.long)  # Assuming integer labels
 
 # Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, random_state=42)
-# scaler = StandardScaler()
-# X_train = scaler.fit_transform(X_train)
-# X_test = scaler.transform(X_test)
-# print(X_test)
-# y_train = y_train.view(-1, 1)
-# y_test = y_test.view(-1, 1)
-
+X_train, X_test, y_train, y_test = train_test_split(X_tensor, y_tensor, test_size=0.2, stratify=y, random_state=42)
 
 train_dataset = TensorDataset(X_train, y_train)
 test_dataset = TensorDataset(X_test, y_test)
@@ -40,28 +39,50 @@ test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
 
 # Define the neural network model
-class NeuralNetwork(nn.Module):
-    def __init__(self, input_size, output_size):
-        super(NeuralNetwork, self).__init__()
-        self.fc1 = nn.Linear(input_size , 64)
-        self.relu = nn.ReLU()
-        self.fc2 = nn.Linear(64, 32)
-        self.fc3 = nn.Linear(32, output_size)  # Output layer with output_size neurons
-
-
-
-    def forward(self, x):
-
-        x = self.fc1(x)
-        x = self.relu(x)
-        x = self.fc2(x)
-        x = self.relu(x)
-        x = self.fc3(x)
-
-        return x
+# class NeuralNetwork(nn.Module):
+#     def __init__(self, input_size, output_size):
+#         super(NeuralNetwork, self).__init__()
+#         self.fc1 = nn.Linear(input_size , 64)
+#         self.relu = nn.ReLU()
+#         self.fc2 = nn.Linear(64, 32)
+#         self.fc3 = nn.Linear(32, output_size)  # Output layer with output_size neurons
+#
+#
+#
+#     def forward(self, x):
+#
+#         x = self.fc1(x)
+#         x = self.relu(x)
+#         x = self.fc2(x)
+#         x = self.relu(x)
+#         x = self.fc3(x)
+#
+#         return x
 
 
 # Instantiate the model with the correct input_size and output_size
+
+class NeuralNetwork(nn.Module):
+    def __init__(self, input_size, output_size, dropout_rate=0.3):
+        super(NeuralNetwork, self).__init__()
+        self.fc1 = nn.Linear(input_size, 64)
+        self.relu = nn.ReLU()
+        self.dropout1 = nn.Dropout(p=dropout_rate)
+        self.fc2 = nn.Linear(64, 32)
+        self.dropout2 = nn.Dropout(p=dropout_rate)
+        self.fc3 = nn.Linear(32, output_size)
+
+    def forward(self, x):
+        x = self.fc1(x)
+        x = self.relu(x)
+        x = self.dropout1(x)
+        x = self.fc2(x)
+        x = self.relu(x)
+        x = self.dropout2(x)
+        x = self.fc3(x)
+        return x
+
+
 input_size = X_train.shape[1]
 output_size = 4  # Number of classes (0, 1, 2, 3)
 
@@ -69,10 +90,10 @@ model = NeuralNetwork(input_size, output_size)
 
 # Define the loss function and optimizer
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
 
 # Training loop
-epochs = 10
+epochs = 40
 for epoch in range(epochs):
     model.train()  # Set the model to training mode
     for batch_X, batch_y in train_loader:
