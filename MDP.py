@@ -36,6 +36,7 @@ class ReimbursementMDP(gym.Env):
         self.observation, self.info = self.env.reset()
         self.terminated = False
         self.act=None
+        self.path=[]
     def iterate(self):
         if not self.terminated:
             init = []
@@ -52,18 +53,18 @@ class ReimbursementMDP(gym.Env):
                 self.act=None
             else:
                 self.act = random.choice(init)
+
             self.observation, reward, self.terminated, truncated, self.info = self.env.step(self.act)
+            self.path.append(self.observation)
 
             if self.terminated:
-                return self.observation
+                return self.path
             else:
-                return self.act
+                return self.path
 
 
 mdp = ReimbursementMDP(0.2, 0.1, 0.2, True)
 
-print(mdp.iterate())
-print(mdp.iterate())
 print(mdp.iterate())
 print(mdp.iterate())
 print(mdp.iterate())
