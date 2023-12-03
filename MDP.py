@@ -32,33 +32,39 @@ class ReimbursementMDP(gym.Env):
         self.P_0 = np.array([1, 0, 0, 0, 0])
         # env = gym.make('matrix_mdp/MatrixMDP-v0', p_0=P_0, p=T, r=R, disable_env_checker=True)
         # observation, info = env.reset()
-
+        self.env= gym.make('matrix_mdp/MatrixMDP-v0', p_0=self.P_0, p=self.T, r=self.R, disable_env_checker=True)
+        self.observation, self.info = self.env.reset()
+        self.terminated = False
+        self.act=None
+        self.path=[]
     def iterate(self):
-        env = gym.make('matrix_mdp/MatrixMDP-v0', p_0=self.P_0, p=self.T, r=self.R, disable_env_checker=True)
-        observation, info = env.reset()
-
-        terminated = False
-        while not terminated:
+        if not self.terminated:
             init = []
 
             # choose random valid action from state
             for a in range(self.num_actions):
                 for s in range(self.num_states):
-                    if self.T[s][observation][a] > 0:
+                    if self.T[s][self.observation][a] > 0:
                         init.append(a)
             # choose action from curr state
             if len(init) == 1:
-                act = init[0]
+                self.act = init[0]
             elif len(init) == 0:
-                break
+                self.act=None
             else:
-                act = random.choice(init)
-            observation, reward, terminated, truncated, info = env.step(act)
+                self.act = random.choice(init)
 
-            if terminated:
-                return observation, reward
+            self.observation, reward, self.terminated, truncated, self.info = self.env.step(self.act)
+            self.path.append(self.observation)
+
+            if self.terminated:
+                return self.path
+            else:
+                return self.path
 
 
 mdp = ReimbursementMDP(0.2, 0.1, 0.2, True)
 
+print(mdp.iterate())
+print(mdp.iterate())
 print(mdp.iterate())
