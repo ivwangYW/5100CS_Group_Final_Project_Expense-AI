@@ -119,5 +119,3 @@ with torch.no_grad():
         correct += (predicted == labels).sum().item()
 
 print('Accuracy on the test set: {:.2f}%'.format(100 * correct / total))
-model_path = 'trained_riskScore_model.pth'
-torch.save(model.state_dict(), model_path)

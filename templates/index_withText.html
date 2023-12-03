@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap">
+    <title>Expense AI</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 20px;
+            background-color: #f5eef8;
+            color: #6c3483;
+        }
+        h1 {
+            color: #8e44ad;
+        }
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: grid;
+            gap: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: flex;
+            justify-content: space-between;
+        }
+        select, input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d2b4de;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        select {
+            cursor: pointer;
+        }
+        button {
+            background-color: #8e44ad;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #674172;
+        }
+    </style>
+</head>
+<body>
+    <h1>Expense AI</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" name="employee_id" required>
+
+        <label for="project_name">Project Name:</label>
+        <input type="text" name="project_name" required>
+
+        <label for="invoice_amount">Invoice Amount:</label>
+        <input type="text" name="invoice_amount" required>
+
+        <label for="currency_unit">Currency Unit:</label>
+        <select name="currency_unit">
+            <option value="CA$">CA$ - CAD</option>
+            <option value="A$">A$ - AUD</option>
+            <option value="€">€ - EUR</option>
+            <option value="£">£ - GBP</option>
+            <option value="$">$ - USD</option>
+            <option value="¥">¥ - CNY</option>
+            <option value="HK$">HK$ - HKD</option>
+            <option value="¥">¥ - JPY</option>
+        </select>
+
+        <label for="invoice_text">Invoice Text:</label>
+        <textarea name="invoice_text" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
