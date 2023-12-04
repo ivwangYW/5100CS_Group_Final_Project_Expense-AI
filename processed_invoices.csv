@@ -1,751 +1,751 @@
-Predicted Expense Category,Invoice Date,Invoice Amount,Currency Unit
- Professional Development,,1440.0,$
- Travel,2040-02-10,3150.0,$
- Meals and Entertainment,,638.0,$
- Meals and Entertainment,2040-02-25,1985.0,$
- Health and Wellness,2040-03-05,363.0,$
- Professional Development,,2178.0,$
- Office Equipment & Supplies,2040-03-25,180.0,$
- Health and Wellness,,1460.0,$
- Meals and Entertainment,,2900.0,$
- Office Equipment & Supplies,,4950.0,$
- Professional Development,,1320.0,$
- Office Equipment & Supplies,2039-09-20,495.0,$
- Travel,,3850.0,$
- Health and Wellness,2039-10-05,1650.0,$
- Meals and Entertainment,,2750.0,$
- Professional Development,,1980.0,$
- Travel,,660.0,$
- Office Equipment & Supplies,,242.0,$
- Meals and Entertainment,,2200.0,$
- Professional Development,2039-12-10,1650.0,$
- Meals and Entertainment,2039-12-20,2200.0,$
- Office Equipment & Supplies,2039-12-25,4050.0,$
- Health and Wellness,,330.0,$
- Professional Development,,1980.0,$
- Office Equipment & Supplies,,275.0,$
- Office Equipment & Supplies,2038-10-15,700.0,$
- Travel,,18250.0,$
- Professional Development,2038-11-05,1650.0,$
- Phone & Internet,2038-11-15,1100.0,$
- Meals and Entertainment,,1320.0,$
- Moving Expense,2038-12-05,7500.0,$
- Meals and Entertainment,,8800.0,$
- Phone & Internet,,6000.0,$
- Health and Wellness,,1100.0,$
- Travel,,750.0,$
- Office Equipment & Supplies,2039-01-25,500.0,$
- Meals and Entertainment,2039-02-05,1320.0,$
- Travel,2039-02-15,3600.0,$
- Office Equipment & Supplies,2039-03-01,400.0,$
- Health and Wellness,2039-03-05,990.0,$
- Travel,,8950.0,$
- Professional Development,,1300.0,$
- Phone & Internet,2038-04-20,950.0,$
- Meals and Entertainment,2038-04-05,650.0,$
- Moving Expense,2038-05-15,4800.0,$
-Professional Development,2038-05-25,4000.0,£
- Phone & Internet,2038-06-01,6000.0,£
- Health and Wellness,2038-06-10,1300.0,£
- Travel,2038-07-05,850.0,$
- Meals and Entertainment,2034-04-05,1520.0,$
- Travel,2034-06-12,,
- Professional Development,2034-08-20,586.25,£
- Meals and Entertainment,2034-10-25,2942.5,$
- Health and Wellness,2034-12-05,483.5,$
- Professional Development,2035-02-15,2460.0,$
- Meals and Entertainment,2010-10-10,1520.0,$
- Travel,,,
- Professional Development,,586.25,£
- Meals and Entertainment,,2942.5,$
- Health and Wellness,,483.5,$
- Meals and Entertainment,2014-09-15,1520.0,$
- Travel,2016-09-28,,
- Professional Development,2018-04-10,586.25,£
- Meals and Entertainment,2020-11-05,2942.5,$
- Health and Wellness,2023-12-20,483.5,$
- Professional Development,2025-02-28,2460.0,$
- Meals and Entertainment,2014-09-15,1520.0,$
- Travel,2016-09-28,,
- Professional Development,2018-04-10,586.25,£
- Meals and Entertainment,2020-11-05,2942.5,$
- Health and Wellness,2023-12-20,483.5,$
- Professional Development,2025-02-28,2460.0,$
- Professional Development,2012-12-12,1520.0,$
- Meals and Entertainment,2015-09-25,2942.5,$
- Health and Wellness,2018-10-01,483.5,$
- Office Equipment & Supplies,2012-06-10,4870.0,£
- Travel,2014-10-25,3055.0,$
- Professional Development,2016-11-30,792.5,$
- Meals and Entertainment,2018-05-12,4420.0,$
- Health and Wellness,2020-12-20,,
- Professional Development,2022-05-15,2065.0,$
- Meals and Entertainment,2024-08-30,3705.0,$
- Health and Wellness,2026-12-15,575.75,$
- Professional Development,2028-01-10,2765.0,$
- Meals and Entertainment,2030-11-20,4040.0,£
- Professional Development,2033-02-28,808.0,$
- Office Equipment & Supplies,2012-06-10,4870.0,£
- Travel,2014-10-25,3055.0,$
- Professional Development,2016-11-30,792.5,$
- Meals and Entertainment,2018-05-12,4420.0,$
- Health and Wellness,2020-12-20,,
- Professional Development,2022-05-15,2065.0,$
- Meals and Entertainment,2024-08-30,3705.0,$
- Health and Wellness,2026-12-15,575.75,$
- Professional Development,2028-01-10,2765.0,$
- Office Equipment & Supplies,2030-11-20,3980.0,£
- Professional Development,2015-07-18,2840.0,$
- Health and Wellness,2017-03-28,,
- Travel,2019-09-14,3340.0,£
- Professional Development,2021-04-05,1104.5,$
- Meals and Entertainment,2023-11-02,2935.0,$
- Health and Wellness,2025-06-20,3400.0,$
- Professional Development,2027-02-12,1792.5,$
- Office Equipment & Supplies,2029-08-09,575.0,£
- Meals and Entertainment,2031-05-15,2800.0,$
- Health and Wellness,2033-12-08,,
- Professional Development,2036-03-21,3265.0,$
- Travel,2038-10-19,2543.0,£
- Professional Development,2040-07-07,1457.5,$
- Meals and Entertainment,2042-01-25,3425.0,$
- Health and Wellness,2044-06-12,3180.0,$
- Professional Development,2016-08-14,1457.5,$
- Meals and Entertainment,2018-04-02,3780.0,$
- Health and Wellness,2020-12-15,,
- Professional Development,2022-07-20,1700.0,$
- Meals and Entertainment,2024-02-28,3460.0,$
- Professional Development,2026-10-10,745.0,$
- Office Equipment & Supplies,2028-05-18,628.75,£
- Travel,2030-12-05,3975.0,$
- Professional Development,2032-09-15,2125.0,$
- Office Equipment & Supplies,2034-04-28,3470.0,£
- Professional Development,2036-01-10,747.5,$
- Meals and Entertainment,2038-06-20,4875.0,$
- Professional Development,2015-04-25,1295.5,$
- Health and Wellness,2017-11-08,,
- Travel,2019-06-15,2305.0,£
- Professional Development,2021-01-30,418.5,$
- Meals and Entertainment,2023-08-12,4420.0,$
- Health and Wellness,2025-03-22,453.25,$
- Professional Development,2027-10-05,1903.25,$
- Office Equipment & Supplies,2029-05-18,707.5,£
- Travel,2031-12-08,3387.5,$
- Professional Development,2033-07-20,2102.5,$
- Office Equipment & Supplies,2035-02-28,3880.0,£
- Professional Development,2037-09-15,732.5,$
- Meals and Entertainment,2039-04-28,4630.0,$
- Health and Wellness,2041-02-12,3635.0,$
- Professional Development,2043-07-31,1507.5,$
- Professional Development,2015-04-25,1295.5,$
- Health and Wellness,2017-11-08,,
- Travel,2019-06-15,2305.0,£
- Professional Development,2021-01-30,418.5,$
- Meals and Entertainment,2023-08-12,4420.0,$
- Health and Wellness,2025-03-22,453.25,$
- Professional Development,2027-10-05,1903.25,$
- Office Equipment & Supplies,2029-05-18,707.5,£
- Travel,2031-12-08,3387.5,$
- Professional Development,2033-07-20,2102.5,$
- Office Equipment & Supplies,2035-02-28,3880.0,£
- Professional Development,2037-09-15,732.5,$
- Meals and Entertainment,2039-04-28,4630.0,$
- Health and Wellness,2041-02-12,3635.0,$
- Professional Development,2015-04-25,1295.5,$
- Health and Wellness,2017-11-08,,
- Travel,2019-06-15,2305.0,£
- Professional Development,2021-01-30,418.5,$
- Meals and Entertainment,2023-08-12,4420.0,$
- Health and Wellness,2025-03-22,453.25,$
- Professional Development,2027-10-05,1903.25,$
- Office Equipment & Supplies,2029-05-18,707.5,£
- Travel,2031-12-08,3387.5,$
- Professional Development,2033-07-20,2102.5,$
- Office Equipment & Supplies,2035-02-28,3880.0,£
- Professional Development,2037-09-15,732.5,$
- Meals and Entertainment,2039-04-28,4630.0,$
- Health and Wellness,2041-02-12,3635.0,$
- Professional Development,2023-02-15,5037.5,$
- Professional Development,2024-05-10,,
- Meals and Entertainment,2025-09-20,325.0,£
- Professional Development,2026-12-05,2480.0,$
- Office Equipment & Supplies,2028-03-28,217.5,$
- Professional Development,2029-07-15,1090.75,$
- Travel,2031-10-12,2970.0,$
- Professional Development,2033-01-25,4200.0,$
- Professional Development,2034-05-30,690.0,$
- Meals and Entertainment,2036-10-18,407.5,$
- Travel,2038-02-28,3410.0,£
- Health and Wellness,2040-06-12,407.5,$
- Professional Development,2023-02-15,5037.5,$
- Professional Development,2024-05-10,,
- Meals and Entertainment,2025-09-20,325.0,£
- Professional Development,2026-12-05,2480.0,$
- Office Equipment & Supplies,2028-03-28,217.5,$
- Professional Development,2029-07-15,1090.75,$
- Travel,2031-10-12,2970.0,$
- Professional Development,2033-01-25,4200.0,$
- Professional Development,2034-05-30,690.0,$
- Meals and Entertainment,2036-10-18,407.5,$
- Travel,2038-02-28,3410.0,£
- Health and Wellness,2040-06-12,407.5,$
- Professional Development,2023-02-15,5037.5,$
- Professional Development,2024-05-10,,
- Meals and Entertainment,2025-09-20,325.0,£
- Professional Development,2026-12-05,2480.0,$
- Office Equipment & Supplies,2028-03-28,217.5,$
- Professional Development,2029-07-15,1090.75,$
- Travel,2031-10-12,2970.0,$
- Professional Development,2033-01-25,4200.0,$
- Professional Development,2034-05-30,690.0,$
- Meals and Entertainment,2036-10-18,407.5,$
- Professional Development,2023-03-20,4320.0,$
- Professional Development,2024-07-10,,
- Meals and Entertainment,2025-11-15,435.0,£
- Professional Development,2027-02-28,3140.0,$
- Office Equipment & Supplies,2028-06-05,275.75,$
- Professional Development,2029-09-20,1312.5,$
- Travel,2031-01-12,2965.0,$
- Professional Development,2033-04-25,4762.5,$
- Professional Development,2034-08-30,805.0,$
- Meals and Entertainment,2036-12-18,510.0,$
- Meals and Entertainment,2023-04-15,3862.5,$
- Meals and Entertainment,2024-08-22,287.5,£
- Meals and Entertainment,2025-12-10,,
- Meals and Entertainment,2027-03-28,336.0,$
- Meals and Entertainment,2028-07-15,628.0,£
- Meals and Entertainment,2029-10-30,487.5,$
- Meals and Entertainment,2031-02-20,617.5,$
- Meals and Entertainment,2033-06-12,688.75,$
- Meals and Entertainment,2034-10-28,,
- Meals and Entertainment,2036-02-15,240.0,$
- Meals and Entertainment,2037-06-28,520.0,£
- Meals and Entertainment,2038-11-15,175.5,$
- Meals and Entertainment,2040-03-05,867.5,$
- Meals and Entertainment,2023-04-15,580.0,$
- Meals and Entertainment,2024-08-22,,
- Meals and Entertainment,2025-12-10,460.0,£
- Meals and Entertainment,2027-03-28,336.0,$
- Meals and Entertainment,2028-07-15,405.0,$
- Meals and Entertainment,2029-10-30,,
- Meals and Entertainment,2031-02-20,617.5,$
- Meals and Entertainment,2033-06-12,538.75,$
- Meals and Entertainment,2034-10-28,,
- Meals and Entertainment,2036-02-15,207.5,$
- Meals and Entertainment,2037-06-28,628.0,£
- Meals and Entertainment,2038-11-15,245.5,$
- Meals and Entertainment,2040-03-05,295.0,$
- Meals and Entertainment,2023-05-28,375.0,$
- Meals and Entertainment,2024-09-15,395.0,£
- Meals and Entertainment,2025-01-10,477.5,$
- Meals and Entertainment,2026-03-22,415.5,$
- Meals and Entertainment,2027-08-05,,
- Meals and Entertainment,2028-11-18,248.5,$
- Meals and Entertainment,2030-02-10,495.0,£
- Meals and Entertainment,2031-05-15,,
- Meals and Entertainment,2032-09-28,418.5,$
- Meals and Entertainment,2034-01-22,570.0,$
- Meals and Entertainment,2023-07-15,305.0,$
- Meals and Entertainment,2024-10-28,,
- Meals and Entertainment,2026-02-20,380.0,£
- Meals and Entertainment,2027-09-10,330.5,$
- Meals and Entertainment,2028-12-12,380.0,$
- Meals and Entertainment,2030-03-25,333.0,$
- Meals and Entertainment,2031-06-18,,
- Meals and Entertainment,2032-10-05,245.0,£
- Meals and Entertainment,2034-02-15,377.0,$
- Meals and Entertainment,2036-09-12,,
- Meals and Entertainment,2037-01-28,,
- Meals and Entertainment,2038-04-15,442.0,£
- Meals and Entertainment,2039-07-22,392.5,$
- Meals and Entertainment,2040-11-10,249.5,$
- Meals and Entertainment,2041-02-18,356.5,$
- Meals and Entertainment,2042-06-05,,
- Meals and Entertainment,2043-09-30,292.5,£
- Meals and Entertainment,2044-01-15,428.5,$
- Meals and Entertainment,2045-04-20,545.0,$
- Meals and Entertainment,2046-07-12,,
- Meals and Entertainment,2047-02-28,,
- Meals and Entertainment,2048-05-19,326.0,£
- Meals and Entertainment,2049-09-02,450.0,$
- Meals and Entertainment,2050-12-10,275.5,$
- Meals and Entertainment,2051-03-15,374.5,$
- Meals and Entertainment,2052-06-28,,
- Meals and Entertainment,2053-10-05,283.5,£
- Meals and Entertainment,2054-01-25,463.5,$
- Meals and Entertainment,2023-07-15,305.0,$
- Meals and Entertainment,2024-10-28,,
- Meals and Entertainment,2026-02-20,380.0,£
- Meals and Entertainment,2027-09-10,330.5,$
- Meals and Entertainment,2028-12-12,380.0,$
- Meals and Entertainment,2030-03-25,333.0,$
- Meals and Entertainment,2031-06-18,,
- Meals and Entertainment,2032-10-05,245.0,£
- Meals and Entertainment,2034-02-15,377.0,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,395.0,£
- Meals and Entertainment,,560.5,$
- Meals and Entertainment,,302.5,$
- Meals and Entertainment,,423.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,330.5,£
- Meals and Entertainment,,407.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,412.5,£
- Meals and Entertainment,,645.5,$
- Meals and Entertainment,,318.5,$
- Meals and Entertainment,,498.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,300.5,£
- Meals and Entertainment,,345.5,$
- Meals and Entertainment,,560.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,412.5,£
- Meals and Entertainment,,645.5,$
- Meals and Entertainment,,318.5,$
- Meals and Entertainment,,498.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,300.5,£
- Meals and Entertainment,,345.5,$
- Meals and Entertainment,,560.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,558.5,£
- Meals and Entertainment,,818.5,$
- Meals and Entertainment,,648.5,$
- Meals and Entertainment,,948.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,718.5,£
- Meals and Entertainment,,483.5,$
- Meals and Entertainment,,1118.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,648.5,£
- Meals and Entertainment,,778.5,$
- Meals and Entertainment,,563.5,$
- Meals and Entertainment,,998.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,628.5,£
- Meals and Entertainment,,503.5,$
- Meals and Entertainment,,768.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,708.5,£
- Meals and Entertainment,,563.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,578.5,£
- Meals and Entertainment,,523.5,$
- Meals and Entertainment,,688.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,463.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,648.5,£
- Meals and Entertainment,,,
- Meals and Entertainment,,493.5,$
- Meals and Entertainment,,553.5,$
- Meals and Entertainment,,578.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,493.5,£
- Meals and Entertainment,,,
- Meals and Entertainment,,568.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,578.5,£
- Meals and Entertainment,,648.5,$
- Meals and Entertainment,,493.5,$
- Meals and Entertainment,,558.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,648.5,£
- Meals and Entertainment,,503.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,608.5,$
- Meals and Entertainment,,558.5,£
- Meals and Entertainment,,718.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,558.5,$
- Meals and Entertainment,,718.5,$
- Meals and Entertainment,,608.5,£
- Meals and Entertainment,,558.5,$
- Meals and Entertainment,,718.5,$
- Meals and Entertainment,,608.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,718.5,£
- Meals and Entertainment,,558.5,$
- Meals and Entertainment,,,
- Meals and Entertainment,,718.5,$
- Meals and Entertainment,,558.5,$
- Meals and Entertainment,,718.5,£
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,538.5,$
- Meals and Entertainment,,458.5,$
- Meals and Entertainment,,518.5,£
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,458.5,$
- Meals and Entertainment,,518.5,$
- Meals and Entertainment,,538.5,£
- Meals and Entertainment,,,
- Meals and Entertainment,,672.5,$
- Meals and Entertainment,,550.0,$
- Meals and Entertainment,,600.0,£
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,600.0,$
- Meals and Entertainment,,657.5,$
- Meals and Entertainment,,725.0,£
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,725.0,$
- Meals and Entertainment,,657.5,$
- Meals and Entertainment,,600.0,£
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,600.0,$
- Meals and Entertainment,,657.5,$
- Meals and Entertainment,,725.0,£
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,725.0,$
- Meals and Entertainment,,657.5,$
- Meals and Entertainment,,600.0,£
- Meals and Entertainment,,,
- Meals and Entertainment,,,
- Meals and Entertainment,,600.0,$
- Meals and Entertainment,,657.5,$
- Meals and Entertainment,,725.0,£
- Meals and Entertainment,,,
- Meals and Entertainment,,725.0,$
- Meals and Entertainment,,790.0,$
- Meals and Entertainment,,,
- Meals and Entertainment,,870.0,$
- Meals and Entertainment,,850.0,£
- Meals and Entertainment,,,
- Meals and Entertainment,,850.0,$
- Meals and Entertainment,,870.0,$
- Meals and Entertainment,,,
- Meals and Entertainment,,850.0,£
- Meals and Entertainment,,850.0,$
- Travel,,1620.0,$
- Travel,,,
- Travel,,2180.0,$
- Travel,,1680.0,£
- Travel,,,
- Travel,,2180.0,$
- Travel,,1580.0,$
- Travel,,,
- Travel,,1680.0,£
- Travel,,,
- Travel,,990.0,$
- Travel,,550.0,£
- Travel,,330.0,$
- Travel,,,
- Travel,,,
- Travel,,110.0,£
- Travel,,132.0,$
- Travel,,440.0,$
- Travel,,250.0,$
- Travel,,,
- Travel,,660.0,£
- Travel,,1320.0,$
- Travel,,220.0,$
- Travel,,,
- Travel,,,
- Travel,,88.0,£
- Travel,,110.0,$
- Travel,,385.0,$
- Travel,,148.5,$
- Travel,,,
- Travel,,990.0,£
- Travel,,1650.0,$
- Travel,,275.0,$
- Travel,,,
- Travel,,,
- Travel,,132.0,£
- Travel,,132.0,$
- Travel,,440.0,$
- Travel,,137.5,$
- Travel,,,
- Travel,,990.0,£
- Travel,,1650.0,$
- Travel,,275.0,$
- Travel,,,
- Travel,,,
- Travel,,132.0,£
- Travel,,132.0,$
- Travel,,440.0,$
- Travel,,137.5,$
- Travel,,,
- Travel,,2750.0,$
- Travel,,330.0,£
- Travel,,,
- Travel,,1100.0,$
- Travel,,,
- Travel,,1320.0,£
- Travel,,198.0,$
- Travel,,330.0,$
- Travel,,148.5,$
- Travel,,,
- Travel,,495.0,£
- Travel,,330.0,$
- Travel,,2750.0,$
- Travel,,,
- Travel,,880.0,£
- Travel,,132.0,$
- Travel,,220.0,$
- Travel,,137.5,$
- Travel,,,
- Travel,,,
- Travel,,495.0,$
- Travel,,,
- Travel,,385.0,$
- Travel,,198.0,£
- Travel,,330.0,$
- Travel,,,
- Travel,,165.0,$
- Travel,,,
- Travel,,44.0,£
- Travel,,440.0,$
- Travel,,1980.0,$
- Travel,,,
- Travel,,275.0,$
- Travel,,132.0,£
- Travel,,770.0,$
- Travel,,,
- Travel,,198.0,$
- Travel,,,
- Travel,,55.0,£
- Travel,,550.0,$
- Travel,,1980.0,$
- Travel,,,
- Travel,,275.0,$
- Travel,,132.0,£
- Travel,,770.0,$
- Travel,,,
- Travel,,198.0,$
- Travel,,,
- Travel,,55.0,£
- Travel,,550.0,$
- Travel,2040-03-15,2750.0,$
- Travel,,,
- Travel,,880.0,$
- Travel,,88.0,£
- Travel,,990.0,$
- Travel,,,
- Travel,,242.0,$
- Travel,,,
- Travel,,44.0,£
- Travel,,495.0,$
- Travel,2040-01-10,3300.0,$
- Travel,,,
- Travel,,660.0,$
- Travel,,110.0,£
- Travel,,1320.0,$
- Travel,,,
- Travel,,330.0,$
- Travel,,,
- Travel,,55.0,£
- Travel,,660.0,$
- Travel,,7700.0,$
- Travel,,,
- Travel,,935.0,$
- Travel,,220.0,£
- Travel,,2200.0,$
- Travel,,,
- Travel,,550.0,$
- Travel,,,
- Travel,,110.0,£
- Travel,,660.0,$
- Travel,,1320.0,$
- Travel,,55.0,£
- Travel,,,
- Travel,,88.0,$
- Travel,,330.0,$
- Travel,,,
- Travel,,55.0,$
- Travel,,165.0,£
- Travel,,198.0,$
- Travel,,,
- Travel,,330.0,$
- Travel,,,
- Travel,,660.0,$
- Travel,,880.0,$
- Travel,,1320.0,£
- Travel,,,
- Travel,,275.0,$
- Travel,,132.0,$
- Travel,,,
- Travel,,330.0,£
- Travel,,880.0,$
- Travel,,,
- Travel,,990.0,$
- Travel,,1320.0,$
- Travel,,1650.0,£
- Travel,,,
- Travel,,198.0,$
- Travel,,55.0,$
- Travel,,,
- Travel,,275.0,£
- Travel,,1650.0,$
- Travel,,,
- Travel,,880.0,$
- Travel,,1980.0,$
- Travel,,2750.0,$
- Travel,,,
- Travel,,330.0,$
- Travel,,110.0,£
- Travel,,,
- Travel,,132.0,$
- Travel,,2200.0,$
- Travel,,,
- Travel,,165.0,£
- Travel,,330.0,$
- Travel,,1980.0,$
- Travel,,,
- Travel,,,
- Travel,,275.0,$
- Travel,,880.0,£
- Travel,,1650.0,$
- Travel,,55.0,$
- Travel,,,
- Travel,,132.0,$
- Travel,,,
- Travel,,880.0,$
- Travel,,,
- Travel,,198.0,£
- Travel,,220.0,$
- Travel,,,
- Travel,,330.0,$
- Travel,,2750.0,$
- Travel,,330.0,£
- Travel,,165.0,$
- Travel,,,
- Travel,,110.0,$
- Travel,,,
- Travel,,880.0,$
- Travel,,88.0,$
- Travel,,,
- Travel,,132.0,$
- Travel,,330.0,$
- Travel,,55.0,£
- Travel,,77.0,$
- Travel,,,
- Travel,,,
- Travel,,1650.0,$
- Travel,,220.0,$
- Travel,,44.0,$
- Travel,,,
- Travel,,,
- Travel,,88.0,$
- Travel,,,
- Travel,,165.0,$
- Travel,,1980.0,$
- Travel,,,
- Travel,,,
- Travel,,99.0,$
- Travel,,,
- Travel,,66.0,$
- Travel,,2915.0,$
- Travel,,,
- Travel,,1045.0,$
- Travel,,3560.0,$
- Travel,,572.0,$
- Travel,,,
- Travel,,1430.0,$
- Travel,,3322.0,$
- Travel,,535.0,$
- Travel,,3000.0,$
- Travel,,365.0,$
- Travel,,2360.0,$
- Travel,,1780.0,$
- Travel,,480.0,$
- Travel,,835.0,$
- Travel,,2756.0,$
- Travel,,940.0,$
- Travel,,2390.0,$
- Travel,,1430.0,$
- Travel,,4120.0,$
- Travel,,480.0,$
- Travel,,956.0,$
- Travel,,435.0,$
- Travel,,1450.0,$
- Travel,,705.0,$
- Travel,,3320.0,$
- Travel,,61.0,$
- Travel,,3000.0,$
- Travel,,380.0,$
- Travel,,3810.0,$
- Travel,,700.0,$
- Travel,,1530.0,$
- Travel,,615.0,$
- Travel,,2136.0,$
- Travel,,380.0,$
- Travel,,3000.0,$
- Travel,,490.0,$
- Travel,,2400.0,$
- Travel,,1078.0,$
- Travel,,3210.0,$
- Travel,,1900.0,$
- Travel,,2148.0,$
- Travel,,725.0,$
- Travel,,2660.0,$
- Travel,,510.0,$
- Travel,,548.0,$
- Travel,,2400.0,$
- Travel,,1240.0,$
- Travel,,960.0,$
- Travel,,4200.0,$
- Travel,,2390.0,$
- Travel,,2150.0,$
- Travel,,725.0,$
- Travel,,2980.0,$
- Travel,,510.0,$
- Travel,,548.0,$
- Travel,,2600.0,$
- Travel,,1450.0,$
- Travel,,960.0,$
- Travel,,4530.0,$
-650.00,,2500.0,$
- Travel,,3650.0,$
- Travel,,3270.0,$
- Travel,,730.0,$
- Travel,,480.0,$
- Travel,,920.0,$
- Travel,,1450.0,$
- Travel,,3600.0,$
- Travel,,730.0,$
- Travel,,2620.0,$
- Travel,,4200.0,$
-430.00,,1200.0,$
- Travel,,480.0,$
- Travel,,4900.0,$
- Travel,,970.0,$
- Travel,,1190.0,$
- Travel,,3300.0,$
- Travel,,4200.0,$
- Travel,,850.0,$
- Travel,,2600.0,$
- Travel,,2400.0,$
- Travel,,960.0,$
- Travel,,3600.0,$
- Travel,,1440.0,$
- Travel,,3000.0,$
- Travel,,3000.0,$
- Travel,,4550.0,$
- Travel,,900.0,$
- Travel,,720.0,$
- Travel,,5100.0,$
- Travel,,2800.0,$
- Travel,,1800.0,$
- Travel,,5400.0,$
- Travel,,3700.0,$
- Travel,,2160.0,$
- Travel,,2680.0,$
- Travel,,1200.0,$
- Travel,,1080.0,$
- Travel,,5870.0,$
- Travel,,3920.0,$
+Predicted Expense Category,InvoiceNumber,Invoice Date,Invoice Amount,Currency Unit
+ Professional Development,#TechGurus-INV/2040-0893,,1440.0,$
+ Travel,#EcoLuxe73847,2040-02-10 - Provider,3150.0,$
+ Meals and Entertainment,,,638.0,$
+ Meals and Entertainment,#UrbanEats-20XYN25,2040-02-25 - Vendor,1985.0,$
+ Health and Wellness,#HealthJourney-INV/20734H5,,363.0,$
+ Professional Development,#TechInnovate-2083845315,,2178.0,$
+ Office Equipment & Supplies,,2040-03-25 - Supplier,180.0,$
+ Health and Wellness,#WellnessWave-208249401,04-01-2040 - Vendor:,1460.0,$
+ Meals and Entertainment,#GourmetFeast-INV/410,,2900.0,$
+ Office Equipment & Supplies,#ACME-INV/20390901,,4950.0,$
+ Professional Development,#XYZ-2039X004,"September 10, 2039 - Provider",1320.0,$
+ Office Equipment & Supplies,,2039-09-20 - Supplier,495.0,$
+ Travel,#GreenTech-203XH125,,3850.0,$
+ Health and Wellness,,2039-10-05 - Supplier,1650.0,$
+ Meals and Entertainment,#Summit-INV-20XHKD15,"October 15, 2039 - Supplier",2750.0,$
+ Professional Development,#FutureTech-203XLH95,2039,1980.0,$
+ Travel,,daily,660.0,$
+ Office Equipment & Supplies,#EcoLiving-20KDGH13,"November 15, 2039 - Vendor",242.0,$
+ Meals and Entertainment,#Adventure-INV/203XKD11,12-01-2039 - Supplier,2200.0,$
+ Professional Development,#ProSkill-203DG103,2039-12-10 - Provider,1650.0,$
+ Meals and Entertainment,,2039-12-20 - Supplier,2200.0,$
+ Office Equipment & Supplies,#EnergeticTech-203SHDK34,2039-12-25 - Vendor,4050.0,$
+ Health and Wellness,#RelaxWell-INV-2DSGL344,,330.0,$
+ Professional Development,#TechSolutions-20DGE853,,1980.0,$
+ Office Equipment & Supplies,,,275.0,$
+ Office Equipment & Supplies,#6320-INV,2038-10-15 - Supplier,700.0,$
+ Travel,,"October 25, 2038 - Vendor",18250.0,$
+ Professional Development,#20DHK08,2038-11-05 - Provider:,1650.0,$
+ Phone & Internet,,2038-11-15 - Supplier,1100.0,$
+ Meals and Entertainment,#6724-INV,,1320.0,$
+ Moving Expense,#2JDHG05,2038-12-05 - Vendor:,7500.0,$
+ Meals and Entertainment,,,8800.0,$
+ Phone & Internet,,Bill/20SDE95 - Date,6000.0,$
+ Health and Wellness,,Jan 05,1100.0,$
+ Travel,#203KDH19,daily,750.0,$
+ Office Equipment & Supplies,#7300-INV,2039-01-25 - Supplier,500.0,$
+ Meals and Entertainment,,2039-02-05 - Supplier,1320.0,$
+ Travel,#20DKG18,2039-02-15 - Vendor,3600.0,$
+ Office Equipment & Supplies,,2039-03-01 - Supplier,400.0,$
+ Health and Wellness,#7932230-INV,,990.0,$
+ Travel,,"March 01,",8950.0,$
+ Professional Development,#203KDHG10,,1300.0,$
+ Phone & Internet,,2038-04-20 - Supplier,950.0,$
+ Meals and Entertainment,#45032-INV,2038-04-05 - Supplier,650.0,$
+ Moving Expense,#203JKS15,2038-05-15 - Vendor:,4800.0,$
+Professional Development,,2038-05-25 - Supplier,4000.0,£
+ Phone & Internet,,2038-06-01,6000.0,£
+ Health and Wellness,,2038-06-10 - Provider:,1300.0,£
+ Travel,#20HDK05,2038-07-05 - Provider:,850.0,$
+ Meals and Entertainment,#TechSummit-INV/20340405,,1520.0,$
+ Travel,#EcoRetreat-20340612,2034-06-12 - Supplier,,
+ Professional Development,#VirtualTools-20340820,2034-08-20 - Supplier,586.25,£
+ Meals and Entertainment,#CelebrationCatering-20341025,2034-10-25 - Supplier,2942.5,$
+ Health and Wellness,#WellnessSubscription-20341205,,483.5,$
+ Professional Development,#InnovationBootcamp-20350215,2035-02-15 - Supplier,2460.0,$
+ Meals and Entertainment,#TechSummit-INV/20101010,2010-10-10 - Supplier,1520.0,$
+ Travel,#EcoRetreat-INV/20111215,"Dec 15, 2011 - Supplier",,
+ Professional Development,#VirtualTools-INV/20130920,,586.25,£
+ Meals and Entertainment,#CelebrationCatering-INV/20150825,,2942.5,$
+ Health and Wellness,#WellnessSubscription-INV/20170301,"Mar 01,",483.5,$
+ Meals and Entertainment,#TechSummit-INV/20140915,2014-09-15 - Supplier,1520.0,$
+ Travel,#EcoRetreat-20160928,2016-09-28 - Supplier,,
+ Professional Development,#VirtualTools-20180410,2018-04-10 - Supplier,586.25,£
+ Meals and Entertainment,#CelebrationCatering-20201105,2020-11-05 - Supplier,2942.5,$
+ Health and Wellness,#WellnessSubscription-20231220,,483.5,$
+ Professional Development,#InnovationBootcamp-20250228,2025-02-28 - Supplier,2460.0,$
+ Meals and Entertainment,#TechSummit-INV/20140915,2014-09-15 - Supplier,1520.0,$
+ Travel,#EcoRetreat-201KDG8,2016-09-28 - Supplier,,
+ Professional Development,#VirtualTools-2HDK34,2018-04-10 - Supplier,586.25,£
+ Meals and Entertainment,#CelebrationCatering-20HDJK5,2020-11-05 - Supplier,2942.5,$
+ Health and Wellness,#WellnessSubscription-20HDJK0,,483.5,$
+ Professional Development,#InnovationBootcamp-20HkqlJJK8,2025-02-28 - Supplier,2460.0,$
+ Professional Development,#InnovateSummit-INV/20121212,2012-12-12 - Supplier,1520.0,$
+ Meals and Entertainment,#TastyBites-INV/20150925,2015-09-25 - Supplier,2942.5,$
+ Health and Wellness,#WellnessSubscription-20181001,2018-10-01 - Supplier,483.5,$
+ Office Equipment & Supplies,#OfficeRefresh-INV/20120610,2012-06-10 - Supplier,4870.0,£
+ Travel,#ExploreNature-20141025,2014-10-25 - Supplier,3055.0,$
+ Professional Development,#DigitalLearning-20161130,2016-11-30 - Supplier,792.5,$
+ Meals and Entertainment,#CulinaryArtistry-20180512,,4420.0,$
+ Health and Wellness,#MindfulLiving-20201220,2020-12-20 - Supplier,,
+ Professional Development,#TechSymposium-20220515,2022-05-15 - Supplier,2065.0,$
+ Meals and Entertainment,#CateringElegance-20240830,2024-08-30 - Supplier,3705.0,$
+ Health and Wellness,#FitnessFocus-20261215,,575.75,$
+ Professional Development,#InnovateSummit-20280110,2028-01-10 - Supplier,2765.0,$
+ Meals and Entertainment,#DineDeluxe-INV/20301120,2030-11-20 - Supplier,4040.0,£
+ Professional Development,#VirtualLearning-20330228,2033-02-28 - Supplier,808.0,$
+ Office Equipment & Supplies,#OfficeRevamp-INV/ABC123,2012-06-10 - Supplier,4870.0,£
+ Travel,#AdventureTeam-INV/X789YZ,2014-10-25 - Supplier,3055.0,$
+ Professional Development,#DigitalSkills-INV/634XYZ,2016-11-30 - Supplier,792.5,$
+ Meals and Entertainment,#GalaFeast-INV/567ABC,,4420.0,$
+ Health and Wellness,#MindfulLife-INV/M12345,2020-12-20 - Supplier,,
+ Professional Development,#TechInnovate-INV/789XYZ,2022-05-15 - Supplier,2065.0,$
+ Meals and Entertainment,#CorporateCater-INV/CCC222,2024-08-30 - Supplier,3705.0,$
+ Health and Wellness,#WellnessBoost-INV/XYZ321,,575.75,$
+ Professional Development,#TechSummit-INV/T23456,2028-01-10 - Supplier,2765.0,$
+ Office Equipment & Supplies,#ModernOffice-INV/999XYZ,2030-11-20 - Supplier,3980.0,£
+ Professional Development,#TechShowcase-INV/ZZZ111,2015-07-18 - Supplier,2840.0,$
+ Health and Wellness,#HealthFiesta-INV/111AAA,2017-03-28 - Supplier,,
+ Travel,#TravelExplorers-INV/ABC789,2019-09,3340.0,£
+ Professional Development,#LearningSummit-INV/XYZ987,2021-04-05 - Supplier,1104.5,$
+ Meals and Entertainment,#CulinaryJourney-INV/555BBB,2023-11-02 - Supplier,2935.0,$
+ Health and Wellness,#WellbeingRetreat-INV/123XYZ,2025-06-20 - Supplier,3400.0,$
+ Professional Development,#TechInnovation-INV/T123ZZZ,,1792.5,$
+ Office Equipment & Supplies,#GreenOffice-INV/GOGO123,2029-08-09 - Supplier,575.0,£
+ Meals and Entertainment,#CulturalFeast-INV/222CCC,2031-05-15 - Supplier,2800.0,$
+ Health and Wellness,#MindfulBreak-INV/MB456,2033-12-08 - Supplier,,
+ Professional Development,#TechShowdown-INV/888TTT,2036-03-21 - Supplier,3265.0,$
+ Travel,#NatureSerenity-INV/111GGG,2038-10-19 - Supplier,2543.0,£
+ Professional Development,#InnovateConnect-INV/IC789,2040-07-07 - Supplier,1457.5,$
+ Meals and Entertainment,#EpicCuisine-INV/EC456,2042-01-25 - Supplier,3425.0,$
+ Health and Wellness,#WellnessEscape-INV/WE123,2044-06-12 - Supplier,3180.0,$
+ Professional Development,#TechSummit-ORDER/ZZZ222,2016-08,1457.5,$
+ Meals and Entertainment,#CulinaryDelight-BILL/C456,2018-04-02 - Supplier,3780.0,$
+ Health and Wellness,#MindfulLiving-PO/ML789,,,
+ Professional Development,#InnovateConnect-INVC/IC111,2022-07-20 - Supplier,1700.0,$
+ Meals and Entertainment,#GlobalCuisine-BILL/GC789,2024-02-28 - Supplier,3460.0,$
+ Professional Development,#VirtualLearn-POVL/123,2026-10-10 - Supplier,745.0,$
+ Office Equipment & Supplies,#EcoOffice-BILL/ECO456,2028-05-18 - Supplier,628.75,£
+ Travel,#TeamRetreat-PO/TR111,,3975.0,$
+ Professional Development,#TechInnovate-INVC/TI789,2032-09-15 - Supplier,2125.0,$
+ Office Equipment & Supplies,#GreenSolutions-BILL/GS123,2034-04-28 - Supplier,3470.0,£
+ Professional Development,#LearningJourney-INVC/LJ456,2036-01-10 - Supplier,747.5,$
+ Meals and Entertainment,#CulinaryMaster-BILL/CM789,2038-06-20 - Supplier,4875.0,$
+ Professional Development,#GlobalTech-ORDER/GT321,2015-04-25 - Supplier,1295.5,$
+ Health and Wellness,#WellnessRetreat-BILL/WR456,2017-11-08 - Supplier,,
+ Travel,#ExploreNature-PO/EN789,2019-06-15 - Supplier,2305.0,£
+ Professional Development,#DigitalSkills-BILL/DS111,2021-01-30 - Supplier,418.5,$
+ Meals and Entertainment,#CulinaryFiesta-INV/CF789,2023-08-12 - Supplier,4420.0,$
+ Health and Wellness,#MindfulLiving-BILL/ML321,2025-03-22 - Supplier,453.25,$
+ Professional Development,#InnovationLab-ORDER/IL456,,1903.25,$
+ Office Equipment & Supplies,#EcoOffice-BILL/ECO789,2029-05-18 - Supplier,707.5,£
+ Travel,#TeamAdventure-PO/TA123,2031-12-08 - Supplier,3387.5,$
+ Professional Development,#TechInnovate-BILL/TI789,2033-07-20 - Supplier,2102.5,$
+ Office Equipment & Supplies,#GreenSolutions-ORDER/GS456,2035-02-28 - Supplier,3880.0,£
+ Professional Development,#FutureSkills-INV/FS789,2037-09-15 - Supplier,732.5,$
+ Meals and Entertainment,#CulinaryMaster-BILL/CM123,2039-04-28 - Supplier,4630.0,$
+ Health and Wellness,#WellbeingRetreat-PO/WR789,2041-02-12 - Supplier,3635.0,$
+ Professional Development,#InnovateTech-ORDER/IT321,2043-07-31 - Supplier,1507.5,$
+ Professional Development,#TechSummit-INV/ACMTECH456,2015-04-25 - Supplier,1295.5,$
+ Health and Wellness,#WellnessRetreat-BILL/SerenityEscape789,2017-11-08 - Supplier,,
+ Travel,#GlobalAdventure-PO/ExploraVentures456,2019-06-15 - Supplier,2305.0,£
+ Professional Development,#DigitalSkills-BILL/DigiHub111,2021-01-30 - Supplier,418.5,$
+ Meals and Entertainment,#CulinaryFiesta-INV/GourmetEpic789,2023-08-12 - Supplier,4420.0,$
+ Health and Wellness,#MindfulLiving-BILL/MindfulMoments321,2025-03-22 - Supplier,453.25,$
+ Professional Development,#InnovationLab-ORDER/InnovateSolutions456,,1903.25,$
+ Office Equipment & Supplies,#EcoOffice-BILL/EcoFriendlyOffice789,2029-05-18 - Supplier,707.5,£
+ Travel,#TeamAdventure-PO/AdventureVentures123,2031-12-08 - Supplier,3387.5,$
+ Professional Development,#TechInnovate-BILL/InnovateTech789,2033-07-20 - Supplier,2102.5,$
+ Office Equipment & Supplies,#GreenSolutions-ORDER/EcoFriendlySolutions456,2035-02-28 - Supplier,3880.0,£
+ Professional Development,#FutureSkills-INV/FutureLearning789,2037-09-15 - Supplier,732.5,$
+ Meals and Entertainment,#CulinaryMaster-BILL/EpicureanDelight123,2039-04-28 - Supplier,4630.0,$
+ Health and Wellness,#WellbeingRetreat-PO/WellnessWonders789,2041-02-12 - Supplier,3635.0,$
+ Professional Development,#TechSummit-INV/IBM345,2015-04-25 - Supplier,1295.5,$
+ Health and Wellness,#WellnessRetreat-BILL/JohnsonWellness789,2017-11-08 - Supplier,,
+ Travel,#GlobalAdventure-PO/GoogleVentures456,2019-06-15 - Supplier,2305.0,£
+ Professional Development,#DigitalSkills-BILL/MicrosoftLearning111,2021-01-30 - Supplier,418.5,$
+ Meals and Entertainment,#CulinaryFiesta-INV/ChefCatering789,2023-08-12 - Supplier,4420.0,$
+ Health and Wellness,#MindfulLiving-BILL/Headspace321,2025-03-22 - Supplier,453.25,$
+ Professional Development,#InnovationLab-ORDER/IntelInnovate456,,1903.25,$
+ Office Equipment & Supplies,#EcoOffice-BILL/SustainableOffice789,2029-05-18 - Supplier,707.5,£
+ Travel,#TeamAdventure-PO/AdventureWorks123,2031-12-08 - Supplier,3387.5,$
+ Professional Development,#TechInnovate-BILL/TechInnovations789,2033-07-20 - Supplier,2102.5,$
+ Office Equipment & Supplies,#GreenSolutions-ORDER/EcoFriendlySolutions456,2035-02-28 - Supplier,3880.0,£
+ Professional Development,#FutureSkills-INV/FutureLearning789,2037-09-15 - Supplier,732.5,$
+ Meals and Entertainment,#CulinaryMaster-BILL/EpicureanDelight123,2039-04-28 - Supplier,4630.0,$
+ Health and Wellness,#WellbeingRetreat-PO/WellnessWonders789,2041-02-12 - Supplier,3635.0,$
+ Professional Development,#IBM-INV/ABC123,,5037.5,$
+ Professional Development,#Microsoft-ORDER/DEF456,2024-05-10 - Supplier,,
+ Meals and Entertainment,#Amazon-BILL/GHI789,2025-09-20 - Supplier,325.0,£
+ Professional Development,#Google-PO/JKL123,,2480.0,$
+ Office Equipment & Supplies,#Dell-INV/MNO456,2028-03-28 - Supplier,217.5,$
+ Professional Development,#Oracle-ORDER/PQR789,2029-07-15 - Supplier,1090.75,$
+ Travel,#MarriottHotels-BILL/STU123,2031-10-12 - Supplier,2970.0,$
+ Professional Development,#HewlettPackard-PO/VWX456,2033-01-25 - Supplier,4200.0,$
+ Professional Development,#Salesforce-INV/XYZ789,2034-05-30 - Supplier,690.0,$
+ Meals and Entertainment,#Adobe-BILL/ABC123,2036-10-18 - Supplier,407.5,$
+ Travel,#Intel-ORDER/DEF456,2038-02-28 - Supplier,3410.0,£
+ Health and Wellness,#WellnessWave-BILL/GHI789,2040-06-12 - Supplier,407.5,$
+ Professional Development,#IBM-INV/ABC123XYZ,,5037.5,$
+ Professional Development,#Microsoft-ORDER/DEF456ABC,2024-05-10 - Supplier,,
+ Meals and Entertainment,#Amazon-BILL/GHI789XYZ,2025-09-20 - Supplier,325.0,£
+ Professional Development,#Google-PO/JKL123ABC,,2480.0,$
+ Office Equipment & Supplies,#Dell-INV/MNO456XYZ,2028-03-28 - Supplier,217.5,$
+ Professional Development,#Oracle-ORDER/PQR789ABC,2029-07-15 - Supplier,1090.75,$
+ Travel,#MarriottHotels-BILL/STU123XYZ,2031-10-12 - Supplier,2970.0,$
+ Professional Development,#HewlettPackard-PO/VWX456ABC,2033-01-25 - Supplier,4200.0,$
+ Professional Development,#Salesforce-INV/XYZ789XYZ,2034-05-30 - Supplier,690.0,$
+ Meals and Entertainment,#Adobe-BILL/ABC123ABC,2036-10-18 - Supplier,407.5,$
+ Travel,#Intel-ORDER/DEF456XYZ,2038-02-28 - Supplier,3410.0,£
+ Health and Wellness,#WellnessWave-BILL/GHI789ABC,2040-06-12 - Supplier,407.5,$
+ Professional Development,#IBM-INV/ABC123XYZ,,5037.5,$
+ Professional Development,#Microsoft-ORDER/DEF456ABC,2024-05-10 - Supplier,,
+ Meals and Entertainment,#Amazon-BILL/GHI789XYZ,2025-09-20 - Supplier,325.0,£
+ Professional Development,#Google-PO/JKL123ABC,,2480.0,$
+ Office Equipment & Supplies,#Dell-INV/MNO456XYZ,2028-03-28 - Supplier,217.5,$
+ Professional Development,#Oracle-ORDER/PQR789ABC,2029-07-15 - Supplier,1090.75,$
+ Travel,#MarriottHotels-BILL/STU123XYZ,2031-10-12 - Supplier,2970.0,$
+ Professional Development,#HewlettPackard-PO/VWX456ABC,2033-01-25 - Supplier,4200.0,$
+ Professional Development,#Salesforce-INV/XYZ789XYZ,2034-05-30 - Supplier,690.0,$
+ Meals and Entertainment,#Adobe-BILL/ABC123ABC,2036-10-18 - Supplier,407.5,$
+ Professional Development,#IBM-INV/GH23JK5,,4320.0,$
+ Professional Development,#Microsoft-ORDER/ABC789DEF,2024-07-10 - Supplier,,
+ Meals and Entertainment,#Amazon-BILL/XYZ123GHI,2025-11-15 - Supplier,435.0,£
+ Professional Development,#Google-PO/456JKL789,2027-02-28 - Supplier,3140.0,$
+ Office Equipment & Supplies,#Dell-INV/STU456MNO,2028-06-05 - Supplier,275.75,$
+ Professional Development,#Oracle-ORDER/PQR123ABC,2029-09-20 - Supplier,1312.5,$
+ Travel,#MarriottHotels-BILL/VWX789YZ,2031-01-12 - Supplier,2965.0,$
+ Professional Development,#HewlettPackard-PO/ABC456XYZ,,4762.5,$
+ Professional Development,#Salesforce-INV/XYZ789GHI,2034-08-30 - Supplier,805.0,$
+ Meals and Entertainment,#RestaurantCharlie-BILL/DEF123ABC,2036-12-18 - Supplier,510.0,$
+ Meals and Entertainment,#FoodDeluxe-INV/ABC234XYZ,,3862.5,$
+ Meals and Entertainment,#PizzaParadise-BILL/DEF567ABC,2024-08-22 - Vendor:,287.5,£
+ Meals and Entertainment,#SushiMasters-INV/GHI890XYZ,2025-12-10 - Vendor:,,
+ Meals and Entertainment,#BurgerBlast-BILL/JKL123ABC,,336.0,$
+ Meals and Entertainment,#FineDine-INV/MNO456XYZ,2028-07-15 - Vendor:,628.0,£
+ Meals and Entertainment,#TacoTime-BILL/PQR789ABC,2029-10-30 - Vendor,487.5,$
+ Meals and Entertainment,#WineWonders-INV/STU123XYZ,2031-02-20 - Vendor,617.5,$
+ Meals and Entertainment,#PastaPerfection-PO/VWX456ABC,2033-06-12 - Vendor,688.75,$
+ Meals and Entertainment,#BBQBonanza-ORDER/ABC789XYZ,2034-10-28 - Vendor:,,
+ Meals and Entertainment,#CafeCravings-BILL/DEF123GHI,2036-02-15 - Vendor,240.0,$
+ Meals and Entertainment,#SeafoodSensation-INV/JKL456XYZ,2037-06-28 - Vendor,520.0,£
+ Meals and Entertainment,#IceCreamIndulgence-ORDER/MNO789ABC,2038-11-15 - Vendor:,175.5,$
+ Meals and Entertainment,#SteakhouseSupreme-BILL/PQR123XYZ,,867.5,$
+ Meals and Entertainment,#SakuraSushi-INV/ABC234XYZ,,580.0,$
+ Meals and Entertainment,#PastaPresto-BILL/DEF567ABC,2024-08-22 - Vendor,,
+ Meals and Entertainment,#TomYumTreats-INV/GHI890XYZ,2025-12-10 - Vendor,460.0,£
+ Meals and Entertainment,#MammaMia-BILL/JKL123ABC,,336.0,$
+ Meals and Entertainment,#SizzlingSiam-INV/MNO456XYZ,2028-07-15 - Vendor:,405.0,$
+ Meals and Entertainment,#BellaNotte-BILL/PQR789ABC,2029-10-30 - Vendor,,
+ Meals and Entertainment,#SushiSamba-INV/STU123XYZ,2031-02-20 - Vendor,617.5,$
+ Meals and Entertainment,#RomaRisotto-PO/VWX456ABC,2033-06-12 - Vendor,538.75,$
+ Meals and Entertainment,#TokyoTeppan-BILL/ABC789XYZ,2034-10-28 - Vendor,,
+ Meals and Entertainment,#GelatoGusto-BILL/DEF123GHI,2036-02-15 - Vendor,207.5,$
+ Meals and Entertainment,#MonteCarloMunch-INV/JKL456XYZ,2037-06-28 - Vendor:,628.0,£
+ Meals and Entertainment,#SobaSensation-ORDER/MNO789ABC,2038-11-15 - Vendor,245.5,$
+ Meals and Entertainment,#CarnivalCuisine-BILL/PQR123XYZ,,295.0,$
+ Meals and Entertainment,#SushiFiesta-INV/STU456XYZ,2023-05-28 - Vendor:,375.0,$
+ Meals and Entertainment,#FlavorsOfIndia-BILL/ABC234GHI,2024-09-15 - Vendor,395.0,£
+ Meals and Entertainment,#BurgerBlast-INV/DEF567XYZ,2025-01-10 - Vendor,477.5,$
+ Meals and Entertainment,#MediterraneanJoy-BILL/GHI890ABC,,415.5,$
+ Meals and Entertainment,#SambaCarnival-INV/JKL123XYZ,2027-08,,
+ Meals and Entertainment,#WokWonders-INV/MNO456ABC,2028-11-18 - Vendor:,248.5,$
+ Meals and Entertainment,#TacoTemptations-BILL/PQR789XYZ,2030-02-10 - Vendor,495.0,£
+ Meals and Entertainment,#DeliDelights-INV/STU123ABC,2031-05-15 - Vendor,,
+ Meals and Entertainment,#SizzlingBBQ-BILL/VWX456XYZ,2032-09-28 - Vendor:,418.5,$
+ Meals and Entertainment,#PastaPalooza-INV/ABC789ABC,2034-01-22 - Vendor,570.0,$
+ Meals and Entertainment,#SushiSensation-BILL/YZ123ABC,2023-07-15 - Vendor:,305.0,$
+ Meals and Entertainment,#TasteOfItaly-INV/XYZ456ABC,2024-10-28 - Vendor:,,
+ Meals and Entertainment,#BBQBliss-BILL/ABC789XYZ,2026-02-20 - Vendor:,380.0,£
+ Meals and Entertainment,#NoodleNirvana-INV/DEF012ABC,,330.5,$
+ Meals and Entertainment,#MargaritaMingle-BILL/GHI345XYZ,,380.0,$
+ Meals and Entertainment,#BollywoodBites-INV/JKL678ABC,2030-03-25 - Vendor,333.0,$
+ Meals and Entertainment,#BavarianFeast-BILL/MNO901XYZ,2031-06-18 - Vendor,,
+ Meals and Entertainment,#WaffleWonderland-INV/PQR234ABC,2032-10-05 - Vendor,245.0,£
+ Meals and Entertainment,#TacoTrend-INV/STU567XYZ,2034-02-15 - Vendor,377.0,$
+ Meals and Entertainment,#DimSumDelight-BILL/YZABCD123,2036-09-12 - Vendor,,
+ Meals and Entertainment,#PastaParadise-INV/EFGHIJK456,2037-01-28 - Vendor,,
+ Meals and Entertainment,#BurgerBounty-BILL/LMNOP789,2038-04-15 - Vendor,442.0,£
+ Meals and Entertainment,#SushiFiesta-INV/QRSTU012,2039-07-22 - Vendor:,392.5,$
+ Meals and Entertainment,#CafeCraze-BILL/VWXYZ345,2040-11-10 - Vendor,249.5,$
+ Meals and Entertainment,#NoodleNest-INV/ABCDE678,2041-02-18 - Vendor,356.5,$
+ Meals and Entertainment,#OktoberfestFeast-BILL/FGHIJK901,2042-06-05 - Vendor,,
+ Meals and Entertainment,#PancakePalooza-INV/LMNOPQ234,2043-09-30 - Vendor,292.5,£
+ Meals and Entertainment,#TacoTime-BILL/RSTUVW567,2044-01-15 - Vendor,428.5,$
+ Meals and Entertainment,#BBQBonanza-INV/XYZ123ABC,,545.0,$
+ Meals and Entertainment,#SalsaSensation-BILL/DEF456GHI,2046-07-12 - Vendor,,
+ Meals and Entertainment,#BollywoodBanquet-INV/JKL789MNO,2047-02-28 - Vendor,,
+ Meals and Entertainment,#BistroBliss-BILL/PQR101STU,2048-05-19 - Vendor,326.0,£
+ Meals and Entertainment,#MisoMagic-INV/VWX123YZA,2049-09-02 - Vendor:,450.0,$
+ Meals and Entertainment,#CoffeeCraze-BILL/BCD456EFG,,275.5,$
+ Meals and Entertainment,#RamenRendezvous-INV/EFG789HIJ,,374.5,$
+ Meals and Entertainment,#OktoberfestFiesta-BILL/KLM012NOP,2052-06-28 - Vendor,,
+ Meals and Entertainment,#PancakePleasure-INV/OPQ345RST,,283.5,£
+ Meals and Entertainment,#TacoTreat-BILL/U567VWX789,2054-01-25 - Vendor,463.5,$
+ Meals and Entertainment,#SushiSensation-BILL/YZ123ABC,2023-07-15 - Vendor:,305.0,$
+ Meals and Entertainment,#TasteOfItaly-INV/XYZ456ABC,2024-10-28 - Vendor:,,
+ Meals and Entertainment,#BBQBliss-BILL/ABC789XYZ,2026-02-20 - Vendor:,380.0,£
+ Meals and Entertainment,#NoodleNirvana-INV/DEF012ABC,,330.5,$
+ Meals and Entertainment,#MargaritaMingle-BILL/GHI345XYZ,,380.0,$
+ Meals and Entertainment,#BollywoodBites-INV/JKL678ABC,2030-03-25 - Vendor,333.0,$
+ Meals and Entertainment,#BavarianFeast-BILL/MNO901XYZ,2031-06-18 - Vendor,,
+ Meals and Entertainment,#WaffleWonderland-INV/PQR234ABC,2032-10-05 - Vendor,245.0,£
+ Meals and Entertainment,#TacoTrend-INV/STU567XYZ,2034-02-15 - Vendor,377.0,$
+ Meals and Entertainment,#SalsaSensation-BILL/DEF456GHI,,,
+ Meals and Entertainment,#BollywoodBanquet-INV/JKL789MNO,,,
+ Meals and Entertainment,#GourmetGalaxy-INV/PQR234STU,"June 14,",395.0,£
+ Meals and Entertainment,#TeppanyakiTreat-BILL/VWX567YZA,teppanyaki,560.5,$
+ Meals and Entertainment,#SmoothieSensation-INV/BCD890EFG,January 15,302.5,$
+ Meals and Entertainment,#PizzaParadise-BILL/EFG123HIJ,Mar 22,423.5,$
+ Meals and Entertainment,#TasteofItaly-BILL/KLM456NOP,July 30,,
+ Meals and Entertainment,#CrepesCraze-INV/OPQ789RST,,330.5,£
+ Meals and Entertainment,#BurgerBinge-BILL/U890VWX567,February 5,407.5,$
+ Meals and Entertainment,#SushiSensation-BILL/XYZ123ABC,,,
+ Meals and Entertainment,#MediterraneanDelight-INV/123DEF456,October 7,,
+ Meals and Entertainment,#GourmetGrill-BILL/789GHI012,,412.5,£
+ Meals and Entertainment,#WokWonders-INV/456JKL789,"March 3, 2058 - Vendor:",645.5,$
+ Meals and Entertainment,#JuiceJamboree-BILL/MNO234PQR,,318.5,$
+ Meals and Entertainment,#BistroBounty-INV/STU345VWX,"June 20,",498.5,$
+ Meals and Entertainment,#SavorTheSpices-BILL/YZ012ABC345,,,
+ Meals and Entertainment,#CravingCrepes-INV/678DEF901,"September 5,",300.5,£
+ Meals and Entertainment,#BurgerBash-BILL/GHI234JKL,,345.5,$
+ Meals and Entertainment,#BBQFiesta-INV/MNO345PQR678,December 15,560.5,$
+ Meals and Entertainment,#NoodleNest-INV/123ABC456,,,
+ Meals and Entertainment,#PizzaPalooza-BILL/789DEF012,"November 10,",,
+ Meals and Entertainment,#BountifulBites-INV/GHI234JKL,,412.5,£
+ Meals and Entertainment,#SushiSymphony-BILL/MNO345PQR,"March 3,",645.5,$
+ Meals and Entertainment,#SmoothieSerenity-INV/678STU901,,318.5,$
+ Meals and Entertainment,#CulinaryCanvas-BILL/VWX012YZ345,June 5,498.5,$
+ Meals and Entertainment,#TeaTimeTreasures-INV/678ABC901,,,
+ Meals and Entertainment,#SavorTheSeasons-BILL/234DEF567,"October 15,",300.5,£
+ Meals and Entertainment,#BurgerBonanza-INV/890GHI123,,345.5,$
+ Meals and Entertainment,#GrillGala-BILL/JKL234MNO567,"December 20, 2074 - Vendor",560.5,$
+ Meals and Entertainment,#SushiHarbor-INV/PQR345STU,,,
+ Meals and Entertainment,#PastaPleasure-BILL/VWX456YZA,April 5,,
+ Meals and Entertainment,#GlobalGastronomy-INV/BCD567EFG,,558.5,£
+ Meals and Entertainment,#OceanOvation-BILL/EFG678HIJ,"November 15, 2078 - Vendor:",818.5,$
+ Meals and Entertainment,#SmoothSailing-INV/KLM789NOP,,648.5,$
+ Meals and Entertainment,#CruiseCulinaire-BILL/PQR890STU,February 8,948.5,$
+ Meals and Entertainment,#TeaTide-INV/UVW901XYZ,,,
+ Meals and Entertainment,#SavorTheSeas-BILL/ABC012DEF,"July 25,",718.5,£
+ Meals and Entertainment,#BurgerBuoy-INV/GHI123JKL,,483.5,$
+ Meals and Entertainment,#SunsetGrill-BILL/MNO234PQR,December 30,1118.5,$
+ Meals and Entertainment,#NoodleNirvana-INV/STU345VWX,,,
+ Meals and Entertainment,#VivaVino-BILL/XYZ456ABC,September 5,,
+ Meals and Entertainment,#CulinaryCanvas-INV/DEF567GHI,,648.5,£
+ Meals and Entertainment,#TropicalTastes-BILL/JKL678MNO,"April 10, 2088 - Vendor:",778.5,$
+ Meals and Entertainment,#FlavorFiesta-INV/PQR789STU,,563.5,$
+ Meals and Entertainment,#GourmetGala-BILL/UVW890XYZ,March 12,998.5,$
+ Meals and Entertainment,#TeaTales-INV/ABC901DEF,,,
+ Meals and Entertainment,#SavorTheSound-BILL/GHI012JKL,June 20,628.5,£
+ Meals and Entertainment,#BurgerBinge-INV/MNO123PQR,,503.5,$
+ Meals and Entertainment,#SunsetSoiree-BILL/STU234VWX,December 5,768.5,$
+ Meals and Entertainment,#SushiSensation-BILL/XYZ345ABC,,,
+ Meals and Entertainment,#BollywoodBites-INV/DEF456GHI,February 25,,
+ Meals and Entertainment,#MysticalMunchies-BILL/JKL567MNO,,708.5,£
+ Meals and Entertainment,#PandaPalate-INV/PQR678STU,November 20,563.5,$
+ Meals and Entertainment,#BavarianBites-BILL/UVW789XYZ,,,
+ Meals and Entertainment,#BBQBonanza-INV/ABC890DEF,"July 15,",578.5,£
+ Meals and Entertainment,#MatchaMoments-BILL/GHI901JKL,,523.5,$
+ Meals and Entertainment,#SalsaSoiree-INV/MNO012PQR,,688.5,$
+ Meals and Entertainment,#CulinaryCruise-BILL/STU123VWX,September 8,,
+ Meals and Entertainment,#EpicureanElegance-INV/XYZ234ABC,,,
+ Meals and Entertainment,#MochaMingle-INV/ABC345DEF,,463.5,$
+ Meals and Entertainment,#TokyoTreats-BILL/GHI456JKL,"June 30,",,
+ Meals and Entertainment,#FlavorFiesta-INV/MNO567PQR,,648.5,£
+ Meals and Entertainment,#GastronomyGala-BILL/STU678VWX,"March 10, 2108 - Vendor:",,
+ Meals and Entertainment,#SipNSavor-INV/XYZ789ABC,,493.5,$
+ Meals and Entertainment,#StreetEatsFest-BILL/DEF890GHI,November 5,553.5,$
+ Meals and Entertainment,#CarnivalCuisine-INV/JKL901MNO,,578.5,$
+ Meals and Entertainment,#OperaBite-INV/PQR012STU,,,
+ Meals and Entertainment,#TropicalTaste-BILL/VWX123YZA,,493.5,£
+ Meals and Entertainment,#PanAsianPalate-INV/BCD234EFG,February 14,,
+ Meals and Entertainment,#BollywoodBites-BILL/FGH345IJK,,568.5,$
+ Meals and Entertainment,#NoodleNirvana-INV/LMN456OPQ,July 5,,
+ Meals and Entertainment,#SambaSizzle-BILL/XYZ567ABC,,,
+ Meals and Entertainment,#MysticalMorsels-INV/DEF678GHI,,578.5,£
+ Meals and Entertainment,#IslandIndulgence-INV/JKL789MNO,"March 18,",648.5,$
+ Meals and Entertainment,#FiestaFiesta-BILL/PQR890STU,,493.5,$
+ Meals and Entertainment,#GalacticGourmet-INV/VWX901YZA,,558.5,$
+ Meals and Entertainment,#OperaOdyssey-BILL/BCD012EFG,"December 3, 2122 - Vendor:",,
+ Meals and Entertainment,#TasteTravels-BILL/GHI123JKL,,648.5,£
+ Meals and Entertainment,#FusionFiesta-INV/MNO234PQR,February 22,503.5,$
+ Meals and Entertainment,#SushiSpectacle-BILL/STU345VWX,"June 8,",,
+ Meals and Entertainment,#CarnivalCuisine-INV/YZA456BCD,,608.5,$
+ Meals and Entertainment,#MysticMunchies-INV/EFG567HIJ,"September 5,",558.5,£
+ Meals and Entertainment,#FlavorFiesta-BILL/KLM678NOP,4/20/2128,718.5,$
+ Meals and Entertainment,#GastronomicGrove-INV/PQR789STU,December 12,,
+ Meals and Entertainment,#StreetFoodSymphony-BILL/VWX890YZA,,558.5,$
+ Meals and Entertainment,#TropicalTastes-INV/BCD901EFG,"March 3, 2131 - Vendor:",718.5,$
+ Meals and Entertainment,#OperaOdyssey-BILL/GHI012JKL,October 11,608.5,£
+ Meals and Entertainment,#MunchBoxMadness-INV/MNO123PQR,,558.5,$
+ Meals and Entertainment,#FiestaFusion-BILL/STU234VWX,January 28,718.5,$
+ Meals and Entertainment,#SpicyBites-INV/XYZ345ABC,,608.5,$
+ Meals and Entertainment,#ZenZest-BILL/DEF456GHI,,,
+ Meals and Entertainment,#GourmetGroove-INV/JKL567MNO,"September 10,",718.5,£
+ Meals and Entertainment,#StreetEatsSaga-BILL/PQR678STU,,558.5,$
+ Meals and Entertainment,#CulinaryCraze-INV/VWX789YZA,June 5,,
+ Meals and Entertainment,#MusicMunchies-BILL/BCD890EFG,,718.5,$
+ Meals and Entertainment,#TasteTropics-INV/GHI901JKL,March 12,558.5,$
+ Meals and Entertainment,#SymphonySuppers-BILL/MNO012PQR,,718.5,£
+ Meals and Entertainment,#FlavorFiesta-INV/STU123VWX,"May 23,",,
+ Meals and Entertainment,#CulinaryCanvas-BILL/YZA234BCD,,,
+ Meals and Entertainment,#SportSpectacle-INV/ABC345DEF,,538.5,$
+ Meals and Entertainment,#TeamTreats-BILL/GHI456JKL,,458.5,$
+ Meals and Entertainment,#AdventureArena-INV/MNO567PQR,"April 5,",518.5,£
+ Meals and Entertainment,#PlayPalooza-BILL/STU678VWX,,,
+ Meals and Entertainment,#GoalGather-INV/YZA789BCD,"October 15, 2149 - Vendor:",,
+ Meals and Entertainment,#SportySips-BILL/EFG890HIJ,,458.5,$
+ Meals and Entertainment,#ChallengeChow-INV/JKL901MNO,February 8,518.5,$
+ Meals and Entertainment,#ThrillTeam-BILL/PQR012STU,,538.5,£
+ Meals and Entertainment,#RushRally-INV/VWX123YZA,"June 3,",,
+ Meals and Entertainment,#TasteTreats-INV/XYZ345,,672.5,$
+ Meals and Entertainment,#CulturalFeast-BILL/123ABC,,550.0,$
+ Meals and Entertainment,#AdrenalineDine-INV/456DEF,"January 7, 2157 - Vendor:",600.0,£
+ Meals and Entertainment,#PlayfulPlates-BILL/789GHI,,,
+ Meals and Entertainment,#GastronomyGalaxy-INV/012JKL,"September 30,",,
+ Meals and Entertainment,#SipNSavor-BILL/MNO345,,600.0,$
+ Meals and Entertainment,#FlavorFiesta-INV/PQR678,February 15,657.5,$
+ Meals and Entertainment,#SensationalSips-BILL/STU901,,725.0,£
+ Meals and Entertainment,#FrozenFiesta-INV/VWX234,May 22,,
+ Meals and Entertainment,#EpicureanEncounter-BILL/YZA567,,,
+ Meals and Entertainment,#CulinaryVoyage-INV/ABC987,,725.0,$
+ Meals and Entertainment,#JoyfulJamboree-BILL/DEF321,November 28,657.5,$
+ Meals and Entertainment,#SavorSerenade-INV/GHI654,,600.0,£
+ Meals and Entertainment,#TropicalTaste-BILL/JKL987,"March 17, 2168 - Vendor:",,
+ Meals and Entertainment,#GourmetGala-INV/MNO321,,,
+ Meals and Entertainment,#HarmonyHaven-BILL/PQR654,,600.0,$
+ Meals and Entertainment,#ExoticEats-INV/STU987,February 8,657.5,$
+ Meals and Entertainment,#WhimsicalWonders-BILL/VWX321,,725.0,£
+ Meals and Entertainment,#MysticMorsels-INV/YZA987,"June 26, 2173 - Vendor:",,
+ Meals and Entertainment,#SpectacularSpreads-BILL/BCD321,,,
+ Meals and Entertainment,#FlavorFiesta-BILL/DEF123,,725.0,$
+ Meals and Entertainment,#GastronomicGala-INV/GHI456,"October 3, 2176 - Vendor:",657.5,$
+ Meals and Entertainment,#MelodicMunchies-BILL/JKL789,,600.0,£
+ Meals and Entertainment,#CulinaryCarousel-INV/MNO012,"April 7, 2178 - Vendor:",,
+ Meals and Entertainment,#EpicureanExtravaganza-BILL/PQR345,delights,,
+ Meals and Entertainment,#RhythmicRepast-INV/STU678,"November 14,",600.0,$
+ Meals and Entertainment,#EclecticEats-BILL/VWX901,,657.5,$
+ Meals and Entertainment,#SymphonySoiree-INV/YZA234,February 19,725.0,£
+ Meals and Entertainment,#DiverseDelicacies-BILL/BCD567,,,
+ Meals and Entertainment,#SensationalSpreads-INV/EFG890,"July 27,",725.0,$
+ Meals and Entertainment,#GlobalGastronomy-INV/GHI123,,790.0,$
+ Meals and Entertainment,#CulinaryCanvas-BILL/JKL456,March 8,,
+ Meals and Entertainment,#TropicalTastings-INV/MNO789,,870.0,$
+ Meals and Entertainment,#HarmonyHaven-BILL/PQR012,"November 5,",850.0,£
+ Meals and Entertainment,#SavorySymphony-INV/STU345,,,
+ Meals and Entertainment,#EpicureanElegance-BILL/VWX678,February 10,850.0,$
+ Meals and Entertainment,#FlavorfulFiesta-INV/YZA901,,870.0,$
+ Meals and Entertainment,#MelodicMorsels-BILL/BCD234,December 17,,
+ Meals and Entertainment,#CulinaryCrescendo-INV/EFG567,,850.0,£
+ Meals and Entertainment,#TasteOfTuscany-INV/HIJ890,August 31,850.0,$
+ Travel,#SkyVoyages-INV/123ABC,March 25,1620.0,$
+ Travel,#OceanExplorer-BILL/456DEF,7-day,,
+ Travel,#GlobalGetaways-INV/789GHI,,2180.0,$
+ Travel,#PeakAdventures-BILL/JKL012,"November 8,",1680.0,£
+ Travel,#ZenithExplorers-INV/MNO345,,,
+ Travel,#EternalEscapes-BILL/PQR678,"February 15, 2015 - Vendor:",2180.0,$
+ Travel,#PristinePaths-INV/STU901,,1580.0,$
+ Travel,#VividVoyages-BILL/VWX234,"December 17, 2017 - Vendor:",,
+ Travel,#SapphireSafaris-INV/YZA567,,1680.0,£
+ Travel,#AstralAdventures-INV/BCD890,"August 31, 2019 - Vendor",,
+ Travel,#LuxuryLodges-INV/DEF123,October 5,990.0,$
+ Travel,#UrbanStay-BILL/GHI456,,550.0,£
+ Travel,#CityWheels-INV/JKL789,July 12,330.0,$
+ Travel,#QuickRide-BILL/MNO012,,,
+ Travel,#SkyHigh-INV/PQR345,"November 20, 2024 - Vendor",,
+ Travel,#GreenRoutes-BILL/STU678,,110.0,£
+ Travel,#SwiftRails-INV/VWX901,August 28,132.0,$
+ Travel,#DriveEasy-BILL/YZA234,a week,440.0,$
+ Travel,#MilesAhead-INV/BCD567,"December 15,",250.0,$
+ Travel,#FuelUp-BILL/EFG890,,,
+ Travel,#SkyPalace-BILL/HIJ345,"June 7,",660.0,£
+ Travel,#CityLiving-INV/KLM678,,1320.0,$
+ Travel,#WheelsUp-INV/NOP901,February 3,220.0,$
+ Travel,#CityCabs-BILL/QRS234,,,
+ Travel,#AirJourney-INV/TUV567,October 12,,
+ Travel,#GreenRoutes-BILL/WXY890,,88.0,£
+ Travel,#ExpressRails-INV/ZAB123,"December 5, 2036 - Vendor:",110.0,$
+ Travel,#CityRide-BILL/CDE456,a week,385.0,$
+ Travel,#SoloDrive-INV/FGH789,"March 20, 2038 - Vendor",148.5,$
+ Travel,#FuelStation-BILL/IJK012,,,
+ Travel,#SkyView-INV/LMN345,August 15,990.0,£
+ Travel,#UrbanSuites-BILL/OPQ678,11/21/2041,1650.0,$
+ Travel,#EcoWheels-INV/RST901,RST901 - Date,275.0,$
+ Travel,#CityRide-BILL/UVW234,a day,,
+ Travel,#AeroJet-INV/XYZ567,"September 18,",,
+ Travel,#GreenRoutes-BILL/ABC890,,132.0,£
+ Travel,#ExpressRails-INV/DEF123,"March 2,",132.0,$
+ Travel,#CityDrive-BILL/GHI456,a week,440.0,$
+ Travel,#SoloDrive-INV/JKL789,"May 15, 2048 - Vendor",137.5,$
+ Travel,#FuelUp-BILL/MNO012,,,
+ Travel,#SkyView-INV/LMN345,August 15,990.0,£
+ Travel,#UrbanSuites-BILL/OPQ678,11/21/2041,1650.0,$
+ Travel,#EcoWheels-INV/RST901,RST901 - Date,275.0,$
+ Travel,#CityRide-BILL/UVW234,a day,,
+ Travel,#AeroJet-INV/XYZ567,"September 18,",,
+ Travel,#GreenRoutes-BILL/ABC890,,132.0,£
+ Travel,#ExpressRails-INV/DEF123,"March 2,",132.0,$
+ Travel,#CityDrive-BILL/GHI456,,440.0,$
+ Travel,#SoloDrive-INV/JKL789,"May 15, 2048 - Vendor",137.5,$
+ Travel,#FuelUp-BILL/MNO012,,,
+ Travel,#BlueWaves-INV/PQR345,July 5,2750.0,$
+ Travel,#SkyStay-BILL/STU678,,330.0,£
+ Travel,#GreenRides-INV/VWX901,November 20,,
+ Travel,#JetLux-INV/YZ012,,1100.0,$
+ Travel,#CityRide-BILL/ABC345,"April 5,",,
+ Travel,#BlueWaves-INV/DEF678,5-day,1320.0,£
+ Travel,#ExpressRails-BILL/GHI901,"June 30,",198.0,$
+ Travel,#CityDrive-INV/JKL234,,330.0,$
+ Travel,#SoloDrive-BILL/MNO567,"August 25, 2058 - Vendor",148.5,$
+ Travel,#FuelUp-INV/PQR890,,,
+ Travel,#SkyStay-BILL/STU234,"January 8,",495.0,£
+ Travel,#EcoTrek-INV/VWX567,,330.0,$
+ Travel,#BlueWaves-INV/YZ890,"September 17,",2750.0,$
+ Travel,#CityRide-BILL/ABC123,,,
+ Travel,#FlyFirst-INV/DEF456,March 30,880.0,£
+ Travel,#ExpressRails-BILL/GHI789,,132.0,$
+ Travel,#CityDrive-INV/JKL012,July 2,220.0,$
+ Travel,#SoloDrive-BILL/MNO345,,137.5,$
+ Travel,#FuelUp-INV/PQR678,"August 15,",,
+ Travel,#CityRide-BILL/STU901,,,
+ Travel,,,495.0,$
+ Travel,#VRX789,"August 10, 2022 - Vendor:",,
+ Travel,,,385.0,$
+ Travel,#TA2023-002,February 28,198.0,£
+ Travel,,,330.0,$
+ Travel,,7-day,,
+ Travel,,June 15,165.0,$
+ Travel,,,,
+ Travel,#TS78901,"September 10, 2028 - Vendor:",44.0,£
+ Travel,,,440.0,$
+ Travel,#TI-2040-007,March 7,1980.0,$
+ Travel,#HG2356,,,
+ Travel,,,275.0,$
+ Travel,,January 12,132.0,£
+ Travel,,,770.0,$
+ Travel,,,,
+ Travel,#CE-2045,April 5,198.0,$
+ Travel,#AE456,,,
+ Travel,,"December 20, 2031 - Vendor",55.0,£
+ Travel,,,550.0,$
+ Travel,#TI-2040-007,March 7,1980.0,$
+ Travel,#HG2356,,,
+ Travel,,,275.0,$
+ Travel,,January 12,132.0,£
+ Travel,,,770.0,$
+ Travel,,,,
+ Travel,#CE-2045,April 5,198.0,$
+ Travel,#AE456,,,
+ Travel,,"December 20, 2031 - Vendor",55.0,£
+ Travel,,,550.0,$
+ Travel,,,2750.0,$
+ Travel,,,,
+ Travel,#RT-203210,,880.0,$
+ Travel,#SE-20231215,SwiftExpress#SE-20231215 - Date,88.0,£
+ Travel,,,990.0,$
+ Travel,,,,
+ Travel,#CA-2044,CityAdventures#CA-2044 - Date,242.0,$
+ Travel,#CSA123,,,
+ Travel,,"September 5,",44.0,£
+ Travel,#WD-202810,WildernessDrive#WD-202810 - 10/18/2028 - Vendor,495.0,$
+ Travel,,2040-01-10 - Vendor,3300.0,$
+ Travel,,,,
+ Travel,,,660.0,$
+ Travel,#SE-20350520,SwiftExpress#SE-20350520 - Date,110.0,£
+ Travel,,,1320.0,$
+ Travel,,,,
+ Travel,#CW-204605,,330.0,$
+ Travel,#CSA456,,,
+ Travel,,"November 10, 2031 - Vendor:",55.0,£
+ Travel,#MD-203207,MountainDrive#MD-203207 - 07/05/2032 - Vendor:,660.0,$
+ Travel,#TW-204312,12-05-2043,7700.0,$
+ Travel,#EA-20410815,,,
+ Travel,,November 30,935.0,$
+ Travel,#SE-204511,,220.0,£
+ Travel,,10th September 2043 - Vendor:,2200.0,$
+ Travel,,20th September 2039,,
+ Travel,#CE-205204,,550.0,$
+ Travel,#AE456,,,
+ Travel,,May 20,110.0,£
+ Travel,#WW-20420920,,660.0,$
+ Travel,#JSE-20480405,"April 5, 2048 - Vendor:",1320.0,$
+ Travel,#GG-20421210,,55.0,£
+ Travel,#AV-20460220,"February 20,",,
+ Travel,#FF-20391115,FuelFast#FF-20391115 - Date,88.0,$
+ Travel,,,330.0,$
+ Travel,,"July 15,",,
+ Travel,,30-05-2041 - Vendor:,55.0,$
+ Travel,,,165.0,£
+ Travel,#GER-20440825,August 25,198.0,$
+ Travel,,,,
+ Travel,#VoyageXplor-20450612,June 12,330.0,$
+ Travel,,20-08-2037 - Vendor:,,
+ Travel,,"December 5,",660.0,$
+ Travel,,,880.0,$
+ Travel,,November 15,1320.0,£
+ Travel,,,,
+ Travel,,"December 28,",275.0,$
+ Travel,,"April 18, 2042 - Vendor:",132.0,$
+ Travel,,,,
+ Travel,,"October 5,",330.0,£
+ Travel,#DeltaAirlines-20451102,November 2,880.0,$
+ Travel,,June 15,,
+ Travel,,,990.0,$
+ Travel,,"October 20,",1320.0,$
+ Travel,,CC-20420401 - Date,1650.0,£
+ Travel,,,,
+ Travel,,January 5,198.0,$
+ Travel,,February 22,55.0,$
+ Travel,,,,
+ Travel,,June 12,275.0,£
+ Travel,#AmericanAirlines-AA20470520,May 20,1650.0,$
+ Travel,,"October 5, 2038 - Vendor:",,
+ Travel,,"June 18,",880.0,$
+ Travel,,HY-20390214 - Date,1980.0,$
+ Travel,,NorwegianCruiseLine/NCL-20370403 - Date,2750.0,$
+ Travel,,December 8,,
+ Travel,,VG-20400415 - Date,330.0,$
+ Travel,,ER-20420930 - Date,110.0,£
+ Travel,,,,
+ Travel,,FI-20361110 - Date,132.0,$
+ Travel,#DeltaAirlines-DL20450603,June 3,2200.0,$
+ Travel,,AB-20421115 - Date,,
+ Travel,,HR-20391222 - Date,165.0,£
+ Travel,,,330.0,$
+ Travel,,"July 1,",1980.0,$
+ Travel,,,,
+ Travel,,June 5,,
+ Travel,,AR-20381118 - Date,275.0,$
+ Travel,,October 20,880.0,£
+ Travel,,,1650.0,$
+ Travel,#UberRides-U20450902,September 2,55.0,$
+ Travel,,AA-20421130 - Date,,
+ Travel,,ER-20400312 - Date,132.0,$
+ Travel,,,,
+ Travel,,"December 5,",880.0,$
+ Travel,,,,
+ Travel,,"August 10,",198.0,£
+ Travel,,"March 18, 2038 - Vendor:",220.0,$
+ Travel,,LH-20411105 - Date,,
+ Travel,,June 15,330.0,$
+ Travel,,DA-20430720 - Date,2750.0,$
+ Travel,,September 12,330.0,£
+ Travel,,May 2,165.0,$
+ Travel,,August 8,,
+ Travel,,December 22,110.0,$
+ Travel,,November 1,,
+ Travel,,"August 15, 2039 - Vendor:",880.0,$
+ Travel,,"April 10, 2039 - Vendor:",88.0,$
+ Travel,,January 18,,
+ Travel,,March 30,132.0,$
+ Travel,,"June 5,",330.0,$
+ Travel,,"October 20,",55.0,£
+ Travel,,ER-20311218 - Date,77.0,$
+ Travel,,"February 14, 2038 - Vendor",,
+ Travel,,AV-20400908 - Date,,
+ Travel,,"September 3,",1650.0,$
+ Travel,,December 12,220.0,$
+ Travel,,December 5,44.0,$
+ Travel,,"October 15, 2039 - Vendor",,
+ Travel,,"March 8,",,
+ Travel,,"April 20, 2048 - Vendor",88.0,$
+ Travel,,"June 10,",,
+ Travel,,October 5,165.0,$
+ Travel,,February 15,1980.0,$
+ Travel,,December 1,,
+ Travel,,"September 25,",,
+ Travel,,"June 8,",99.0,$
+ Travel,,January 15,,
+ Travel,,"December 30, 2039 - Vendor:",66.0,$
+ Travel,#SkylineGetaways_TRV/20480310,"March 10, 2048 - Vendor:",2915.0,$
+ Travel,,"July 20,",,
+ Travel,,October 12,1045.0,$
+ Travel,#GlobeTrekker-Vacation/20420305,"March 5,",3560.0,$
+ Travel,,May 15,572.0,$
+ Travel,#EuroExpress_TRP/20490422,April 22,,
+ Travel,,"November 8,",1430.0,$
+ Travel,#GlobalEscapes_TRP/20470430,April 30,3322.0,$
+ Travel,,June 12,535.0,$
+ Travel,#AquaVoyages_CRU/20461115,"November 15,",3000.0,$
+ Travel,,August 28,365.0,$
+ Travel,#SunsetVoyages/20490520,May 20,2360.0,$
+ Travel,,"November 15, 2042 - Vendor:",1780.0,$
+ Travel,#TrekGlobal_TRP/20480210,"February 10, 2048 - Vendor:",480.0,$
+ Travel,,"September 5, 2036 - Vendor:",835.0,$
+ Travel,#OceanAdventures_TRP/20470405,April 5,2756.0,$
+ Travel,,October 22,940.0,$
+ Travel,#GreenJourneys_TRP/20461018,"October 18,",2390.0,$
+ Travel,,"August 10,",1430.0,$
+ Travel,#GlobalExplorers_TRP/20490815,"August 15,",4120.0,$
+ Travel,,"July 15,",480.0,$
+ Travel,#GrandHotel/20481110,"November 10, 2048 - Vendor:",956.0,$
+ Travel,,March 20,435.0,$
+ Travel,#SkylineResort/20470805,August 5,1450.0,$
+ Travel,,December 12,705.0,$
+ Travel,#NatureRetreats_TRP/20490622,June 22,3320.0,$
+ Travel,,"September 8,",61.0,$
+ Travel,#SilverWaves_TRP/20480102,"January 2, 2048 - Vendor:",3000.0,$
+ Travel,,"October 10,",380.0,$
+ Travel,#AdventureSkies_TRP/20491018,October 18,3810.0,$
+ Travel,,"May 15, 2038 - Vendor:",700.0,$
+ Travel,#GlobalFly_TRP/20491205,December 5,1530.0,$
+ Travel,,"August 22,",615.0,$
+ Travel,#SunsetCruise_TRP/20480714,"July 14, 2048 - Vendor:",2136.0,$
+ Travel,,November 5,380.0,$
+ Travel,#SkyHighResort_TRP/20490630,June 30,3000.0,$
+ Travel,,"April 8, 2036 - Vendor:",490.0,$
+ Travel,#LuxuryLiner_TRP/20480220,"February 20, 2048 - Vendor:",2400.0,$
+ Travel,,September 12,1078.0,$
+ Travel,#AdventureEscape_TRP/20490415,"April 15,",3210.0,$
+ Travel,,October 20,1900.0,$
+ Travel,#SkyJet_TRP/20480105,"January 5, 2048 - Vendor:",2148.0,$
+ Travel,,"May 15, 2039 - Vendor:",725.0,$
+ Travel,#BlueHorizon_TRP/20490210,"February 10,",2660.0,$
+ Travel,,September 5,510.0,$
+ Travel,#EcoRides_TRP/20490520,May 20,548.0,$
+ Travel,,November 12,2400.0,$
+ Travel,#SeaBreeze_TRP/20480418,SeaBreeze_TRP/20480418 - Date,1240.0,$
+ Travel,,August 8,960.0,$
+ Travel,#ExoticEscape_TRP/20490605,June 5,4200.0,$
+ Travel,,"November 20,",2390.0,$
+ Travel,#CityscapeRetreat_TRP/20470803,August 3,2150.0,$
+ Travel,,"April 15, 2043 - Vendor:",725.0,$
+ Travel,#SkySail_TRP/20491201,December 1,2980.0,$
+ Travel,,April 22,510.0,$
+ Travel,#EcoVoyage_TRP/20480610,"June 10, 2048 - Vendor:",548.0,$
+ Travel,,May 12,2600.0,$
+ Travel,#SkyExpress_TRP/20490115,January 15,1450.0,$
+ Travel,,August 20,960.0,$
+ Travel,#ExoTravel_TRP/20490705,July 5,4530.0,$
+650.00,,"March 18, 2048 - Vendor:",2500.0,$
+ Travel,#BlueSkiesCruise_TRP/20471005,October 5,3650.0,$
+ Travel,,April 2,3270.0,$
+ Travel,#EcoStay_TRP/20491212,December 12,730.0,$
+ Travel,,March 25,480.0,$
+ Travel,#CityScapeHotel_TRP/20460708,"July 8,",920.0,$
+ Travel,,"March 2, 2048 - Vendor",1450.0,$
+ Travel,#NatureRetreat_TRP/20490120,January 20,3600.0,$
+ Travel,,October 15,730.0,$
+ Travel,#SkyViewAirlines_TRP/20470815,August 15,2620.0,$
+ Travel,#ExpressFly_TRP/20500610,June 10,4200.0,$
+430.00,,"February 5,",1200.0,$
+ Travel,#MetroCarRentals_TRP/20451220,December 20,480.0,$
+ Travel,,"March 15,",4900.0,$
+ Travel,#AutoWay_TRP/20470928,September 28,970.0,$
+ Travel,,"May 10,",1190.0,$
+ Travel,#SwiftFlyers_TRP/20480320,"March 20, 2048 - Vendor:",3300.0,$
+ Travel,#GrandRetreats_TRP/20491112,November 12,4200.0,$
+ Travel,,"August 3,",850.0,$
+ Travel,#HorizonAirlines_TRP/20471018,October 18,2600.0,$
+ Travel,#GlobeTrek_TRP/20440214,February 14,2400.0,$
+ Travel,,"October 5,",960.0,$
+ Travel,#SkyViewAirlines_TRP/20460301,Invoice#SkyViewAirlines_TRP/20460301 - Date:,3600.0,$
+ Travel,#DriveLuxCarRentals_TRP/20491220,"December 20,",1440.0,$
+ Travel,,April 15,3000.0,$
+ Travel,#SwiftWingsAirlines_TRP/20481210,"December 10, 2048 - Vendor:",3000.0,$
+ Travel,#EcoTravelRetreats_TRP/20500705,Invoice#EcoTravelRetreats_TRP/20500705 - Date,4550.0,$
+ Travel,,April 22,900.0,$
+ Travel,#UrbanDriveCarRentals_TRP/20460815,"August 15, 2046 - Vendor:",720.0,$
+ Travel,#SkyRetreats_TRP/20470905,September 5,5100.0,$
+ Travel,,March 12,2800.0,$
+ Travel,#LuxuryDestinyHotels_TRP/20501120,November 20,1800.0,$
+ Travel,#JetSetAirlines_TRP/20530801,"August 1, 2053 - Vendor:",5400.0,$
+ Travel,,December 25,3700.0,$
+ Travel,#RoyalCarRentals_TRP/20520710,"July 10, 2052 - Vendor",2160.0,$
+ Travel,#EcoResorts_TRP/20510415,April 15,2680.0,$
+ Travel,,November 30,1200.0,$
+ Travel,#MetroDriveCarRentals_TRP/20540422,April 22,1080.0,$
+ Travel,#SkyHighRetreats_TRP/20560205,February 5,5870.0,$
+ Travel,#GlobalWingsAirlines_TRP/20571215,December 15,3920.0,$

@@ -3,19 +3,56 @@ from datetime import datetime
 import risk_customFeature as fea
 import dataConverter_fromDB as db
 import numpy as np
+from sklearn.externals import joblib
+from sklearn.preprocessing import LabelEncoder
+
+#import expenseNLP as nlp
 
 app = Flask(__name__)
-result = 'approve'  #initiate random decision string
+nextAction = 'approve'  #initiate random decision string
 
 """
 helper functions and variables and data frames
 """
+
+#Variable for path of trained model from model file stored by expenseNLP.py file
+trained_expenseNLP_model_path = 'trained_model.joblib'
+
 #get reimbursement history date
 df_reimbursementHistory = db.queryProjectEmployeesRelationFromDB()
 df_projectEmployee = db.queryProjectEmployeesRelationFromDB()
 df_employees = db.queryEmployeesFromDB
 df_projects = db.queryProjectsFromDB()
 
+#Define function to get the predicted expense category, invoice Number, invoice amount, currency unit, invoice date.
+def getInfoFromInvoiceText(invoice_text):             
+	#Use trained model for expense category classification from expenseNLP.py and store prediction of expense category into a variable.
+	#expenseCategoryPredictingModel = joblib.load(trained_expenseNLP_model_path) 
+	#predicted_expense_category = expenseCategoryPredictingModel.predict([invoice_text])    #TODO  to check what the returned prediction is (not sure if it's expense category or all)
+	#Testing (Printing Status on Terminal) :   invoice info from NLP obtained by app.py
+	#print(f'Invoice info extracted using NLP is obtained by app.py file and stored to variable.')
+	#return predicted_expense_category          #TODO to update for invoice Number, invoice amount, currency unit, invoice date
+    pass
+#define function to get predicted fraud risk score using the feature vector specifially for the current invoice text.
+def getPredictedRiskScore(feature_vector):
+    #TODO call prediction model trained by riskEvaluation.py 
+    #return fraudRiskScore
+    pass
+
+# Define function to assess whether it is a special case invoice claim.  
+# Special case include:  for Travel, or invoice falls outside of project duration.
+def isSpecialCase(fea9):
+    return fea9 == 1
+
+# Define function to get the optimum policy of actions(decision) from the MDP process
+# parameter r:  fraud risk score for this invoice
+# parameter x:  invoice amount from user input
+# parameter a:  variance  =  invoice amount from user input - invoice amount from extraction from text using NLP
+def getOptimumPolicy(r, x, a,isSpecialCase):
+    #get the unique mdp specifically for this invoice based on it's unique r,x,a
+    mdp = ReimbursementMDP(r, x, a, isSpecialCase)
+    policy, reward = mdp.iterate()
+    return policy
 
     
 """
@@ -46,14 +83,19 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     Step 2:   Using NLP to process invoice to extract detail from the text of invoice: 
               extracted data include:  classified invoice category, and invoice date, invoice amount, invoice number, currency unit. 
     '''
-    #Call prediction function from expenseNLP.py and store results of NLP classification and processing on text of invoice to new variables. 
-    
+    """
+    2.1: Predict invoice info
+    """
+    # to call function 
+    # store the extracted/ predicted data into variables
     expenseCategory_InvoiceTextNLP = 'Travel'                #TODO to replace
     invoiceAmount_InvoiceTextNLP = '345'                    #TODO to replace
     invoiceNumber_InvoiceTextNLP = 'XYZ345'                  #TODO to replace
     currency_unit_InvoiceTextNLP = 'USD'                     #TODO to replace
     invoiceDate_invoiceTextNLP = '12/24/2022'                 #TODO to replace
     print(f'data from invoice text extracted and stored using NLP.')
+
+
     """
     Step 3: Fraud Risk Score generation
     """
@@ -72,16 +114,33 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     #generate a vector of customized feature values using the above feature values
     # Create a NumPy array
     feature_vector = np.array([fea1, fea2, fea3, fea4, fea5, fea6, fea7, fea8, fea9])
-
+    #store boolean variable to tell if the invoice is a special case.
+    isSpecialCase = isSpecialCase(fea9)
     # Reshape the array to be a row vector (1x9)
     feature_vector = feature_vector.reshape(1, -1)
     
     # Now, feature_vector is a 2D NumPy array representing a row vector
     print(f'custom feature vector generated : {feature_vector}.')
+    # predict risk score for this feature_vector.
+    fraudRiskScore = float(getPredictedRiskScore(feature_vector))
+    # Testing (Printing Status on Terminal) : risk score generated:
+    print(f'fraud risk score predicted: {fraudRiskScore}')
     
 
+    """
+    Step 4:   get optimum policy and next action according to the policy
+    """
+    #calculate 
+    r = fraudRiskScore
+    x = invoice_amount
+    a = invoice_amount - invoiceAmount_InvoiceTextNLP
+    optimumPolicy = getOptimumPolicy(r, x, a,isSpecialCase)
 
-    return result
+
+
+
+
+    return nextAction, optimumPolicy
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -93,8 +152,8 @@ def index():
         invoice_text = request.form['invoice_text']
 
 
-        result = process_form_data(employee_id, project_name, invoice_amount, currency_unit, invoice_text)
-        return render_template('result.html', decision=result)
+        nextAction,optimumPolicy = process_form_data(employee_id, project_name, invoice_amount, currency_unit, invoice_text)
+        return render_template('result.html', decision=nextAction)
 
     return render_template('index_withText.html')
 
