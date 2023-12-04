@@ -13,10 +13,23 @@ import re
 import dataConverter
 import spacy
 
+from nltk import download
+
 # Ensure necessary NLTK resources are available
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+# List of resources to download
+resources_to_download = ['stopwords', 'punkt', 'wordnet']
+# Check if each resource is already downloaded, and download if not
+for resource in resources_to_download:
+    if not nltk.data.find(f"corpora/{resource}"):
+        print(f"Downloading {resource}...")
+        download(resource)
+    else:
+        print(f"{resource} is already downloaded.")
+
+
+#nltk.download('stopwords')
+#nltk.download('punkt')
+#nltk.download('wordnet')
 
 # Obtain dataset and DataFrame from dataConverter.py
 dataset = dataConverter.dataset_invoiceText_expenseCategory
