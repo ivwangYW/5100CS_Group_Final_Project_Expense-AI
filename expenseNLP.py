@@ -14,26 +14,29 @@ import dataConverter
 import spacy
 
 
+# Set the name of the subfolder under the current working directory
+#subfolder_name = 'nltkDataDirectory'
 
-'''
+# Create the full path to the subfolder
+#custom_nltk_data_dir = os.path.join(os.getcwd(), subfolder_name)
 
-# Note: this part of commented code apply to Ivy only. Not applicable to others.  Please proceed to look at the next section. 
-from nltk import download
-# Ensure necessary NLTK resources are available
-# List of resources to download
-resources_to_download = ['stopwords', 'punkt', 'wordnet']
-# Check if each resource is already downloaded, and download if not
+# Add the custom data directory to NLTK path
+#nltk.data.path.append(custom_nltk_data_dir)
+
+# Ensure necessary NLTK resources - stopwords are available
+resources_to_download = ['stopwords']
+
 for resource in resources_to_download:
     if not nltk.data.find(f"corpora/{resource}"):
         print(f"Downloading {resource}...")
-        download(resource)
+        nltk.download(resource, download_dir=custom_nltk_data_dir)
     else:
         print(f"{resource} is already downloaded.")
-'''
 
-nltk.download('stopwords')
+#download other recources
 nltk.download('punkt')
 nltk.download('wordnet')
+
 
 # Obtain dataset and DataFrame from dataConverter.py
 dataset = dataConverter.dataset_invoiceText_expenseCategory
