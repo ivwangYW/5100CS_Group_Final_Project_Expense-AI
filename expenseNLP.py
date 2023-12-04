@@ -13,30 +13,13 @@ import re
 import dataConverter
 import spacy
 
+import re
+from dateutil.parser import parse
 
-# Set the name of the subfolder under the current working directory
-#subfolder_name = 'nltkDataDirectory'
-
-# Create the full path to the subfolder
-#custom_nltk_data_dir = os.path.join(os.getcwd(), subfolder_name)
-
-# Add the custom data directory to NLTK path
-#nltk.data.path.append(custom_nltk_data_dir)
-
-# Ensure necessary NLTK resources - stopwords are available
-resources_to_download = ['stopwords']
-
-for resource in resources_to_download:
-    if not nltk.data.find(f"corpora/{resource}"):
-        print(f"Downloading {resource}...")
-        nltk.download(resource, download_dir=custom_nltk_data_dir)
-    else:
-        print(f"{resource} is already downloaded.")
-
-#download other recources
+# Ensure necessary NLTK resources are available
+nltk.download('stopwords')
 nltk.download('punkt')
 nltk.download('wordnet')
-
 
 # Obtain dataset and DataFrame from dataConverter.py
 dataset = dataConverter.dataset_invoiceText_expenseCategory
@@ -129,24 +112,29 @@ df_invoiceDate = dataConverter.df_invoiceDate
 # Load dataset
 df = dataConverter.df_invoiceText
 
-nlp = spacy.load("en_core_web_sm")
-
 # Function to extract date, total amount, and currency unit
 def extract_details(text):
 
-    invoice_number_pattern = r'#\S+'
+    invoice_number_pattern = r'\b(?:\w+[/\-_])*\w+[/\-_]\w+\b'
     invoice_number_match = re.search(invoice_number_pattern, text)
     invoice_number = invoice_number_match.group(0) if invoice_number_match else None
     # Regex pattern for date (YYYY-MM-DD format)
-    doc = nlp(text)
-    dates = [ent.text for ent in doc.ents if ent.label_ == 'DATE']
-    date = dates[0] if dates else None
+
     # Regex for currency symbols/codes
     currency_pattern = r'\$|€|£|USD|EUR|GBP'
     # Regex for monetary values
     amount_pattern = r'(\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?|€\d{1,3}(?:,\d{3})*(?:\.\d{2})?|£\d{1,3}(?:,\d{3})*(?:\.\d{2})?)'
 
-
+    date = None
+    date_candidates = re.findall(r'\d{4}-\d{1,2}-\d{1,2}|\b(?:January|Jan|February|Feb|March|Mar|April|Apr|May|June|July|August|September|Sep|October|November|December)\b \d{1,2}, \d{4}|\d{1,2}/\d{1,2}/\d{4}', text)
+    if date_candidates:
+        # Attempt to parse the first date candidate found
+        try:
+            parsed_date = parse(date_candidates[0], fuzzy_with_tokens=False)
+            date = parsed_date.strftime('%Y-%m-%d')  # Format the date as needed
+        except ValueError:
+            pass  # If parsing fails, keep date as None    
+    
     currency_match = re.search(currency_pattern, text)
     amounts = re.findall(amount_pattern, text)
 
@@ -161,19 +149,19 @@ def extract_details(text):
 
 # Apply the extraction function
 extracted_data = df.apply(extract_details)
-
+trained_model = joblib.load('trained_model.joblib')
 
 # Create a new DataFrame from the extracted data
 df_extracted = pd.DataFrame(extracted_data.tolist(), columns=['InvoiceNumber','Invoice Date', 'Invoice Amount', 'Currency Unit'])
 
 
-df_extracted['Predicted Expense Category'] = grid_search.predict(df)
+df_extracted['Predicted Expense Category'] = trained_model.predict(df)
 
 df_final = df_extracted[['Predicted Expense Category', 'InvoiceNumber','Invoice Date', 'Invoice Amount', 'Currency Unit']]
 
 df_final.to_csv('processed_invoices.csv', index=False)
 
-trained_model = joblib.load('trained_model.joblib')
+
 
 def appInvoiceFinder(text, trained_model):
         InvoiceId,InvoiceDate, InvoiceAmount, InvoiceCurrency = extract_details(text)
@@ -192,7 +180,7 @@ def appInvoiceFinder(text, trained_model):
 
 
 text = "#Summit-INV-20XHKD15 - Date of Issue: October 15, 2039 - Supplier: Summit Catering Services - Catering for company-wide summit, gourmet cuisine, and dessert buffet - Subamounts: $2,500.00 for catering - Tax: $250.00 - Total Amount: $2,750.00, Summit-INV-20XHKD15, Meals and Entertainment, 2039-10-15, 2750.00, USD"
-appInvoiceFinder(text, trained_model)
+#appInvoiceFinder(text, trained_model)
 
 
 
