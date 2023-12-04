@@ -13,8 +13,12 @@ import re
 import dataConverter
 import spacy
 
-from nltk import download
 
+
+'''
+
+# Note: this part of commented code apply to Ivy only. Not applicable to others.  Please proceed to look at the next section. 
+from nltk import download
 # Ensure necessary NLTK resources are available
 # List of resources to download
 resources_to_download = ['stopwords', 'punkt', 'wordnet']
@@ -25,11 +29,11 @@ for resource in resources_to_download:
         download(resource)
     else:
         print(f"{resource} is already downloaded.")
+'''
 
-
-#nltk.download('stopwords')
-#nltk.download('punkt')
-#nltk.download('wordnet')
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
 
 # Obtain dataset and DataFrame from dataConverter.py
 dataset = dataConverter.dataset_invoiceText_expenseCategory
