@@ -6,6 +6,11 @@ import numpy as np
 import joblib
 from sklearn.preprocessing import LabelEncoder
 import sqlite3
+import predictRiskScore_nnModel as net
+import CONSTANTS as const
+import torch
+import torch.nn as nn
+
 
 #import expenseNLP as nlp
 
@@ -18,6 +23,8 @@ helper functions and variables and data frames
 
 #Variable for path of trained model from model file stored by expenseNLP.py file
 trained_expenseNLP_model_path = 'trained_model.joblib'
+#Variable for path of trained model for classifying fraud risk score  (model was trained already in file predictRiskScore_trainning.py).
+trained_fraudRiskScore_model_path = 'trained_riskScore_model.pth'
 
 #get reimbursement history date
 df_reimbursementHistory = db.queryReimbursementRequestRecordsFromDB()
@@ -34,11 +41,8 @@ def getInfoFromInvoiceText(invoice_text):
 	#print(f'Invoice info extracted using NLP is obtained by app.py file and stored to variable.')
 	#return predicted_expense_category          #TODO to update for invoice Number, invoice amount, currency unit, invoice date
     pass
-#define function to get predicted fraud risk score using the feature vector specifially for the current invoice text.
-def getPredictedRiskScore(feature_vector):
-    #TODO call prediction model trained by riskEvaluation.py 
-    #return fraudRiskScore
-    pass
+
+
 
 # Define function to assess whether it is a special case invoice claim.  
 # Special case include:  for Travel, or invoice falls outside of project duration.
@@ -54,6 +58,40 @@ def getOptimumPolicy(r, x, a,isSpecialCase_variable):
     mdp = ReimbursementMDP(r, x, a, isSpecialCase_variable)
     policy, reward = mdp.iterate()
     return policy
+
+
+# Define function to predict Fraud Risk Score based on a certain feature vector of 9 elements. 
+
+
+def getPredictedRiskScore(feature_vector, model_path, input_size, output_size):   #takes feature vector in example format [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+#TODO call prediction model trained by riskEvaluation.py 
+    def load_model(model_path, input_size, output_size):
+        model = net.NeuralNetwork(input_size, output_size)  # Adjust input_size and output_size accordingly
+        model.load_state_dict(torch.load(model_path))
+        model.eval()
+        return model
+
+
+    #return fraudRiskScore
+    loaded_model = load_model(model_path, input_size, output_size)    
+    '''
+    forward propagation to predict output class
+    '''
+    # Convert the feature_vector to a PyTorch tensor
+    feature_tensor = torch.tensor(feature_vector, dtype=torch.float32)  
+    # Ensure the model is in evaluation mode
+    loaded_model.eval()
+    # Make the prediction
+    with torch.no_grad():
+        output = loaded_model(feature_tensor)
+
+    # Get the predicted class index
+    _, predicted_class = torch.max(output.data, 1)
+    # Convert the predicted class to fraud risk score.
+    fraudRiskScore_mapping = const.fraudRiskScore_mapping
+    fraudRiskScore_result = fraudRiskScore_mapping[predicted_class.item()]
+    return fraudRiskScore_result
+
 
 
 """
@@ -133,7 +171,7 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     # Now, feature_vector is a 2D NumPy array representing a row vector
     print(f'custom feature vector generated : {feature_vector}.')
     # predict risk score for this feature_vector.
-    fraudRiskScore = float(getPredictedRiskScore(feature_vector))
+    fraudRiskScore = getPredictedRiskScore(feature_vector, trained_fraudRiskScore_model_path, input_size=const.input_size, output_size=const.output_size)
     # Testing (Printing Status on Terminal) : risk score generated:
     print(f'fraud risk score predicted: {fraudRiskScore}')
     
@@ -143,8 +181,8 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     """
     #calculate 
     r = fraudRiskScore
-    x = invoice_amount
-    a = invoice_amount - invoiceAmount_InvoiceTextNLP
+    x = float(invoice_amount)          
+    a = float(invoice_amount) - float(invoiceAmount_InvoiceTextNLP)
     optimumPolicy = getOptimumPolicy(r, x, a,isSpecialCase_variable)
 
 
