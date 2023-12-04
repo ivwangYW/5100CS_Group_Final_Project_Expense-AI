@@ -69,5 +69,8 @@ Step 3. then run the sqlite3.exe file and copy the file from the package/folder 
 Visit http://127.0.0.1:5000/ in your browser to see the form. After submission, the decision will be displayed on the result page.
 
 
+## Download before running this app ##
+python -m spacy download en_core_web_md                        // to check if a text contains certain keyword
+pip install pandas sqlite3                                     // for accessing SQLite database
 
 
