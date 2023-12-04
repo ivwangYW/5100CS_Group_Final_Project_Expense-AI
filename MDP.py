@@ -5,6 +5,23 @@ import numpy as np
 from rewardCalc import reward_calculation
 
 
+#mapping dictionary for fraud risk score.  Index to score
+# Define a dictionary to map state labels to integers
+mdpState_mapping = {
+    0: 'start',
+    1: 'deny',
+    2: 'approve',
+    3: 'evidence',
+    4: 'review'
+}
+# 0'review', 1'deny', 2'approve', 3'evidence'
+mdpAction_mapping = {
+    0: 'review',   #submit to management for review
+    1: 'deny',
+    2: 'approve',    
+    3: 'evidence',  #request for more evidence
+}
+
 class ReimbursementMDP(gym.Env):
     def __init__(self, x, r, a, if_travel):
         # Define states and actions 0'start', 1'deny', 2'approve',
