@@ -59,6 +59,9 @@ def preprocess_data(df, employeeID, expenseCategory):
 
 def predictInvoiceAmount(futureDate, employeeID, expenseCategory, df_reimbursementHistory):
     df = preprocess_data(df_reimbursementHistory, employeeID, expenseCategory)
+    # if df size is 0, return 0 directly. 
+    if df.empty:
+        return 0
     df['InvoiceDateInt'] = (df['InvoiceDate'] - df['InvoiceDate'].min()).dt.days
     X_trend = df[['InvoiceDateInt']].values
     y = df['InvoiceAmount']

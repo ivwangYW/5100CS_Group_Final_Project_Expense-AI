@@ -9,10 +9,10 @@ from rewardCalc import reward_calculation
 # Define a dictionary to map state labels to integers
 mdpState_mapping = {
     0: 'start',
-    1: 'deny',
-    2: 'approve',
-    3: 'evidence',
-    4: 'review'
+    1: 'deny',      #DO NOT CHANGE - to match html result page
+    2: 'approve',    #DO NOT CHANGE - to match html result page
+    3: 'submit_additional_document',    #DO NOT CHANGE - to match html result page
+    4: 'submit_to_management'       #DO NOT CHANGE - to match html result page
 }
 # 0'review', 1'deny', 2'approve', 3'evidence'
 mdpAction_mapping = {
