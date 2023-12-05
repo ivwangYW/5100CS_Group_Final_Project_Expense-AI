@@ -5,6 +5,7 @@ import sqlite3
 import spacy
 import datetime
 from dateutil import parser
+import predict_future_InvoiceAmount as forcast
 #from workalendar.usa import UnitedStates
 
 
@@ -73,29 +74,14 @@ def parse_invoice_date(date_string):
             except ValueError:
                 # Print an error message if parsing fails for the current format
                 print(f"Failed to parse using format: {date_format}")
+                
 
         # Print a message indicating that none of the formats matched
         print("Unsupported date format. Can try adding potential_formats in the parseInvocieDate function in risk_customFeature.py.")
-        raise ValueError("Unsupported date format.  Can try adding potential_formats in the parseInvocieDate function in risk_customFeature.py.")
+        #(DO NOT RAISE ERROR)  raise ValueError("Unsupported date format.  Can try adding potential_formats in the parseInvocieDate function in risk_customFeature.py.")
+        #Return -2 to indicate parsing failure.  If -2 is returned, it will be received by app.py to send invoice to management for review directly.
+        return -2
 
-def convert_currency_symbol_to_abbreviation(currency_symbol):
-    currency_mapping = {
-        'CA$': 'CAD',
-        'A$': 'AUD',
-        '€': 'EUR',
-        '£': 'GBP',
-        '$': 'USD',
-        '¥': 'CNY',
-        'HK$': 'HKD',
-        '¥': 'JPY',
-    }
-    
-    return currency_mapping.get(currency_symbol, 'Unknown')
-
-# Test convert_currency_cymbol_to_abbreviation function:
-#currency_symbol = '€'
-#abbreviation = convert_currency_symbol_to_abbreviation(currency_symbol)
-#print(f"{currency_symbol} -> {abbreviation}")
 #####################################################################################
 """
 Custom Feature Extraction 1:  function to return feature value 0 or 1 (False or True) for whether the invoice date is on weekend or holiday.  
@@ -206,6 +192,10 @@ Custom Feature Extraction 4:  Amount overclaimed?
 return: 0 if no overclaim.   1 if input amount is greater than amount extracted from invoice.
 '''
 def fea4_amountIsOverclaimed(input_invoiceAmount, amountExtracted ):
+    if input_invoiceAmount is None:
+        return -6
+    if amountExtracted is None: 
+        return -3
     bool_result = 0
     if not isinstance(input_invoiceAmount, float):
         try:
@@ -214,7 +204,11 @@ def fea4_amountIsOverclaimed(input_invoiceAmount, amountExtracted ):
             # Handle the case where conversion to float is not possible
             # You might want to log an error or handle it according to your needs
     
-            raise ValueError("Unsupported input_invoiceAmount format in fea4 function in risk_customFeature.py.")
+            #(NO NOT RAISE ERROR)raise ValueError("Unsupported input_invoiceAmount format in fea4 function in risk_customFeature.py.")
+            #if format not convertable to float, should send to management for review directly by returning -3.
+            
+            print('invoice amount from user input not convertable to float.  Will send to management for review directly.')
+            return -6   #input invoice amount not valid
     if not isinstance(amountExtracted, float):
         try:
             amountExtracted = float(amountExtracted)
@@ -222,8 +216,9 @@ def fea4_amountIsOverclaimed(input_invoiceAmount, amountExtracted ):
             # Handle the case where conversion to float is not possible
             # You might want to log an error or handle it according to your needs
             
-            raise ValueError("Unsupported amountExtracted format in fea4 function in risk_customFeature.py.")
-    
+            #(DO NOT Raise error)raise ValueError("Unsupported amountExtracted format in fea4 function in risk_customFeature.py.")
+            print('invoice amount from invoice nlp extraction not convertable to float.  Will send to management for review directly.')
+            return -3
     variance = input_invoiceAmount - amountExtracted
     if variance > 0:
         bool_result = 1
@@ -285,18 +280,24 @@ def fea6_has_repeated_rounding_numbers(employee_id, input_invoiceAmount):
     - reimbursement_df: DataFrame, reimbursement history DataFrame
 
     Returns:
-    - True if the employee has repeatedly claimed rounding numbers, False otherwise
+      Ratio of rounding amount claimed within the last three claims for the same person.
+    - a value between 0 to 1.   Good if 0, bad if 1. if the employee has repeatedly claimed rounding numbers.
     """
-    bool = 0
+    ratio = 0
     df_reimbursementHist_temp = db.queryReimbursementRequestRecordsFromDB()
     df_reimbursementHist_forEmployeeID = df_reimbursementHist_temp[df_reimbursementHist_temp['EmployeeID'] == employee_id]
     if isRoundingAmount(inputAmount=input_invoiceAmount):
-        # Get the last five lines of the reimbursement data frame or all existing lines if there are fewer than five
+        # Get the last three lines of the reimbursement data frame or all existing lines if there are fewer than five
         last_three_lines = df_reimbursementHist_forEmployeeID.tail(3)
-        # Check if all invoice amounts in the last three lines (or existing lines) are rounding numbers
-        if all(isRoundingAmount(amount) for amount in last_three_lines['InvoiceAmount']) is True:
-            bool = 1
-    return bool
+
+        # Count the number of rounding amounts within the last three claims
+        rounding_count = sum(isRoundingAmount(amount) for amount in last_three_lines['InvoiceAmount'])
+        # Calculate the ratio
+
+        total_claims = min(3, len(last_three_lines))  # Use the actual number of claims or 3, whichever is smaller
+        if total_claims != 0:
+            ratio = rounding_count / total_claims
+    return ratio
 
 """
     Custom Feature Extraction 7:   Check if the text contains similar keywords related to personal expenses.
@@ -329,20 +330,33 @@ def fea7_contains_personalExpense_keywords(textOfInvoice):
     with predicted invoice amount for the current date of claim  for this employee for the same expense 
     category.
 """
-def fea8_suddenChangeInBehavior(inputInvoiceAmount):
-    bool_result = 0
+def fea8_suddenChangeInBehavior(inputInvoiceAmount, futureDate, employeeID, expenseCategory, df_reimbursementHistory):
+    
     if not isinstance(inputInvoiceAmount, float):
         try:
             inputInvoiceAmount = float(inputInvoiceAmount)
         except ValueError:
             # Handle the case where conversion to float is not possible
-            raise ValueError("Unsupported inputInvoiceAmount parameter in fea8 function in risk_customFeature.py.")
+            print("Unsupported inputInvoiceAmount parameter in fea8 function in risk_customFeature.py.")
+            return -6
     # to use prediction function prepared
-    # # TODO     
+    # # TODO     done
+    predictedInvoiceAmount = forcast.predictInvoiceAmount(futureDate, employeeID, expenseCategory, df_reimbursementHistory)
+    variance = inputInvoiceAmount - predictedInvoiceAmount
+    featureValue_scaled = min_max_scaling(variance)
+    print(f'feature 8 -scaled sudden change of behavior index = {featureValue_scaled}')
+    return featureValue_scaled          
+
+# helper function for scaling.
+def min_max_scaling(variance):
+    if variance > 1000:
+        return 1
+    min_value = 0  # Set your minimum value here
+    max_value = 1000  # Set your maximum value here
     
-    return bool_result             
-
-
+    scaled_variance = (variance - min_value) / (max_value - min_value)
+    
+    return scaled_variance
 
 """
     Custom Feature Extraction 9:   Check if Invoice Date falls outside of Project Duration Dates
