@@ -10,21 +10,32 @@ import predictRiskScore_nnModel as net
 import CONSTANTS as const
 import torch
 import torch.nn as nn
-
+import MDP 
+import expenseNLP_modeling as nlp
 
 #import expenseNLP as nlp
 
 app = Flask(__name__)
-nextAction = 'approve'  #initiate random decision string
+suggestedNextState_result = 'submit_to_management'  #initiate result to review due to data validation check. 
+
+
 
 """
 helper functions and variables and data frames
 """
+bool_validData = True
+bool_invoiceDate_notDetectable = False
+bool_invoiceAmount_notDetectable = False
+bool_currencyUnit_notDetectable = False
+bool_expenseCategory_notDetectable = False
 
+bool_invoiceAmountFromInput_notDetectable = False
 #Variable for path of trained model from model file stored by expenseNLP.py file
 trained_expenseNLP_model_path = 'trained_model.joblib'
 #Variable for path of trained model for classifying fraud risk score  (model was trained already in file predictRiskScore_trainning.py).
 trained_fraudRiskScore_model_path = 'trained_riskScore_model.pth'
+#Variable for path of trained model for classifying invoice text to corresponding expense category (model was trained already in file expenseNLP_trainning.py)
+trained_NLP_model_path = 'trained_model.joblib'
 
 #get reimbursement history date
 df_reimbursementHistory = db.queryReimbursementRequestRecordsFromDB()
@@ -32,15 +43,32 @@ df_projectEmployee = db.queryProjectEmployeesRelationFromDB()
 df_employees = db.queryEmployeesFromDB
 df_projects = db.queryProjectsFromDB()
 
-#Define function to get the predicted expense category, invoice Number, invoice amount, currency unit, invoice date.
-def getInfoFromInvoiceText(invoice_text):             
+
+
+def dataValidation(invoiceAmount_nlp, invoiceDate_nlp, invoice_amount_from_input):             
 	#Use trained model for expense category classification from expenseNLP.py and store prediction of expense category into a variable.
 	#expenseCategoryPredictingModel = joblib.load(trained_expenseNLP_model_path) 
 	#predicted_expense_category = expenseCategoryPredictingModel.predict([invoice_text])    #TODO  to check what the returned prediction is (not sure if it's expense category or all)
 	#Testing (Printing Status on Terminal) :   invoice info from NLP obtained by app.py
 	#print(f'Invoice info extracted using NLP is obtained by app.py file and stored to variable.')
 	#return predicted_expense_category          #TODO to update for invoice Number, invoice amount, currency unit, invoice date
-    pass
+    #str_nlp_invoiceNumber, str_nlp_invoiceDate, str_nlp_invoiceAmount, expenseCategory_predicted,  str_nlp_currencyUnit = nlp.NLP_getTextInfo(invoice_text, trained_NLP_model_path)
+    print(f'Validating nlp invoice date from text: {invoiceDate_nlp}')
+    temp_parsedDate = fea.parse_invoice_date(invoiceDate_nlp)
+    temp_invoiceAmount_validation = fea.fea4_amountIsOverclaimed(invoice_amount_from_input, invoiceAmount_nlp )
+    if temp_parsedDate == (-2):
+        bool_invoiceDate_notDetectable = True
+        #set decision result to be displayed as review
+        return False
+
+    if temp_invoiceAmount_validation == (-6):
+        bool_invoiceAmountFromInput_notDetectable = True
+        return False
+    if temp_invoiceAmount_validation == (-3):
+        bool_invoiceAmount_notDetectable = True
+        return False
+    #return false indicating invalid data 
+    return True
 
 
 
@@ -53,18 +81,29 @@ def isSpecialCase(fea9):
 # parameter r:  fraud risk score for this invoice
 # parameter x:  invoice amount from user input
 # parameter a:  variance  =  invoice amount from user input - invoice amount from extraction from text using NLP
-def getOptimumPolicy(r, x, a,isSpecialCase_variable):
+def getOptimumPath(x, r, a,isSpecialCase_variable):
     #get the unique mdp specifically for this invoice based on it's unique r,x,a
-    mdp = ReimbursementMDP(r, x, a, isSpecialCase_variable)
-    policy, reward = mdp.iterate()
-    return policy
+    mdp = MDP.ReimbursementMDP(x, r, a, isSpecialCase_variable)
+    #Call q_learning function in the MDP.py file to get the output of optimum path index 
+    optimum_path_index = MDP.mdp.q_learning()
+
+    #get index for suggested next state
+    suggestedNextState_index = optimum_path_index[1]
+
+    #convert to string type names of states from indexes
+    mdpStatesMapping = MDP.mdpState_mapping
+    optimum_path_result = ', '.join(mdpStatesMapping[state] for state in optimum_path_index)  
+    suggestedNextState_result = mdpStatesMapping[suggestedNextState_index]
+
+
+    return suggestedNextState_result, optimum_path_result
 
 
 # Define function to predict Fraud Risk Score based on a certain feature vector of 9 elements. 
 
 
 def getPredictedRiskScore(feature_vector, model_path, input_size, output_size):   #takes feature vector in example format [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
-#TODO call prediction model trained by riskEvaluation.py 
+#call prediction model trained by riskEvaluation.py 
     def load_model(model_path, input_size, output_size):
         model = net.NeuralNetwork(input_size, output_size)  # Adjust input_size and output_size accordingly
         model.load_state_dict(torch.load(model_path))
@@ -128,14 +167,35 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     """
     # to call function 
     # store the extracted/ predicted data into variables
-    expenseCategory_InvoiceTextNLP = 'Travel'                #TODO to replace
-    invoiceAmount_InvoiceTextNLP = '345'                    #TODO to replace
-    invoiceNumber_InvoiceTextNLP = 'XYZ345'                  #TODO to replace
-    currency_unit_InvoiceTextNLP = 'USD'                     #TODO to replace
-    invoiceDate_invoiceTextNLP = '12-24-2022'                 #TODO to replace
-    print(f'data from invoice text extracted and stored using NLP.')
+
+    str_nlp_invoiceNumber, str_nlp_invoiceDate, str_nlp_invoiceAmount, str_nlp_expenseCategory,  str_nlp_currencyUnit = nlp.NLP_getTextInfo(invoice_text, trained_NLP_model_path )
+    #storing invoice info processed from nlp into variables 
+    expenseCategory_InvoiceTextNLP = str_nlp_expenseCategory                #TODO done
+    invoiceAmount_InvoiceTextNLP = str_nlp_invoiceAmount                    #TODO done
+    invoiceNumber_InvoiceTextNLP = str_nlp_invoiceNumber                  #TODO done
+    currency_unit_InvoiceTextNLP = str_nlp_currencyUnit                     #TODO done
+    invoiceDate_invoiceTextNLP = str_nlp_invoiceDate                #TODO done
+    #testing
+    print('*************************data from invoice text extracted and stored using NLP.***********************')
+    print(f'Expense Category (NLP predicted):   {expenseCategory_InvoiceTextNLP} ')
+    print(f'Invoice Amount (NLP predicted):   {invoiceAmount_InvoiceTextNLP} ')
+    print(f'Invoice Number (NLP predicted):   {invoiceNumber_InvoiceTextNLP} ')
+    print(f'Currency Unit (NLP predicted):   {currency_unit_InvoiceTextNLP} ')
+    print(f'Invoice Date (NLP predicted):   {invoiceDate_invoiceTextNLP} ')
 
 
+    '''
+        Data Validation.   If data not valid, DO NOT PROCEED.  send to management for review directly.
+    '''
+    #data validation check (for invoiceAmount nlp, invoiceDate nlp, invoice_amount_from_input). if not valid, send to managment for review directly without proceeding.
+    bool_validData = dataValidation(invoiceAmount_InvoiceTextNLP, invoiceDate_invoiceTextNLP, invoice_amount)   
+    
+    
+    if bool_validData is False:
+        return suggestedNextState_result, [0, 4]
+
+    
+    
     """
     Step 3: Fraud Risk Score generation
     """
@@ -155,7 +215,7 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     print(f'custom feature 6 extracted. Feature 6 (has_repeated_rounding_numbers)= {fea6}')     #testing
     fea7 = fea.fea7_contains_personalExpense_keywords(textOfInvoice=invoice_text)
     print(f'custom feature 7 extracted. Feature 7 (contains_personalExpense_keywords)= {fea7}')     #testing
-    fea8 = fea.fea8_suddenChangeInBehavior(inputInvoiceAmount=invoice_amount)
+    fea8 = fea.fea8_suddenChangeInBehavior(inputInvoiceAmount=invoice_amount, futureDate = invoiceDate_invoiceTextNLP, employeeID = employee_id, expenseCategory = expenseCategory_InvoiceTextNLP, df_reimbursementHistory = df_reimbursementHistory)
     print(f'custom feature 8 extracted. Feature 8 (contains_personalExpense_keywords)= {fea8}')     #testing
     fea9 = fea.fea9_is_project_duration_covering(df_projects, project_name=project_name, invoice_date=invoiceDate_invoiceTextNLP)
     print(f'custom feature 9 extracted. Feature 9 (contains_personalExpense_keywords)= {fea9}')     #testing
@@ -179,17 +239,17 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     """
     Step 4:   get optimum policy and next action according to the policy
     """
-    #calculate 
-    r = fraudRiskScore
-    x = float(invoice_amount)          
-    a = float(invoice_amount) - float(invoiceAmount_InvoiceTextNLP)
-    optimumPolicy = getOptimumPolicy(r, x, a,isSpecialCase_variable)
+    #calculate reward indexes - See MDP process Diagram for what they are.
+    r = fraudRiskScore    #r is fraud Risk Score
+    x = float(invoice_amount)    # x is invoice amount      
+    a = float(invoice_amount) - float(invoiceAmount_InvoiceTextNLP)     #a is variance between invoice amount from employee input and extracted invoice amount from invoice text.
+    suggestedNextState_result, optimum_path_result = getOptimumPath(x, r, a,isSpecialCase_variable)
 
 
 
 
 
-    return nextAction, optimumPolicy
+    return suggestedNextState_result, optimum_path_result
 
 """
 
@@ -197,16 +257,28 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    ##form_processed = False  #added
     if request.method == 'POST':
+
+        
+
+
+
         employee_id = request.form['employee_id']
         project_name = request.form['project_name']
         invoice_amount = request.form['invoice_amount']
         currency_unit = request.form['currency_unit']
         invoice_text = request.form['invoice_text']
 
+        ## Set form_processed to True only if the form data is successfully processed
+        ##form_processed = True               #added
 
-        nextAction,optimumPolicy = process_form_data(employee_id, project_name, invoice_amount, currency_unit, invoice_text)
-        return render_template('result.html', decision=nextAction)
+        '''
+        Processing Invoice.
+        '''
+
+        suggestedNextState_result, optimum_path_result = process_form_data(employee_id, project_name, invoice_amount, currency_unit, invoice_text)
+        return render_template('result.html', decision=suggestedNextState_result)
 
     return render_template('index_withText.html')
 
