@@ -10,5 +10,7 @@ input_size = 9
 output_size = 4
 
 
-#mapping dictionary for fraud risk score.  Index to score
+
+#MDP - mapping dictionary for states 
 fraudRiskScore_mapping = {0: 0, 1: 3, 2: 6, 3: 10} 
+#MDP - mapping dictionary for actions
