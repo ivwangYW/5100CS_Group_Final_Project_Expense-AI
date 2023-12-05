@@ -13,6 +13,7 @@ import torch.nn as nn
 import MDP 
 import expenseNLP_modeling as nlp
 
+
 #import expenseNLP as nlp
 
 app = Flask(__name__)
@@ -54,7 +55,11 @@ def dataValidation(invoiceAmount_nlp, invoiceDate_nlp, invoice_amount_from_input
 	#return predicted_expense_category          #TODO to update for invoice Number, invoice amount, currency unit, invoice date
     #str_nlp_invoiceNumber, str_nlp_invoiceDate, str_nlp_invoiceAmount, expenseCategory_predicted,  str_nlp_currencyUnit = nlp.NLP_getTextInfo(invoice_text, trained_NLP_model_path)
     print(f'Validating nlp invoice date from text: {invoiceDate_nlp}')
-    temp_parsedDate = fea.parse_invoice_date(invoiceDate_nlp)
+    if invoiceDate_nlp is None:
+        bool_invoiceDate_notDetectable = True
+        return False
+    if invoiceDate_nlp is not None:
+        temp_parsedDate = fea.parse_invoice_date(invoiceDate_nlp)
     temp_invoiceAmount_validation = fea.fea4_amountIsOverclaimed(invoice_amount_from_input, invoiceAmount_nlp )
     if temp_parsedDate == (-2):
         bool_invoiceDate_notDetectable = True
