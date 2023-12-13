@@ -18,14 +18,16 @@ This file will be extracting custom features based on the extracted information 
 ######################placeholder for testing.  Data are extracted based on expenseNLP.py file
 '''
 from extraction of invoice text
+Testing data only
 '''
-dateExtracted = '2020-02-02'     #TODO      if invoice date comes in not as YYYY-MM-DD, can revise code parse_invoice_date(date_string) to be added to the date conversion section to convert date to date format
+dateExtracted = '2020-02-02'     
 amountExtracted = '37.1'
-currencyExtracted = 'GBP'       #TODO     probably come in as currency symbol, need conversion code to convert symbol to english abbreviation
+currencyExtracted = 'GBP'       
 invoiceNumberExtracted = '34344'          
 expenseCategoryExtracted = 'Travel'
 '''
 from user input
+Testing data only
 '''
 input_invoiceAmount = '37.1'
 submissionDate = '03-02-2020'

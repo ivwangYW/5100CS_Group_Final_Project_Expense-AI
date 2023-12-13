@@ -17,7 +17,7 @@ Predicted Expense Category,InvoiceNumber,Invoice Date,Invoice Amount,Currency Un
  Professional Development,FutureTech-203XLH95,,1980.0,$
  Travel,INV-203XKD01,,660.0,$
  Office Equipment & Supplies,EcoLiving-20KDGH13,2039-11-15,242.0,$
- Meals and Entertainment,Adventure-INV/203XKD11,,2200.0,$
+ Travel,Adventure-INV/203XKD11,,2200.0,$
  Professional Development,ProSkill-203DG103,2039-12-10,1650.0,$
  Meals and Entertainment,INV-20HD22KD3,2039-12-20,2200.0,$
  Office Equipment & Supplies,EnergeticTech-203SHDK34,2039-12-25,4050.0,$
@@ -29,7 +29,7 @@ Predicted Expense Category,InvoiceNumber,Invoice Date,Invoice Amount,Currency Un
  Professional Development,2038-11-05,2038-11-05,1650.0,$
  Phone & Internet,INV/20HDL915/093,2038-11-15,1100.0,$
  Meals and Entertainment,6724-INV,2038-11-01,1320.0,$
- Moving Expense,2038-12-05,2038-12-05,7500.0,$
+ Travel,2038-12-05,2038-12-05,7500.0,$
  Meals and Entertainment,INV-20DHJ95,,8800.0,$
  Phone & Internet,Bill/20SDE95,2038-12-25,6000.0,$
  Health and Wellness,INV-203KDHG905,2039-01-05,1100.0,$
@@ -43,29 +43,29 @@ Predicted Expense Category,InvoiceNumber,Invoice Date,Invoice Amount,Currency Un
  Professional Development,04/10/2038,2038-04-10,1300.0,$
  Phone & Internet,INV/20E20/112,2038-04-20,950.0,$
  Meals and Entertainment,45032-INV,2038-04-05,650.0,$
- Moving Expense,2038-05-15,2038-05-15,4800.0,$
+ Travel,2038-05-15,2038-05-15,4800.0,$
 Professional Development,INV-203HD5835,2038-05-25,4000.0,£
  Phone & Internet,Bill/2038D31,2038-06-01,6000.0,£
  Health and Wellness,INV-20DKR10,2038-06-10,1300.0,£
  Travel,2038-07-05,2038-07-05,850.0,$
- Meals and Entertainment,TechSummit-INV/20340405,2034-04-05,1520.0,$
+ Professional Development,TechSummit-INV/20340405,2034-04-05,1520.0,$
  Travel,EcoRetreat-20340612,2034-06-12,,
  Professional Development,VirtualTools-20340820,2034-08-20,586.25,£
  Meals and Entertainment,CelebrationCatering-20341025,2034-10-25,2942.5,$
  Health and Wellness,WellnessSubscription-20341205,2034-12-05,483.5,$
  Professional Development,InnovationBootcamp-20350215,2035-02-15,2460.0,$
- Meals and Entertainment,TechSummit-INV/20101010,2010-10-10,1520.0,$
+ Professional Development,TechSummit-INV/20101010,2010-10-10,1520.0,$
  Travel,EcoRetreat-INV/20111215,,,
  Professional Development,VirtualTools-INV/20130920,2013-09-20,586.25,£
  Meals and Entertainment,CelebrationCatering-INV/20150825,,2942.5,$
  Health and Wellness,WellnessSubscription-INV/20170301,2017-03-01,483.5,$
- Meals and Entertainment,TechSummit-INV/20140915,2014-09-15,1520.0,$
+ Professional Development,TechSummit-INV/20140915,2014-09-15,1520.0,$
  Travel,EcoRetreat-20160928,2016-09-28,,
  Professional Development,VirtualTools-20180410,2018-04-10,586.25,£
  Meals and Entertainment,CelebrationCatering-20201105,2020-11-05,2942.5,$
  Health and Wellness,WellnessSubscription-20231220,2023-12-20,483.5,$
  Professional Development,InnovationBootcamp-20250228,2025-02-28,2460.0,$
- Meals and Entertainment,TechSummit-INV/20140915,2014-09-15,1520.0,$
+ Professional Development,TechSummit-INV/20140915,2014-09-15,1520.0,$
  Travel,EcoRetreat-201KDG8,2016-09-28,,
  Professional Development,VirtualTools-2HDK34,2018-04-10,586.25,£
  Meals and Entertainment,CelebrationCatering-20HDJK5,2020-11-05,2942.5,$
@@ -331,7 +331,7 @@ Professional Development,INV-203HD5835,2038-05-25,4000.0,£
  Meals and Entertainment,SavorTheSound-BILL/GHI012JKL,2092-06-20,628.5,£
  Meals and Entertainment,BurgerBinge-INV/MNO123PQR,2093-04-05,503.5,$
  Meals and Entertainment,SunsetSoiree-BILL/STU234VWX,2094-12-05,768.5,$
- Meals and Entertainment,SushiSensation-BILL/XYZ345ABC,2095-08-15,,
+ Professional Development,SushiSensation-BILL/XYZ345ABC,2095-08-15,,
  Meals and Entertainment,BollywoodBites-INV/DEF456GHI,2096-02-25,,
  Meals and Entertainment,MysticalMunchies-BILL/JKL567MNO,2097-06-10,708.5,£
  Meals and Entertainment,PandaPalate-INV/PQR678STU,2098-11-20,563.5,$
@@ -709,7 +709,7 @@ Professional Development,INV-203HD5835,2038-05-25,4000.0,£
  Travel,SkyExpress_TRP/20490115,2049-01-15,1450.0,$
  Travel,INV-2041-UrbanRetreat_TRP/20410820,2041-08-20,960.0,$
  Travel,ExoTravel_TRP/20490705,2049-07-05,4530.0,$
-650.00,INV/20480318/352,2048-03-18,2500.0,$
+ Travel,INV/20480318/352,2048-03-18,2500.0,$
  Travel,BlueSkiesCruise_TRP/20471005,2047-10-05,3650.0,$
  Travel,INV-20440402-AirJet_TRP/20440402,2044-04-02,3270.0,$
  Travel,EcoStay_TRP/20491212,2049-12-12,730.0,$
@@ -720,7 +720,7 @@ Professional Development,INV-203HD5835,2038-05-25,4000.0,£
  Travel,INV-20441015-AutoVoyage_TRP/20441015,2044-10-15,730.0,$
  Travel,SkyViewAirlines_TRP/20470815,2047-08-15,2620.0,$
  Travel,ExpressFly_TRP/20500610,2050-06-10,4200.0,$
-430.00,INV/20480205/112,2048-02-05,1200.0,$
+ Travel,INV/20480205/112,2048-02-05,1200.0,$
  Travel,MetroCarRentals_TRP/20451220,2045-12-20,480.0,$
  Travel,INV-20460315-SkyRetreat_TRP/20460315,2046-03-15,4900.0,$
  Travel,AutoWay_TRP/20470928,2047-09-28,970.0,$
@@ -749,3 +749,35 @@ Professional Development,INV-203HD5835,2038-05-25,4000.0,£
  Travel,MetroDriveCarRentals_TRP/20540422,2054-04-22,1080.0,$
  Travel,SkyHighRetreats_TRP/20560205,2056-02-05,5870.0,$
  Travel,GlobalWingsAirlines_TRP/20571215,2057-12-15,3920.0,$
+ Travel,TravelAdventures_INV/2304-002,2034-03-30,,
+ Travel,GlobeTrekker-INV/2023-0324,2023-03-24,,
+ Travel,INV/20310415/112,2031-03-15,1800.0,£
+ Travel,JetSet-INV/2024-0415,2024-03-15,4900.0,$
+ Travel,LuxuryVoyage-INV/2022-0910,2022-09-10,30000.0,$
+ Travel,INV/20250820/008,,3700.0,$
+ Travel,GlobalWays-INV/2023-0615,2023-06-15,,
+ Travel,VoyageElegance-INV/2029-1201,2029-12-01,,
+ Travel,JetSet-INV/2026-0215,2026-02-15,4900.0,$
+ Travel,EpicJourneys-INV/2030-0805,,2450.0,£
+ Travel,ExploreHorizons-INV/2028-0412,2028-04-12,7400.0,$
+ Travel,CulturalJourneys-INV/2027-1022,2027-10-22,,
+ Travel,INV/20240418/205,2024-04-18,,
+ Travel,VoyageElegance-INV/2023-0915,2023-09-15,37000.0,$
+ Travel,UrbanWays-INV/2025-0720,2025-07-20,3050.0,$
+ Travel,LuxuryRetreats-INV/2026-0308,2026-03-08,,
+ Travel,INV/20281015/125,2028-10-15,6150.0,£
+ Travel,CityVista-INV/2029-1215,2029-12-15,,
+ Travel,JetSet-INV/20300703,2030-07-03,8550.0,$
+ Travel,EpicAdventures-INV/2027-0601,2027-06-01,,
+ Travel,CitySprintCarRentals-INV/2034-0525,2034-05-25,18300.0,$
+ Travel,INV-20350214-GetawayVoyages,2035-02-14,3000.0,$
+ Travel,SwiftAirways_TRP/20420401,2042-04-01,,
+ Travel,GlobalTouring_TRP/20480320,2048-03-20,,
+ Travel,INV/20500228/188,2050-02-28,4950.0,£
+ Travel,PanoramaGetaways_TRP/20450912,2045-09-12,31000.0,$
+ Travel,CityVoyages_TRP/20431115,2043-11-15,3450.0,$
+ Travel,ElegantEscapes_TRP/20471204,2047-12-04,,
+ Travel,INV/20461001/145,2046-10-01,,
+ Travel,UrbanRides_TRP/20401010,2040-10-10,1830.0,$
+ Travel,SkylineAir_TRP/20481130,2048-11-30,6000.0,$
+ Travel,MaritimeCruises_TRP/20451022,2045-10-22,8600.0,$
