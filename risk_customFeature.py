@@ -329,7 +329,7 @@ def fea7_contains_personalExpense_keywords(textOfInvoice):
     return bool_flag
 """
     Custom Feature Extraction 8:   Check if the the current user input invoice amount has a big variance 
-    with predicted invoice amount for the current date of claim  for this employee for the same expense 
+    with predicted invoice amount for the current invoice date  for this employee for the same expense 
     category.
 """
 def fea8_suddenChangeInBehavior(inputInvoiceAmount, futureDate, employeeID, expenseCategory, df_reimbursementHistory):
