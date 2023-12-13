@@ -18,6 +18,7 @@ import expenseNLP_modeling as nlp
 
 app = Flask(__name__)
 suggestedNextState_result = 'submit_to_management'  #initiate result to review due to data validation check. 
+optimum_path_result = ['start', 'submit_to_management']
 
 
 
@@ -90,7 +91,7 @@ def getOptimumPath(x, r, a,isSpecialCase_variable):
     #get the unique mdp specifically for this invoice based on it's unique r,x,a
     mdp = MDP.ReimbursementMDP(x, r, a, isSpecialCase_variable)
     #Call q_learning function in the MDP.py file to get the output of optimum path index 
-    optimum_path_index = MDP.mdp.q_learning()
+    optimum_path_index = mdp.q_learning()
 
     #get index for suggested next state
     suggestedNextState_index = optimum_path_index[1]
@@ -142,7 +143,8 @@ def getPredictedRiskScore(feature_vector, model_path, input_size, output_size): 
 Main function that reflects all our steps of invoice decision making processes from user input to the final result
 """
 def process_form_data(employee_id, project_name, invoice_amount, currency_unit, invoice_text):
-
+    global suggestedNextState_result, optimum_path_result  # Use the global variable
+    
     """
     Step 1:   Getting user input and save to variables.
               Input elements:   Invoice Text, employee_id, project_name, invoice_amount, currency_unit, invoice_text.
@@ -197,7 +199,11 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     
     
     if bool_validData is False:
-        return suggestedNextState_result, [0, 4]
+        print('**********************Decision***********************************')
+        print('Note: Missing Valid Info.  Please submit invoice info again so that the system can extract useful info: ')
+        print(f'Suggested Next State: {suggestedNextState_result}')
+        print(f'Suggested Optimum Policy(Path): {optimum_path_result}')
+        return suggestedNextState_result, optimum_path_result #suggestedNextState_result, [0, 4]
 
     
     
@@ -221,9 +227,9 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     fea7 = fea.fea7_contains_personalExpense_keywords(textOfInvoice=invoice_text)
     print(f'custom feature 7 extracted. Feature 7 (contains_personalExpense_keywords)= {fea7}')     #testing
     fea8 = fea.fea8_suddenChangeInBehavior(inputInvoiceAmount=invoice_amount, futureDate = invoiceDate_invoiceTextNLP, employeeID = employee_id, expenseCategory = expenseCategory_InvoiceTextNLP, df_reimbursementHistory = df_reimbursementHistory)
-    print(f'custom feature 8 extracted. Feature 8 (contains_personalExpense_keywords)= {fea8}')     #testing
+    print(f'custom feature 8 extracted. Feature 8 (sudden_change_in_behavior)= {fea8}')     #testing
     fea9 = fea.fea9_is_project_duration_covering(df_projects, project_name=project_name, invoice_date=invoiceDate_invoiceTextNLP)
-    print(f'custom feature 9 extracted. Feature 9 (contains_personalExpense_keywords)= {fea9}')     #testing
+    print(f'custom feature 9 extracted. Feature 9 (Invoice data falls outside of Project Duration)= {fea9}')     #testing
     
     #generate a vector of customized feature values using the above feature values
     # Create a NumPy array
@@ -249,7 +255,10 @@ def process_form_data(employee_id, project_name, invoice_amount, currency_unit, 
     x = float(invoice_amount)    # x is invoice amount      
     a = float(invoice_amount) - float(invoiceAmount_InvoiceTextNLP)     #a is variance between invoice amount from employee input and extracted invoice amount from invoice text.
     suggestedNextState_result, optimum_path_result = getOptimumPath(x, r, a,isSpecialCase_variable)
-
+    print('')
+    print('**********************MDP Decision***********************************')
+    print(f'Suggested Next State: {suggestedNextState_result}')
+    print(f'Suggested Optimum Policy(Path): {optimum_path_result}')
 
 
 
