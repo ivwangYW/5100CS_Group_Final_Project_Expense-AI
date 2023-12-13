@@ -21,14 +21,14 @@ Please see below for a link to the demo for running the app.py file.
 https://clipchamp.com/watch/0O8Ymey6213
 
 ## Team Contributions ##
-Design of the project: Yiwei Wang
-Dataset and database:  Yiwei Wang
-Extract text information and expense category classification using NLP:  Pengkun Ma, Yiwei Wang
-Linear Regression for predicting future invoice amount: Bingyang Ke
-Feature Extraction:  Yiwei Wang
-Fraud Risk Score Assessment using Neural Network:  Nanxiang Zhao
-Markov Desicion Process: Nanxiang Zhao
-Demo:  Yiwei Wang
+Design of the project: Yiwei Wang <br>
+Dataset and database:  Yiwei Wang <br>
+Extract text information and expense category classification using <br>NLP:  Pengkun Ma, Yiwei Wang<br>
+Linear Regression for predicting future invoice amount: Bingyang Ke<br>
+Feature Extraction:  Yiwei Wang<br>
+Fraud Risk Score Assessment using Neural Network:  Nanxiang Zhao<br>
+Markov Desicion Process: Nanxiang Zhao<br>
+Demo:  Yiwei Wang<br>
 Report: Drafted collectively
 
 ## ML Training Dataset ##
