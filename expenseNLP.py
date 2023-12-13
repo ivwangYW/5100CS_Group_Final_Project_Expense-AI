@@ -184,3 +184,17 @@ text = "#Summit-INV-20XHKD15 - Date of Issue: October 15, 2039 - Supplier: Summi
 
 
 
+df2 = 'processed_invoices.csv'
+df_extractd = pd.read_csv(df2,encoding='latin1')
+
+
+
+df = dataConverter.df_invoiceDate.str.strip()
+df_date = df_extractd['Invoice Date']
+
+
+accuracy = (df_date == df).mean()
+print(f"Accuracy for Date: {accuracy:.2f}")
+
+
+
