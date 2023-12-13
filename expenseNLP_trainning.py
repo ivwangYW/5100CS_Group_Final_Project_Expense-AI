@@ -64,7 +64,9 @@ Model Accuracy Evaluation
 """
 # Model Evaluation
 accuracy = grid_search.score(x_test, y_test)
-print(f"Optimized Model Accuracy - for expense category classification: {accuracy}")
+# Round to 2 decimal places and multiply by 100 to get percentage
+accuracy_percent = round(accuracy * 100, 2)
+print(f"Optimized Model Accuracy - for expense category classification: {accuracy_percent}")
 
 # # Predicting New Invoice Category
 # print('Please input text of invoice for classification: ')
