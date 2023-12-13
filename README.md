@@ -2,7 +2,7 @@
 AI Empowered Automated Employee Expense Reimbursement Process
 
 ### Project Process:  ### 
-##### Process Diagram: #####<br>
+##### Process Diagram: ##### 
 https://lucid.app/lucidchart/c1208529-7687-4675-92aa-f0c39d2d320d/edit?view_items=h9CPPX0PBLSY&invitationId=inv_8b067be2-0838-4a98-8c72-c8ffc477b320
 
 ##### MDP Table  #####
