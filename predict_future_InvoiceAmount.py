@@ -1,16 +1,18 @@
 import pandas as pd
 import numpy as np
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
-from sklearn.base import BaseEstimator, RegressorMixin  # 导入 BaseEstimator 和 RegressorMixin
+from sklearn.base import BaseEstimator, RegressorMixin
 import matplotlib.pyplot as plt
 from datetime import datetime
 
-
 class SeasonalTrendRegressor(BaseEstimator, RegressorMixin):
-    def __init__(self, period=365.25, frequency=1):
+    def __init__(self, period=365.25, frequency=1, trend_degree=2):
         self.period = period
         self.frequency = frequency
-        self.trend_model = LinearRegression()
+        self.trend_degree = trend_degree
+        self.trend_model = make_pipeline(PolynomialFeatures(degree=self.trend_degree), LinearRegression())
         self.seasonal_model = LinearRegression()
 
     def fit(self, X, y):
@@ -39,12 +41,12 @@ class SeasonalTrendRegressor(BaseEstimator, RegressorMixin):
         return trend + seasonality
 
     def _prepare_seasonal_features(self, X):
-        # Create seasonal features based on sine and cosine functions
-        X_seasonal = np.column_stack([
-            np.sin(2 * np.pi * self.frequency * X.squeeze() / self.period),
-            np.cos(2 * np.pi * self.frequency * X.squeeze() / self.period)
-        ])
-        return X_seasonal
+        # Create multiple seasonal features based on sine and cosine functions with different frequencies
+        features = []
+        for freq in range(1, self.frequency + 1):
+            features.append(np.sin(2 * np.pi * freq * X.squeeze() / self.period))
+            features.append(np.cos(2 * np.pi * freq * X.squeeze() / self.period))
+        return np.column_stack(features)
 
 
 def preprocess_data(df, employeeID, expenseCategory):
@@ -59,7 +61,7 @@ def preprocess_data(df, employeeID, expenseCategory):
 
 def predictInvoiceAmount(futureDate, employeeID, expenseCategory, df_reimbursementHistory):
     df = preprocess_data(df_reimbursementHistory, employeeID, expenseCategory)
-    # if df size is 0, return 0 directly. 
+    # if df size is 0, return 0 directly.
     if df.empty:
         return 0
     df['InvoiceDateInt'] = (df['InvoiceDate'] - df['InvoiceDate'].min()).dt.days
@@ -99,18 +101,15 @@ def predictInvoiceAmount(futureDate, employeeID, expenseCategory, df_reimburseme
 
 if __name__ == "__main__":
     test_cases = [
-        {"employeeID": "E000002", "expenseCategory": "Phone & Internet"},
         {"employeeID": "E000435", "expenseCategory": "Phone & Internet"},
-        {"employeeID": "P000009", "expenseCategory": "Travel"},
-        {"employeeID": "P000002", "expenseCategory": "Travel"},
+        {"employeeID": "E000009", "expenseCategory": "Travel"},
     ]
 
-    future_dates = ["2025-01-01", "2030-01-01"]
+    future_dates = ["2025-01-01"]
 
     # 加载数据
     df_reimbursementHistory = pd.read_csv('database_data/Table_ReimbursementRequestRecords.csv')
 
-    # 测试函数
     def run_tests():
         for case in test_cases:
             employeeID = case["employeeID"]
