@@ -16,29 +16,30 @@ This file will be extracting custom features based on the extracted information 
 """
 
 ######################placeholder for testing.  Data are extracted based on expenseNLP.py file
+
 '''
 from extraction of invoice text
 Testing data only
 '''
-dateExtracted = '2020-02-02'     
-amountExtracted = '37.1'
-currencyExtracted = 'GBP'       
-invoiceNumberExtracted = '34344'          
-expenseCategoryExtracted = 'Travel'
+#dateExtracted = '2020-02-02'     
+#amountExtracted = '37.1'
+#currencyExtracted = 'GBP'       
+#invoiceNumberExtracted = '34344'          
+#expenseCategoryExtracted = 'Travel'
 '''
 from user input
 Testing data only
 '''
-input_invoiceAmount = '37.1'
-submissionDate = '03-02-2020'
-input_currency = 'GBP'
-project_name = 'Project G'
-employeeID = 'E000435'
+#input_invoiceAmount = '37.1'
+#submissionDate = '03-02-2020'
+#input_currency = 'GBP'
+#project_name = 'Project G'
+#employeeID = 'E000435'
 
 
 #######################################################################################
 #get reimbursement history date
-df_reimbursementHistory = db.queryProjectEmployeesRelationFromDB()
+df_reimbursementHistory = db.queryReimbursementRequestRecordsFromDB()
 df_projectEmployee = db.queryProjectEmployeesRelationFromDB()
 
 ################################ helper functions #####################################################
